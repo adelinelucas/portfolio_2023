@@ -1,5 +1,43 @@
-body {
+/* RESET */
+*, 
+*::after,
+*::before{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea {
+  font: inherit;
+
+}
+
+/* VARIABLES */
+:root{
+  /* Color */
+  --BG-SECTION: #F2E9E4;
+  --FONT-COLOR: #151715;
+  --RED-ORANGE: #BF452A;
+  --YELLOW: #F2B33D;
+  --LIGHT-ORANGE: #F29544;
+  --ORANGE: #F28444;
+  --ORANGERED: #F26444;
+  --BRIGHT-RED : #F25041;
+  --WHITE: #F2E9E4;
+
+
+  /* FONT SIZE */
+  --FONT-MEDUIM: 1.5rem;
+  --FONT-SMALL: 1rem;
+  --FONT-XS: 0.8rem;
+}
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
