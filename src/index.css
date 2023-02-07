@@ -22,6 +22,7 @@ input, button, textarea {
 :root{
   /* Color */
   --BG-SECTION: #F2E9E4;
+  --BG-FOOTER: #151715;
   --FONT-COLOR: #151715;
   --RED-ORANGE: #BF452A;
   --YELLOW: #F2B33D;
@@ -33,7 +34,7 @@ input, button, textarea {
 
 
   /* FONT SIZE */
-  --FONT-MEDUIM: 1.5rem;
+  --FONT-MEDIUM: 1.5rem;
   --FONT-SMALL: 1rem;
   --FONT-XS: 0.8rem;
 }
