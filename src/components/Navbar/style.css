@@ -1,0 +1,38 @@
+.nav-section{
+    width: 100%;
+    min-height: 7rem;
+    background-color: var( --YELLOW);
+    font-size: var(--FONT-MEDUIM);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.nav-section nav {
+    width: 80%;
+    height: 4rem;
+    text-align: end;
+}
+
+.nav-section nav a {
+    text-decoration: none;
+    color: var(--FONT-COLOR);
+    border: 3px double var(--BRIGHT-RED);
+    margin: 0.5rem 2rem;
+    padding: 0.5rem;
+}
+
+.nav-section nav a svg{
+    margin: 0 0.3rem;
+    font-size: var(--FONT-SMALL);
+}
+
+.nav-section nav a:hover{
+    background-color: var(--BRIGHT-RED);
+    color: var(--WHITE);
+    border: 3px double var(--WHITE);
+}
+
+.nav-section nav a:hover svg{
+    color: var(--WHITE);
+}
