@@ -5,7 +5,7 @@
             "centreFormation" : "Social Builder et Web Force 3",
             "description":"Formation de 6 mois (4 mois de formation technique et 2 mois de stage) comprenant 490 heures de formation technique.",
             "miseEnPratique": "A l'issue de la formation, j'ai eu l'occasion de réaliser un stage de 2 mois en Symfony : Optimisation et ajout de fonctionnalités à un site existant Championnat-Perplexus. Site basé sur le projet open source de Sébastien Castro GogoCarto Symfony avec Sonata Bundle et utilisant la base de données MongoDB. Stage réalisé avec l'entreprise Kidz And Family.",
-            "langages": ["HTML5", "CSS3", "Javascript", "Ajax", "GIT", "SQL","PHP","Symfony" ],
+            "langages": ["HTML5", "CSS3", "Javascript", "Ajax", "GIT", "SQL","PHP","Symfony","Wordpress" ],
             "dates":"2021",
             "diplome": ["Certificat Techniques d'intégration Web","Certificat Techniques de développement Web"],
             "image": ""
