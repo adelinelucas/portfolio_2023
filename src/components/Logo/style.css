@@ -5,14 +5,14 @@
     left: 45px;
     font-size: 3rem;
     /* color: var(--PURPLE); */
-    -webkit-text-stroke: 4px var(--PURPLE);
+    -webkit-text-stroke: 4px var(--LIGHT-BLUE);
     -webkit-text-fill-color: transparent;
     letter-spacing: 4px;
 }
 
 .header__baseline-animated:hover{
     color: var(--PURPLE);
-    -webkit-text-fill-color: var(--PURPLE);
+    -webkit-text-fill-color: var(--WHITE);
     scale: 1.1;
     animation: ease 1s ;
     text-decoration: underline;

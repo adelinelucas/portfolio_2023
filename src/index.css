@@ -21,7 +21,7 @@ input, button, textarea {
 /* VARIABLES */
 :root{
   /* Color */
-  --BG-SECTION: #F2E9E4;
+  --BG-SECTION: #f1edebd2;
   --BG-FOOTER: #151715;
   --FONT-COLOR: #151715;
   --RED-ORANGE: #BF452A;
@@ -32,6 +32,16 @@ input, button, textarea {
   --BRIGHT-RED : #F25041;
   --WHITE: #F2E9E4;
   --PURPLE:#5A378C;
+  --DARK-PURPLE:#190F26;
+
+  /* /// */
+  --BG-PAGES:#f3f0f970;
+  --LIGHT-PURPLE: #B78DF2;
+  --VIOLINE:#8878B2;
+  --BLUE-PURPLE:#6F71E8;
+  --LIGHT-BLUE:#504EE8;
+  --MAT-BLUE:#77ABD9;
+
 
 
   /* FONT SIZE */
