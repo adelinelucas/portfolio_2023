@@ -6,7 +6,8 @@
             "technosTag": ["CSS", "PHP", "Symfony", "MongoDB"],
             "url": "",
             "cover":"",
-            "typeProjet": "Stage"
+            "typeProjet": "Stage",
+            "visibility": "false"
         },
         {
             "titre": "Projet de final de formation - Site de sorties",
@@ -14,7 +15,8 @@
             "technosTag": ["HTML", "CSS", "PHP", "Symfony", "SQL"],
             "url": "",
             "cover":"",
-            "typeProjet": "formation"
+            "typeProjet": "formation",
+            "visibility": "false"
         },
         {
             "titre": "Pink Inspiration - projet solo",
@@ -22,7 +24,8 @@
             "technosTag": ["WordPress", "Brizy"],
             "url": "http://pinkinspiration.000webhostapp.com/",
             "cover":"",
-            "typeProjet": "formation"
+            "typeProjet": "formation",
+            "visibility": "true"
         },
         {
             "titre": "Revue du site \"Stop-Ancre\" - BootCamp Into Tech -",
@@ -30,7 +33,8 @@
             "technosTag": ["WordPress", "Brizy"],
             "url": "http://git134.dreamhosters.com/",
             "cover":"",
-            "typeProjet": "formation"
+            "typeProjet": "formation",
+            "visibility": "true"
         },
         {
             "titre": "Création d'une boutique e-commerce en ligne",
@@ -39,7 +43,8 @@
             "frontBack": "front",
             "url": "",
             "cover":"",
-            "typeProjet": "formation"
+            "typeProjet": "formation",
+            "visibility": "false"
         }
         ,
         {
@@ -49,7 +54,8 @@
             "frontBack": "front et back",
             "url": "",
             "cover":"",
-            "typeProjet": "alternance"
+            "typeProjet": "alternance",
+            "visibility": "true"
         },
         {
             "titre": "Ajout d'un bouton pour générer un numéro de dossier client automatique",
@@ -58,7 +64,8 @@
             "frontBack": "back",
             "url": "",
             "cover":"",
-            "typeProjet": "alternance"
+            "typeProjet": "alternance",
+            "visibility": "true"
         },
         {
             "titre": "Backoffice pour la génération de landing page",
@@ -67,7 +74,8 @@
             "frontBack": "front",
             "url": "",
             "cover":"",
-            "typeProjet": "alternance"
+            "typeProjet": "alternance",
+            "visibility": "true"
         },
         {
             "titre": "Backoffice pour la génération de offre",
@@ -76,7 +84,8 @@
             "frontBack": "front et back",
             "url": "",
             "cover":"",
-            "typeProjet": "alternance"
+            "typeProjet": "alternance",
+            "visibility": "true"
         },
         {
             "titre": "Intégration de landing page",
@@ -85,7 +94,8 @@
             "frontBack": "front",
             "url": "",
             "cover":"",
-            "typeProjet": "alternance"
+            "typeProjet": "alternance",
+            "visibility": "true"
         },
         {
             "titre": "Ajout d'un bouton de relance clients",
@@ -94,7 +104,8 @@
             "frontBack": "back",
             "url": "",
             "cover":"",
-            "typeProjet": "alternance"
+            "typeProjet": "alternance",
+            "visibility": "true"
         },
         {
             "titre": "Helper Form",
@@ -103,7 +114,8 @@
             "frontBack": "front",
             "url": "",
             "cover":"",
-            "typeProjet": "alternance"
+            "typeProjet": "alternance",
+            "visibility": "true"
         }
     ]
 }

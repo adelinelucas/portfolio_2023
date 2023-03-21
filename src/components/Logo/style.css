@@ -1,0 +1,9 @@
+.header__baseline{
+    position: absolute;
+    top: 25px;
+    left: 45px;
+    font-size: 4rem;
+    /* color: var(--PURPLE); */
+    -webkit-text-stroke: 4px var(--PURPLE);
+    -webkit-text-fill-color: transparent;
+}

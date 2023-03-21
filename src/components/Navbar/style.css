@@ -1,20 +1,22 @@
-.nav-section{
+.header__nav-section{
     width: 100%;
     min-height: 7rem;
     background-color: var( --YELLOW);
     font-size: var(--FONT-MEDUIM);
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
-.nav-section nav {
-    width: 80%;
+.header__nav-section nav {
+    width: 100%;
     height: 4rem;
-    text-align: end;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.nav-section nav a {
+.header__nav-section nav a {
     text-decoration: none;
     color: var(--FONT-COLOR);
     border: 3px double var(--BRIGHT-RED);
@@ -22,17 +24,17 @@
     padding: 0.5rem;
 }
 
-.nav-section nav a svg{
+.header__nav-section nav a svg{
     margin: 0 0.3rem;
     font-size: var(--FONT-SMALL);
 }
 
-.nav-section nav a:hover{
+.header__nav-section nav a:hover{
     background-color: var(--BRIGHT-RED);
     color: var(--WHITE);
     border: 3px double var(--WHITE);
 }
 
-.nav-section nav a:hover svg{
+.header__nav-section nav a:hover svg{
     color: var(--WHITE);
 }
