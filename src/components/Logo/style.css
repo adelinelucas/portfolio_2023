@@ -1,9 +1,19 @@
 .header__baseline{
     position: absolute;
-    top: 25px;
+    display: flex;
+    top: 18px;
     left: 45px;
-    font-size: 4rem;
+    font-size: 3rem;
     /* color: var(--PURPLE); */
     -webkit-text-stroke: 4px var(--PURPLE);
     -webkit-text-fill-color: transparent;
+    letter-spacing: 4px;
+}
+
+.header__baseline-animated:hover{
+    color: var(--PURPLE);
+    -webkit-text-fill-color: var(--PURPLE);
+    scale: 1.1;
+    animation: ease 1s ;
+    text-decoration: underline;
 }
