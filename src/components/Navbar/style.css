@@ -6,6 +6,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    letter-spacing: 2px;
 }
 
 .header__nav-section nav {
@@ -19,7 +20,7 @@
 .header__nav-section nav a {
     text-decoration: none;
     color: var(--FONT-COLOR);
-    border: 3px double var(--BRIGHT-RED);
+    border-bottom: 3px double var(--BRIGHT-RED);
     margin: 0.5rem 2rem;
     padding: 0.5rem;
 }
@@ -32,7 +33,7 @@
 .header__nav-section nav a:hover{
     background-color: var(--BRIGHT-RED);
     color: var(--WHITE);
-    border: 3px double var(--WHITE);
+    border: 3px solid var(--WHITE);
 }
 
 .header__nav-section nav a:hover svg{
