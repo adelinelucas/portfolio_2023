@@ -10,7 +10,11 @@
 .page__html-tags{
     font-size: 1.3rem;
     font-style: italic;
-    color: var(--RED-ORANGE);
+    color: var(--LIGHT-BLUE);
     margin:0.5rem 5rem;
     padding: 2rem 0;
+}
+
+.page__html-tags.top-body-tag{
+    padding-bottom: 0;
 }

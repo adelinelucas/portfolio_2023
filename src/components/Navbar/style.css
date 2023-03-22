@@ -1,11 +1,5 @@
 .header__nav-section{
-    width: 100%;
-    min-height: 7rem;
-    background-color: var( --YELLOW);
     font-size: var(--FONT-MEDUIM);
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
     letter-spacing: 2px;
 }
 
@@ -20,9 +14,10 @@
 .header__nav-section nav a {
     text-decoration: none;
     color: var(--FONT-COLOR);
-    border-bottom: 3px double var(--BRIGHT-RED);
+    border-bottom: 3px double var(--BLUE-PURPLE);
     margin: 0.5rem 2rem;
     padding: 0.5rem;
+    box-shadow: 0 4px 7px -3px var(--DARK-PURPLE)
 }
 
 .header__nav-section nav a svg{
@@ -31,7 +26,7 @@
 }
 
 .header__nav-section nav a:hover{
-    background-color: var(--BRIGHT-RED);
+    background-color: var(--BLUE-PURPLE);
     color: var(--WHITE);
     border: 3px solid var(--WHITE);
 }
