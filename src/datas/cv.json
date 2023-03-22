@@ -9,7 +9,9 @@
             "dates":"2021",
             "diplome": ["Certificat Techniques d'intégration Web","Certificat Techniques de développement Web"],
             "image": "",
-            "visibility": "true"
+            "visibility": "true",
+            "dateDebut": "mars 2021",
+            "dateFin": "septembre 2021"
         },
         {
             "formation":"Formation développeur web en alternance",
@@ -21,7 +23,9 @@
             "dates":"2022",
             "diplome": ["Certificat Techniques d'intégration Web","Certificat Techniques de développement Web"],
             "image": "",
-            "visibility": "true"
+            "visibility": "true",
+            "dateDebut": "décembre 2021",
+            "dateFin": "décembre 2022"
         }
     ],
 
