@@ -1,7 +1,7 @@
 import React,{ useState } from 'react';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPuzzlePiece, faScrewdriverWrench, faGear, faGraduationCap, faChevronCircleUp, faChevronCircleDown, faFloppyDisk } from '@fortawesome/free-solid-svg-icons';
+import { faPuzzlePiece, faScrewdriverWrench, faGear, faBullseye, faChevronCircleUp, faChevronCircleDown, faFloppyDisk } from '@fortawesome/free-solid-svg-icons';
 
 const DisplayExpPro = ({infos, expType}) => {
     const [show, setShow] = useState(false);
@@ -9,15 +9,19 @@ const DisplayExpPro = ({infos, expType}) => {
         <article className='exp-pro__article'>
             <div className='exp-pro__article-header' >
                 <div className='exp-pro__article-header-btn'>
-                    <button onClick={()=>{setShow(!show)}}>
-                        {
-                            show ? <FontAwesomeIcon icon={faChevronCircleUp} color="#504EE8" />: <FontAwesomeIcon icon={faChevronCircleDown} color="#504EE8" />
-                        }
-                    </button> 
+                    {
+                        expType != "formationUniversitaire" && 
+                        <button onClick={()=>{setShow(!show)}}>
+                            {
+                                show ? <FontAwesomeIcon icon={faChevronCircleUp} color="#8878B2" />: <FontAwesomeIcon icon={faChevronCircleDown} color="#504EE8" />
+                            }
+                        </button> 
+                    }
+                    
                 </div>
                 <div>
-                    <h3>{infos.formation}</h3>
-                    <i>{infos.centreFormation} <span>{infos.dateDebut} - {infos.dateFin}</span></i>
+                    <h3>{infos.titre}</h3>
+                    <i>{infos.organisme} <span>{infos.dateDebut} - {infos.dateFin}</span></i>
                 </div>
                 
             </div>          
@@ -27,13 +31,21 @@ const DisplayExpPro = ({infos, expType}) => {
                     <p>{infos.description}</p>
                     <p>{infos.miseEnPratique}</p>
                     <div className='exp-pro__article-separator'></div>
-                    <p>{ expType != "formationUniversitaire" && infos.langages.map((tech, indice)=>(
+                    {/* render for webdev */}
+                    <p>{ expType === "webDev" && infos?.langages?.map((tech, indice)=>(
                         <span key={indice}>
                             { expType === "webDev" && <FontAwesomeIcon icon={faFloppyDisk} color="#504EE8" />}
-                            { expType === "avantReconversion" && <FontAwesomeIcon icon={faGear} color="#504EE8" />}
                             {tech}
                         </span>
                     ))}</p>
+                    {/* render for avantReconversion */}
+                    {expType === "avantReconversion" && <h4>Missions:</h4>}
+                    <ul>{ expType === "avantReconversion" && infos?.missions?.map((tech, indice)=>(
+                        <li key={indice}>
+                            { expType === "avantReconversion" && <FontAwesomeIcon icon={faBullseye} color="#504EE8" />}
+                            {tech}
+                        </li>
+                    ))}</ul>
                 </div>
             }
             
