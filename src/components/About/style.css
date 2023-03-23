@@ -1,0 +1,113 @@
+.about__section{
+    width: 85%;
+    background-color: white;
+    margin:auto;
+}
+.about__section__header{
+    padding: 0.5rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about__section__header h2 {
+    color: var(--LIGHT-BLUE);
+    letter-spacing: 10px;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.about__section__header i{
+    font-style: normal;
+    font-weight: var(--FONT-XS);
+}
+
+.about__section__nav {
+    display: flex;
+    background-color: var(--LIGHT-BLUE);
+    color: var(--WHITE);
+    padding: 0.8rem 0;
+}
+
+.about__section__nav ul {
+    list-style: none;
+    display: flex;
+    margin: auto;
+}
+
+.about__section__nav li {
+    display: inline;
+    margin-right: 1.5rem;
+    border:1px solid var(--LIGHT-PURPLE);
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.about__section__nav li a {
+    color: var(--WHITE);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.about__section__nav li:hover{
+    border: 1px solid white;
+}
+
+.about__section__nav li svg{
+    margin: 0 0.3rem;
+}
+
+.about__section article{
+    width: 100%;
+    padding: 1.5rem 2rem;
+}
+
+.about__section article h3{
+    color: var(--LIGHT-PURPLE);
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-bottom: 4px double var(--LIGHT-PURPLE);
+    width: fit-content;
+    margin-bottom:0.8rem;
+}
+
+.about__section article p {
+    text-indent: 30px;
+    width: 100%;
+    margin: auto;
+}
+.about__section article ul {
+    list-style: none;
+    margin-left: 3rem;
+}
+
+.about__section article ul li svg{
+    margin:0 0.5rem;
+}
+.about__section article ul li em {
+    font-style: normal;
+    color: var(--LIGHT-PURPLE);
+    font-weight: bold;
+}
+
+.about__section article h4{
+    color: var(--LIGHT-PURPLE);
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-bottom: 4px double var(--LIGHT-PURPLE);
+    width: fit-content;
+    margin-bottom:0.8rem;
+}
+.about__section article h4 svg {
+    margin-right: 0.5rem;
+}
+.about__section__infosContent {
+    width:80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin:auto;
+}
+.about__section article > div{
+    margin: 1rem 0;
+}
