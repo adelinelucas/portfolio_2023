@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faHome, faUser, faSuitcase, faBars, faLocationDot} from '@fortawesome/free-solid-svg-icons';
+import {faHome, faUser, faSuitcase, faBars, faLocationDot, faGraduationCap} from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './style.css';
@@ -16,6 +16,9 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink exact='true' activeclassname="active" to="/portfolio" className="portfolio-link">
                     Portfolio<FontAwesomeIcon icon={faSuitcase} color="#504EE8" />
+                </NavLink>
+                <NavLink exact='true' activeclassname="active" to="/experiences-pro" className="portfolio-link">
+                    Experiences pro<FontAwesomeIcon icon={faGraduationCap} color="#504EE8" />
                 </NavLink>
                 <NavLink exact='true' activeclassname="active" to="/contact" className="contact-link">
                     Localisation<FontAwesomeIcon icon={faLocationDot} color="#504EE8" />
