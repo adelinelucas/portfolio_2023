@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './style.css';
-import data from '../../datas/qualitesDefauts.json'
+import data from '../../datas/qualitesDefauts.json';
+import DisplayAboutInfos from '../DisplayAboutInfos';
 
 const About = () => {
-    const {qualites, defauts, attentes} = useState(data)
+    const {qualites, defauts, attentes} = data;
     return (
         <section>
             <aside>
@@ -37,9 +38,30 @@ const About = () => {
                 <h2>Pourrais-je m'intégrer dans votre équipe ?</h2>
                 <p>Mon profil vous intéresses ? Et oui c'est normal une junior motivée à apprendre, je vous comprends! Mais pas si vite, savoir si je peux vraiment convenir à votre équipe je vous propose d'anticiper sur les fameux "3 qualités /3 défauts" des entretiens.</p>
                 <p>L'idée est que je puisse également vous dire ce que j'attends d'une entreprise, et oui une relation c'est 50/50! :) Et un employé.e qui se sent bien dans son environnement pro c'est toujours gagnant pour l'entreprise.</p>
-                <h3>Qualités</h3>
-                <h3>Axes de progression</h3>
-                <h3>Ce que j'attends de ma future équipe</h3>
+                <div>
+                    <h3>Qualités</h3>
+                    {
+                        qualites.map((info, idx)=>(
+                            <DisplayAboutInfos key={idx} info={info}/>
+                        ))
+                    }
+                </div>
+                <div>
+                    <h3>Axes de progression</h3>
+                    {
+                        defauts.map((info, idx)=>(
+                            <DisplayAboutInfos key={idx} info={info}/>
+                        ))
+                    }
+                </div>
+                <div>
+                    <h3>Ce que j'attends de ma future équipe</h3>
+                    {
+                        attentes.map((info, idx)=>(
+                            <DisplayAboutInfos key={idx} info={info}/>
+                        ))
+                    }
+                </div>
             </article>
             <article>
                 <h3>Et à part le boulot ? </h3>
