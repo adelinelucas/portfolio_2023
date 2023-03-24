@@ -30,6 +30,7 @@
     font-size: var(--FONT-MEDIUM);
     margin: 0.5rem auto;
     width: fit-content;
+    text-align: center;
 }
 
 .about__section__aside-front-card button,
