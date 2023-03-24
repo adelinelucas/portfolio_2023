@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import data from '../../datas/qualitesDefauts.json';
-import DisplayAboutInfos from '../DisplayAboutInfos';
+import DisplayAboutInfos from '../../components/DisplayAboutInfos';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquare, faSquareFull, faCheck,faBullseye } from '@fortawesome/free-solid-svg-icons';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import data from '../../datas/cv.json';
-import DisplayExpPro from '../DisplayExpPro';
+import DisplayExpPro from '../../components/DisplayExpPro';
 
 const ExperiencesPro = () => {
     const {webDev, avantReconversion, formationUniversitaire} = data;
