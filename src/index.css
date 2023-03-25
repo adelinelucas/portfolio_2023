@@ -35,14 +35,21 @@ input, button, textarea {
   --DARK-PURPLE:#190F26;
 
   /* /// */
-  --BG-PAGES:#f3f0f970;
+  --BG-PAGES:#F2F0F2;
   --LIGHT-PURPLE: #B78DF2;
   --VIOLINE:#8878B2;
   --BLUE-PURPLE:#6F71E8;
   --LIGHT-BLUE:#504EE8;
   --MAT-BLUE:#77ABD9;
 
-
+  /* /// */
+  --PINK-POP: #D95B96;
+  --PURPLE-POP: #800077;
+  --ORANGE-POP:#FF8300;
+  --YELLOW-POP:#F2CB05;
+  --KAKI:#967C11;
+  --GREEN:#BB9E04;
+  --DEEP-GREEN:#337F45;
 
   /* FONT SIZE */
   --FONT-MEDIUM: 1.5rem;

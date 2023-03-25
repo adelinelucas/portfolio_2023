@@ -5,13 +5,13 @@
     left: 45px;
     font-size: 3rem;
     /* color: var(--PURPLE); */
-    -webkit-text-stroke: 4px var(--LIGHT-BLUE);
+    -webkit-text-stroke: 4px var(--WHITE);
     -webkit-text-fill-color: transparent;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
 }
 
 .header__baseline-animated:hover{
-    color: var(--PURPLE);
+    color: var(--DEEP-GREEN);
     -webkit-text-fill-color: var(--WHITE);
     animation: animateLetters 2s ease 0s 1 normal forwards;
     text-decoration: underline;

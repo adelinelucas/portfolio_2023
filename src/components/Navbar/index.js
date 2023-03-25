@@ -9,19 +9,19 @@ const Navbar = () => {
         <section className='header__nav-section'>
             <nav>
                 <NavLink exact='true' activeclassname="active" to="/">
-                    Home<FontAwesomeIcon icon={faHome} color="#504EE8" />
+                    Home<FontAwesomeIcon icon={faHome} color="#D95B96" />
                 </NavLink>
                 <NavLink exact='true' activeclassname="active" to="/about" className="about-link">
-                    A propos<FontAwesomeIcon icon={faUser} color="#504EE8" />
+                    A propos<FontAwesomeIcon icon={faUser} color="#D95B96" />
                 </NavLink>
                 <NavLink exact='true' activeclassname="active" to="/portfolio" className="portfolio-link">
-                    Portfolio<FontAwesomeIcon icon={faSuitcase} color="#504EE8" />
+                    Portfolio<FontAwesomeIcon icon={faSuitcase} color="#D95B96" />
                 </NavLink>
                 <NavLink exact='true' activeclassname="active" to="/experiences-pro" className="portfolio-link">
-                    Experiences pro<FontAwesomeIcon icon={faGraduationCap} color="#504EE8" />
+                    Experiences pro<FontAwesomeIcon icon={faGraduationCap} color="#D95B96" />
                 </NavLink>
                 <NavLink exact='true' activeclassname="active" to="/contact" className="contact-link">
-                    Localisation<FontAwesomeIcon icon={faLocationDot} color="#504EE8" />
+                    Localisation<FontAwesomeIcon icon={faLocationDot} color="#D95B96" />
                 </NavLink>
             </nav>
         </section>

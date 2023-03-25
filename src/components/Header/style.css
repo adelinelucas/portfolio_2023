@@ -6,9 +6,9 @@
     width: 100%;
     min-height: 7rem;
     height: 7rem;
-    border-bottom: 2px solid #949396;
-    box-shadow: 0 4px 7px -3px var(--DARK-PURPLE);
+    border-bottom: 4px double var(--DARK-PURPLE);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    background-color:var(--YELLOW-POP) ;
 }

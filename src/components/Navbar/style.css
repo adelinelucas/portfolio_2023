@@ -13,11 +13,14 @@
 
 .header__nav-section nav a {
     text-decoration: none;
-    color: var(--FONT-COLOR);
-    border-bottom: 3px double var(--BLUE-PURPLE);
+    color: var(--PINK-POP);
+    border: 3px solid transparent;
+    border-bottom: 3px solid var(--GREEN);
     margin: 0.5rem 2rem;
     padding: 0.5rem;
-    box-shadow: 0 4px 7px -3px var(--DARK-PURPLE)
+    box-shadow: 0 4px 7px -3px var(--DARK-PURPLE);
+    background-color: var(--WHITE);
+    font-weight: 600;
 }
 
 .header__nav-section nav a svg{
@@ -26,7 +29,7 @@
 }
 
 .header__nav-section nav a:hover{
-    background-color: var(--BLUE-PURPLE);
+    background-color: var(--PINK-POP);
     color: var(--WHITE);
     border: 3px solid var(--WHITE);
 }
