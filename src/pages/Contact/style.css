@@ -1,0 +1,29 @@
+.contact__section{
+    position: relative;
+    width: 85%;
+    background-color: white;
+    margin:auto;
+    padding: 2rem;
+}
+.contact__section__article-infos{
+    position: absolute;
+    top: 70px;
+    left: 25%;
+    width: 500px;
+    background-color: var(--LIGHT-PURPLE);
+    flex-wrap: wrap;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 10;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding:1rem 1.5rem;
+}
+.contact__section__article-infos h2 {
+    color: var(--WHITE)
+}
+.contact__section__article-map{
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 4px 7px -3px var(--DARK-PURPLE);
+    width: fit-content;
+}
