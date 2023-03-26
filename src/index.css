@@ -21,7 +21,7 @@ input, button, textarea {
 /* VARIABLES */
 :root{
   /* Color */
-  --BG-SECTION: #f1edebd2;
+  --BG-SECTION: #f5f1ef9e;
   --BG-FOOTER: #151715;
   --FONT-COLOR: #151715;
   --RED-ORANGE: #BF452A;
@@ -30,7 +30,7 @@ input, button, textarea {
   --ORANGE: #F28444;
   --ORANGERED: #F26444;
   --BRIGHT-RED : #F25041;
-  --WHITE: #F2E9E4;
+  --WHITE: #fff;
   --PURPLE:#5A378C;
   --DARK-PURPLE:#190F26;
 

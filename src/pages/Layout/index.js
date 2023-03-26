@@ -8,14 +8,14 @@ const Layout = () => {
     return (
       <>
         <Header/>  
-        <section className='page'>
+        <main className='page'>
           <span className='page__html-tags top-body-tag'>&lt;body&gt;</span>
           <Outlet />
           <span className='page__html-tags bottom-body-tag'>&lt;/body&gt;
           <br />
           <span className='page__html-tags bottom-html-tag'>&lt;/html&gt;</span>
           </span>
-        </section>
+        </main>
         <Footer/>
       </>
     );

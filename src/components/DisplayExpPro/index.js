@@ -13,17 +13,15 @@ const DisplayExpPro = ({infos, expType}) => {
                         expType != "formationUniversitaire" && 
                         <button onClick={()=>{setShow(!show)}}>
                             {
-                                show ? <FontAwesomeIcon icon={faChevronCircleUp} color="#8878B2" />: <FontAwesomeIcon icon={faChevronCircleDown} color="#504EE8" />
+                                show ? <FontAwesomeIcon icon={faChevronCircleUp} color="#800077" />: <FontAwesomeIcon icon={faChevronCircleDown} color="#D95B96" />
                             }
                         </button> 
-                    }
-                    
+                    }  
                 </div>
                 <div>
                     <h3>{infos.titre}</h3>
                     <i>{infos.organisme} <span>{infos.dateDebut} - {infos.dateFin}</span></i>
-                </div>
-                
+                </div>  
             </div>          
             
             {show && 
@@ -42,14 +40,12 @@ const DisplayExpPro = ({infos, expType}) => {
                     {expType === "avantReconversion" && <h4>Missions:</h4>}
                     <ul>{ expType === "avantReconversion" && infos?.missions?.map((tech, indice)=>(
                         <li key={indice}>
-                            { expType === "avantReconversion" && <FontAwesomeIcon icon={faBullseye} color="#504EE8" />}
+                            { expType === "avantReconversion" && <FontAwesomeIcon icon={faBullseye} color="#800077" />}
                             {tech}
                         </li>
                     ))}</ul>
                 </div>
-            }
-            
-            
+            }    
         </article>
     );
 };

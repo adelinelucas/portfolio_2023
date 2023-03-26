@@ -1,10 +1,13 @@
 .about__section__aside{
-    background-color: var(--PURPLE);
+    background-image: url('../../../public/images/bg_waves_v2.png'), linear-gradient(147deg, #726d6d45 0%, #726d6d45 74%);
+    background-color: var(--WHITE);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 350px;
     height: 300px;
-    color:var(--WHITE);
+    color:var(--DARK-PURPLE);
     margin: 0.5rem;
-    border:6px solid var(--DARK-PURPLE);
+    border:6px solid var(--PURPLE);
     position: relative;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     transition: transform 0.5s;
@@ -37,18 +40,23 @@
 .about__section__aside-content button
 {
     background-color: transparent;
-    color: var(--YELLOW);
-    border: 1px solid var(--YELLOW);
+    color: var(--WHITE);
+    border: 3px solid var(--WHITE);
     outline: none;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 0px;
     cursor: pointer;
     width: fit-content;
+    font-weight: 600;
+    background-color: var(--PURPLE);
+    letter-spacing: 2px;
 }
 
 .about__section__aside.display-content {
     transform: rotateY( 180deg ) ;
     transition: transform 0.5s;
+    background-color: var(--WHITE);
+    background-image: none;
 }
 .about__section__aside-content{
     transform: rotateY( 180deg ) ;
