@@ -32,7 +32,7 @@ const DisplayExpPro = ({infos, expType}) => {
                     {/* render for webdev */}
                     <p>{ expType === "webDev" && infos?.langages?.map((tech, indice)=>(
                         <span key={indice}>
-                            { expType === "webDev" && <FontAwesomeIcon icon={faFloppyDisk} color="#504EE8" />}
+                            { expType === "webDev" && <FontAwesomeIcon icon={faFloppyDisk} color="#800077" />}
                             {tech}
                         </span>
                     ))}</p>

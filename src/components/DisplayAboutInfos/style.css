@@ -1,5 +1,5 @@
 .about__section__aside{
-    background-image: url('../../../public/images/bg_waves_v2.png'), linear-gradient(147deg, #726d6d45 0%, #726d6d45 74%);
+    background-image: url('../../../public/images/bg_waves_v3.png'), linear-gradient(147deg, #726d6d45 0%, #726d6d45 74%);
     background-color: var(--WHITE);
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,7 +7,7 @@
     height: 300px;
     color:var(--DARK-PURPLE);
     margin: 0.5rem;
-    border:6px solid var(--PURPLE);
+    border:6px solid var(--BLUE-PURPLE);
     position: relative;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     transition: transform 0.5s;
@@ -31,7 +31,7 @@
 .about__section__aside h5 {
     letter-spacing: 5px;
     font-size: var(--FONT-MEDIUM);
-    margin: 0.5rem auto;
+    margin: 1.5rem auto;
     width: fit-content;
     text-align: center;
 }
@@ -48,16 +48,21 @@
     cursor: pointer;
     width: fit-content;
     font-weight: 600;
-    background-color: var(--PURPLE);
+    background-color: var(--PINK-POP);
     letter-spacing: 2px;
 }
 
 .about__section__aside.display-content {
     transform: rotateY( 180deg ) ;
     transition: transform 0.5s;
-    background-color: var(--WHITE);
+    background-color: #dfdddd2b;
     background-image: none;
 }
+
+.about__section__aside.display-content h5{
+    color:  var(--PINK-POP);
+}
+
 .about__section__aside-content{
     transform: rotateY( 180deg ) ;
     transition: transform 0.5s;
