@@ -1,0 +1,110 @@
+.portfolio__section__article{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 450px;
+    max-width: 450px;
+    margin: 1.5rem;
+}
+
+.portfolio__section__article-cover{
+    position: absolute;
+    z-index:2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio__section__article-content{
+    position: absolute;
+    width: 100%;
+    z-index:3;
+    padding: 10px 20px;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: linear-gradient(147deg, #3a373779 0%, #4b474745 74%);
+    /* bottom: -70px; */
+    bottom: 0;
+    height: fit-content;
+    color: var(--WHITE);
+    flex-wrap: wrap;
+}
+
+.portfolio__section__article-title{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: var(--FONT-SMALL);
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3px;
+}
+
+.portfolio__section__article-description{
+    font-size:  var(--FONT-XS);
+    margin-bottom: 5px;
+}
+.portfolio__section__article-content {
+
+}
+
+.portfolio__section__article-content span{
+    background-color: var(--PURPLE-POP);
+    margin: 0 0.3rem;
+    border: 2px solid var(--PURPLE-POP);
+    padding: 2px 5px;
+}
+
+.portfolio__section__article-content a {
+    margin: 0.5rem auto ;
+    padding: 0.3rem 0.5rem;
+    height: 2rem;
+    text-decoration: none;
+    border: 2px solid var(--YELLOW-POP);
+    border-radius: 4px;
+    font-size: 14px;
+    color:#fff;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+.portfolio__section__article-content a:hover{
+    transform: translateY(-3px);
+    background-color: var(--YELLOW-POP);
+}
+
+.portfolio__section__article-content h4{
+    background-color: var(--PINK-POP);
+    width:100%;
+    color: var(--WHITE);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-style: var(--FONT-XXS);
+    padding: 0.3rem;
+}
+
+.portfolio__section__article-content:after{
+    content: "";
+    background: linear-gradient(180deg, #ffd700, #000 );
+    position: absolute;
+    left:0;
+    right: 0;        
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    opacity: 0;
+}
+
+.portfolio__section__article-content:hover:after{
+    opacity: 0.857;
+}
+
+.portfolio__section__article-content:hover .content{
+    bottom: 0;
+    background: transparent;
+}
