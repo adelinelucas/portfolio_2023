@@ -36,7 +36,8 @@ input, button, textarea {
 
   /* /// */
   --BG-PAGES:#F2F0F2;
-  --LIGHT-PURPLE: #B78DF2;
+  /* --LIGHT-PURPLE: #B78DF2; */
+  --LIGHT-PURPLE: #9959f7;
   --VIOLINE:#8878B2;
   --BLUE-PURPLE:#6F71E8;
   --LIGHT-BLUE:#504EE8;
@@ -52,9 +53,11 @@ input, button, textarea {
   --DEEP-GREEN:#337F45;
 
   /* FONT SIZE */
+  --FONT-BIG:2rem;
   --FONT-MEDIUM: 1.5rem;
-  --FONT-SMALL: 1rem;
-  --FONT-XS: 0.8rem;
+  --FONT-SMALL: 1.2rem;
+  --FONT-XS: 1.1rem;
+  --FONT-XXS: 0.8rem;
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

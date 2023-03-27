@@ -19,15 +19,15 @@ const About = () => {
                 </div>
                     <i>A travers cette page, je vous propose de faire connaissance, d'en savoir un peu plus sur les raisons de ma reconversion et comment je pourrais m'intégrer dans votre équipe! (et oui, je n'oublie pas l'essentiel)! </i>
                     <figcaption>
-                        <img src="./images/ethernet_cable.png" alt="illustration câble internet" width="120"   />
+                        <img src="./images/ethernet_cable_v2.png" alt="illustration câble internet" width="120"   />
                     </figcaption>
             </header>
             <nav className='about__section__nav'>
                 <ul>
-                    <li><a href="#avantReconversion"><FontAwesomeIcon icon={faSquare} color="#504EE8"/>Parcours avant reconversion</a></li>
-                    <li><a href="#paroursReconversion"><FontAwesomeIcon icon={faSquare} color="#504EE8"/>Parcours de reconversion</a></li>
-                    <li><a href="#integrationEquipe"><FontAwesomeIcon icon={faSquare} color="#504EE8"/>Qualités - Défauts - Attente en entreprise</a></li>
-                    <li><a href="#traitspersonnalites"><FontAwesomeIcon icon={faSquare} color="#504EE8" />Et sinon dans la vie</a></li>
+                    <li><a href="#avantReconversion"><FontAwesomeIcon icon={faSquare} color="#9959f7"/>Parcours avant reconversion</a></li>
+                    <li><a href="#paroursReconversion"><FontAwesomeIcon icon={faSquare} color="#9959f7"/>Parcours de reconversion</a></li>
+                    <li><a href="#integrationEquipe"><FontAwesomeIcon icon={faSquare} color="#9959f7"/>Qualités - Défauts - Attente en entreprise</a></li>
+                    <li><a href="#traitspersonnalites"><FontAwesomeIcon icon={faSquare} color="#9959f7" />Et sinon dans la vie</a></li>
                 </ul>
             </nav>
             <article id="avantReconversion">
@@ -37,10 +37,10 @@ const About = () => {
                 <br/>
                 <p>Cette expérience m'a aussi fait prendre conscience que malgré les responsabilités qui m'étaient confiées, je n'étais pas épannouie dans ce métier. J'avais besoin d'un métier autonome où je puisse être en controle de ce que je produisait. J'ai engagé ue réflexion sur ce que j'attendais d'un travail. J'avais besoin d'un métier où : </p>
                 <ul>
-                    <li><FontAwesomeIcon icon={faCheck} color="#504EE8"/>je peux être en <em>autonomie</em>,</li>
-                    <li><FontAwesomeIcon icon={faCheck} color="#504EE8"/>j'ai la possibilité d'être en <em>apprentissage constant</em>,</li>
-                    <li><FontAwesomeIcon icon={faCheck} color="#504EE8"/>un métier <em>créatif</em>,</li>
-                    <li><FontAwesomeIcon icon={faCheck} color="#504EE8"/>un métier qui me permette dans un <em>temps raisonnable</em> de me reconvertir.</li>
+                    <li><FontAwesomeIcon icon={faCheck} color="#9959f7"/>je peux être en <em>autonomie</em>,</li>
+                    <li><FontAwesomeIcon icon={faCheck} color="#9959f7"/>j'ai la possibilité d'être en <em>apprentissage constant</em>,</li>
+                    <li><FontAwesomeIcon icon={faCheck} color="#9959f7"/>un métier <em>créatif</em>,</li>
+                    <li><FontAwesomeIcon icon={faCheck} color="#9959f7"/>un métier qui me permette dans un <em>temps raisonnable</em> de me reconvertir.</li>
                 </ul>
             </article>
             <article id="paroursReconversion">
@@ -50,9 +50,9 @@ const About = () => {
                 <p>J'ai réalisé une année d'alternance avec l'école <strong>3WAcademy</strong>, le format était de 3 semaines en entreprise et 1 semaine d'école.</p><p>Cette année d'alternance a été un vrai challenge et les premiers mois ont été une vraie confrontation à la réalité du métier de développeuse et m'a permis de mesurer que je n'étais qu'au tout début de cet apprentissage.</p>
                 <p>J'ai été accueilli dans une petite équipe de 3 personnes : 1 chargé de projet, un développeur et un alternant de 2ième année. J'ai travaillé en JS et PHP principalement, sur la création d'outil interne pour automatiser certains process:
                     <ul>
-                        <li><FontAwesomeIcon icon={faSquare} color="#504EE8"/>générateur de landings page, <a href="#">&lt;a&gt; voir le code&lt;/a&gt;</a></li>
-                        <li><FontAwesomeIcon icon={faSquare} color="#504EE8"/>générateur d'offre, <a href="#">&lt;a&gt; voir le code&lt;/a&gt;</a></li>
-                        <li><FontAwesomeIcon icon={faSquare} color="#504EE8"/>un outil pour gérer l'association des offres aux landings et gérer leur activation <a href="#">&lt;a&gt; voir le code&lt;/a&gt;</a>.</li>
+                        <li><FontAwesomeIcon icon={faSquare} color="#9959f7"/>générateur de landings page, <a href="#">&lt;a&gt; voir le code&lt;/a&gt;</a></li>
+                        <li><FontAwesomeIcon icon={faSquare} color="#9959f7"/>générateur d'offre, <a href="#">&lt;a&gt; voir le code&lt;/a&gt;</a></li>
+                        <li><FontAwesomeIcon icon={faSquare} color="#9959f7"/>un outil pour gérer l'association des offres aux landings et gérer leur activation <a href="#">&lt;a&gt; voir le code&lt;/a&gt;</a>.</li>
                     </ul>
                 </p>
                 <br/>
@@ -65,7 +65,7 @@ const About = () => {
                 <p>Mon profil vous intéresse ? Et oui c'est normal une junior motivée à apprendre, je vous comprends ! Mais pas si vite, c'est important de savoir si je peux vraiment convenir à votre équipe; aussi je vous propose d'anticiper sur les fameux "3 qualités / 3 défauts" des entretiens.</p>
                 <p>L'idée est que je puisse également vous dire ce que j'attends d'une entreprise, et oui une relation c'est 50/50! :) Et un employé.e qui se sent bien dans son environnement pro c'est toujours gagnant pour l'entreprise.</p>
                 <div>
-                    <h4><FontAwesomeIcon icon={faBullseye} color="#504EE8"/>Qualités</h4>
+                    <h4><FontAwesomeIcon icon={faBullseye} color="#9959f7"/>Qualités</h4>
                     <div className='about__section__infosContent'>
                     {
                         qualites.map((info, idx)=>(
@@ -75,7 +75,7 @@ const About = () => {
                     </div> 
                 </div>
                 <div>
-                    <h4><FontAwesomeIcon icon={faBullseye} color="#504EE8"/>Axes de progression</h4>
+                    <h4><FontAwesomeIcon icon={faBullseye} color="#9959f7"/>Axes de progression</h4>
                     <div className='about__section__infosContent'>
                     {
                         defauts.map((info, idx)=>(
@@ -85,7 +85,7 @@ const About = () => {
                     </div>
                 </div>
                 <div>
-                    <h4><FontAwesomeIcon icon={faBullseye} color="#504EE8"/>Ce que j'attends de ma future équipe</h4>
+                    <h4><FontAwesomeIcon icon={faBullseye} color="#9959f7"/>Ce que j'attends de ma future équipe</h4>
                     <div className='about__section__infosContent'>
                     {
                         attentes.map((info, idx)=>(
@@ -107,7 +107,7 @@ const About = () => {
             </article>
             <aside className='about__section__footer'>
                 <figcaption>
-                    <img src="./images/ethernet_cable.png" alt="illustration câble internet" width="120"   />
+                    <img src="./images/internet.png" alt="illustration câble internet" width="120"   />
                 </figcaption>
             </aside>
         </section>

@@ -1,5 +1,6 @@
 .about__section__aside{
-    background-image: url('../../../public/images/bg_waves_v3.png'), linear-gradient(147deg, #726d6d45 0%, #726d6d45 74%);
+    /* background-image: url('../../../public/images/bg_waves_v3.png'), linear-gradient(147deg, #726d6d45 0%, #726d6d45 74%); */
+    background-image: url('../../../public/images/bg_waves_v5.png');
     background-color: var(--WHITE);
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,7 +8,7 @@
     height: 300px;
     color:var(--DARK-PURPLE);
     margin: 0.5rem;
-    border:6px solid var(--BLUE-PURPLE);
+    border:6px solid var(--LIGHT-PURPLE);
     position: relative;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     transition: transform 0.5s;
@@ -31,6 +32,8 @@
 .about__section__aside h5 {
     letter-spacing: 5px;
     font-size: var(--FONT-MEDIUM);
+    text-shadow: 1px 0px 0px var(--PINK-POP);
+    color:var(--PINK-POP);
     margin: 1.5rem auto;
     width: fit-content;
     text-align: center;

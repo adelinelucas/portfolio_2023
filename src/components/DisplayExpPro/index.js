@@ -1,7 +1,7 @@
 import React,{ useState } from 'react';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPuzzlePiece, faScrewdriverWrench, faGear, faBullseye, faChevronCircleUp, faChevronCircleDown, faFloppyDisk } from '@fortawesome/free-solid-svg-icons';
+import { faPuzzlePiece, faScrewdriverWrench, faGear, faBullseye, faChevronCircleUp, faChevronCircleDown, faFloppyDisk, faCircle } from '@fortawesome/free-solid-svg-icons';
 
 const DisplayExpPro = ({infos, expType}) => {
     const [show, setShow] = useState(false);
@@ -16,7 +16,11 @@ const DisplayExpPro = ({infos, expType}) => {
                                 show ? <FontAwesomeIcon icon={faChevronCircleUp} color="#800077" />: <FontAwesomeIcon icon={faChevronCircleDown} color="#D95B96" />
                             }
                         </button> 
-                    }  
+                    } 
+                    {
+                        expType === "formationUniversitaire" &&
+                        <FontAwesomeIcon icon={faCircle} color="#D95B96" className='exp-pro__article_round-svg'/>
+                    } 
                 </div>
                 <div>
                     <h3>{infos.titre}</h3>
