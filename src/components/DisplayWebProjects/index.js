@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 const DisplayWebProjects = ({project, idx}) => {
-    console.log(project)
+
     return (
         <article className='portfolio__section__article' key={idx}>
            <img className='portfolio__section__article-cover' src={project.cover?project.cover : './images/internet.png' } alt={project.title}/>
