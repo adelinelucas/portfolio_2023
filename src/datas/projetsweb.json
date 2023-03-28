@@ -58,7 +58,7 @@
             "visibility": "true"
         },
         {
-            "titre": "Ajout d'un bouton pour générer un numéro de dossier client automatique",
+            "titre": "Bouton pour générer un numéro de dossier client automatique",
             "description":"Une page d'accueil avec l'ensemble des produits chargés dynamiquement depuis la base de données. En cas de rupture de stock de produits, en Javascript nous désactivons le bouton \"ajout au panier\". Une page produit permettant d'ajouter le produit dans le panier. La possibilité de supprimer un produit depuis le panier. Vérification de la disponibilité des produits depuis le stock en BDD",
             "technosTag": ["SQL","PHP"],
             "frontBack": "back",

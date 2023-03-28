@@ -6,6 +6,7 @@
     width: 450px;
     max-width: 450px;
     margin: 1.5rem;
+    cursor: pointer;
 }
 
 .portfolio__section__article-cover{
@@ -13,7 +14,9 @@
     z-index:2;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    border: 2px solid pink;
+    border-radius: 15px;
 }
 
 .portfolio__section__article-content{
@@ -24,14 +27,19 @@
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     background: linear-gradient(147deg, #3a373779 0%, #4b474745 74%);
     /* bottom: -70px; */
-    bottom: 0;
-    height: fit-content;
+    bottom: -390px;
+    height: 500px;
     color: var(--WHITE);
     flex-wrap: wrap;
 }
 
+.portfolio__section__article-content-header{
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
 .portfolio__section__article-title{
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
     margin-top: 0;
     font-size: var(--FONT-SMALL);
     font-weight: 500;
@@ -40,18 +48,24 @@
 }
 
 .portfolio__section__article-description{
-    font-size:  var(--FONT-XS);
+    font-size:  var(--FONT-XXS);
     margin-bottom: 5px;
-}
-.portfolio__section__article-content {
-
+    letter-spacing: 2px;
 }
 
-.portfolio__section__article-content span{
+.portfolio__section__article-content-header span{
+    font-size: var(--FONT-XXS);
     background-color: var(--PURPLE-POP);
-    margin: 0 0.3rem;
+    margin-right: 0.5rem;
     border: 2px solid var(--PURPLE-POP);
     padding: 2px 5px;
+    letter-spacing: 2px;
+
+}
+
+.portfolio__section__article-content-footer{
+    position: absolute;
+    bottom:190px;
 }
 
 .portfolio__section__article-content a {
@@ -69,9 +83,11 @@
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     cursor: pointer;
     letter-spacing: 3px;
+    position: relative;
+    left: 50%;
 }
 .portfolio__section__article-content a:hover{
-    transform: translateY(-3px);
+    /* transform: translateY(-210px); */
     background-color: var(--YELLOW-POP);
 }
 
@@ -83,21 +99,14 @@
     text-transform: uppercase;
     font-style: var(--FONT-XXS);
     padding: 0.3rem;
+    position: relative;
+    bottom: 10px;
 }
 
-.portfolio__section__article-content:after{
-    content: "";
-    background: linear-gradient(180deg, #ffd700, #000 );
-    position: absolute;
-    left:0;
-    right: 0;        
-    bottom: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
+.portfolio__section__article-content:hover{
+    background: linear-gradient(2deg, var(--YELLOW-POP), #0000009c );
+    transform: translateY(-210px);
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    opacity: 0;
 }
 
 .portfolio__section__article-content:hover:after{
