@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import '../../App.scss';
+import Loader from 'react-loaders';
 import './style.css';
 import data from '../../datas/projetsweb.json';
 import DisplayWebProjects from '../../components/DisplayWebProjects';
@@ -14,6 +16,20 @@ const Portfolio = () => {
         const selectedTech = projetsWeb.filter((tech)=> (tech.technosTag.includes(techTrim)));
         setProjectToDisplay(selectedTech);
     }   
+
+    const [renderLoader, setRenderLoader] = useState(true);
+    useEffect(()=>{          
+        const timer = setTimeout(() => {
+            setRenderLoader(false) ;
+                    console.log(renderLoader)
+            }, 1000);
+        
+        return () => clearTimeout(timer);
+
+    }, [])
+
+    if(renderLoader) return <Loader type='ball-rotate'/>
+    
     return (
         <main className='portfolio'>
             <header>

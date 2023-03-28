@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import '../../App.scss';
+import Loader from 'react-loaders';
 import './style.css';
 import {MapContainer, TileLayer} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -6,6 +8,20 @@ const Contact = () => {
     console.log(process.env.REACT_APP_API_KEY)
     const center=['48.912259', '2.384049'];
     const url = `https://maps.geoapify.com/v1/tile/osm-carto/{z}/{x}/{y}.png?apiKey=${process.env.REACT_APP_API_KEY}`
+    
+    const [renderLoader, setRenderLoader] = useState(true);
+    useEffect(()=>{          
+        const timer = setTimeout(() => {
+            setRenderLoader(false) ;
+                    console.log(renderLoader)
+            }, 1000);
+        
+        return () => clearTimeout(timer);
+
+    }, [])
+
+    if(renderLoader) return <Loader type='ball-rotate'/>
+    
     return (
         <section className='contact__section'>
             <article className='contact__section__article-infos'>
