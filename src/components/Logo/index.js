@@ -6,11 +6,11 @@ const Logo = () => {
     const presArray = presentation.split('');
     console.log(presArray)
     return (
-        <section className='header__baseline'>
-            {presArray.map((letter)=>(
-                <h2 className="header__baseline-animated">{letter}</h2>
+        <aside className='header__baseline'>
+            {presArray.map((letter, index)=>(
+                <h2 className="header__baseline-animated" key={index}>{letter}</h2>
             ))}
-        </section>
+        </aside>
     );
 };
 

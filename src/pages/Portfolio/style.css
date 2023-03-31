@@ -73,7 +73,7 @@
     margin: 0 0.5rem;
 }
 
-.portfolio__section {
+.portfolio__section__article {
     width: 95%;
     margin: auto;
     display: flex;

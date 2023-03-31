@@ -3,7 +3,7 @@ import './style.css';
 const DisplayWebProjects = ({project, idx}) => {
 
     return (
-        <article className='portfolio__section__article' key={idx}>
+        <article className='portfolio__section__article-project' key={idx}>
            <img className='portfolio__section__article-cover' src={project.cover?project.cover : './images/internet.png' } alt={project.title}/>
             <div className='portfolio__section__article-content'>
                 <div className='portfolio__section__article-content-header'>

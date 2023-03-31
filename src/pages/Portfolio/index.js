@@ -31,7 +31,7 @@ const Portfolio = () => {
     if(renderLoader) return <Loader type='ball-rotate'/>
     
     return (
-        <main className='portfolio'>
+        <section className='portfolio'>
             <header>
                 <div>
                     <figure>
@@ -54,7 +54,7 @@ const Portfolio = () => {
                 </nav>
             </header>
 
-            <section className='portfolio__section'>
+            <article className='portfolio__section__article'>
                 {
                     projectToDisplay.map((project, idx)=>{
                         if(project.visibility === 'true') return project.visibility && <DisplayWebProjects key={idx} project={project}/>
@@ -62,9 +62,9 @@ const Portfolio = () => {
 
                     )
                 }
-            </section>
+            </article>
 
-        </main>
+        </section>
     );
 };
 
