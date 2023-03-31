@@ -1,11 +1,12 @@
 .footer-section{
     background-color: var(--BG-FOOTER);
     width: 100%;
-    min-height: 3rem;
+    min-height: 5vh;
     color: var(--WHITE);
     text-align: center;
     position: fixed;
     bottom: 0;
+    z-index: 100;
 }
 
 .footer-section ul{

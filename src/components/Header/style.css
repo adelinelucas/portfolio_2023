@@ -4,8 +4,8 @@
     left:0;
     width:100%; */
     width: 100%;
-    min-height: 7rem;
-    height: 7rem;
+    /* min-height: 7rem; */
+    height: 13vh;
     border-bottom: 4px double var(--DARK-PURPLE);
     display: flex;
     flex-direction: column;
