@@ -17,17 +17,3 @@ input, button, textarea {
   font: inherit;
 
 }
-
-/* VARIABLES */
-:root{
-  /* Color */
-  --BG-SECTION: #F2E9E4;
-  --FONT-COLOR: #151715;
-  --RED-ORANGE: #BF452A;
-  --YELLOW: #F2B33D;
-  --LIGHT-ORANGE: #F29544;
-  --ORANGE: #F28444;
-  --ORANGERED: #F26444;
-  --YELLOW: #F2B33D;
-  --BRIGHT-RED : #F25041;
-}
