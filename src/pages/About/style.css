@@ -23,6 +23,7 @@
 
 .about__section__header h2 {
     color: var(--LIGHT-PURPLE);
+    font-size: var(--FONT-BIG);
     letter-spacing: 10px;
     font-weight: 600;
     margin: 0.5rem 0;
@@ -39,6 +40,7 @@
 
 .about__section__nav {
     display: flex;
+    flex-wrap: wrap;
     /* background-color: var(--YELLOW); */
     background-image: url('../../../public/images/bandeau_waves.png');
     background-size:cover;
@@ -135,6 +137,7 @@
 .about__section__infosContent {
     width:100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin:auto;
 }
@@ -150,4 +153,65 @@
 .about__section__footer {
     display: flex;
     justify-content: center;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:481px){
+    .about__section__nav ul {
+        flex-direction: column;
+    }
+    .about__section__nav ul li {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .about__section__header i {
+        font-weight: var(--FONT-SMALL);
+        width: 80%;
+    }
+    .about__section article {
+        padding: 1.5rem 0rem;
+    }
+    .about__section article .about__section__aside-content p {
+        font-size:var(--FONT-XXS) ;
+    }
+    .about__section article p {
+        margin: 0
+    }
+    .about__section article ul {
+        margin:0.2rem 0;
+    }
+    .about__section__header div{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:768px){
+    .about__section__nav  {
+        width: 100%;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .about__section article {
+        width: 100%;
+        padding: 1.5rem 1rem;
+    }
+    .about__section article ul {
+        margin:0.5rem auto;
+    }
+    .about__section__nav li{
+        text-align: center;
+        padding: 0;
+        margin: 0.2rem;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .about__section{
+        width: 95%;
+    }
+    .about__section article p {
+        font-size:var(--FONT-XS) ;
+    }
 }

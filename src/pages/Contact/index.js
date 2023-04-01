@@ -36,7 +36,6 @@ const Contact = () => {
                 <MapContainer
                     center={center}
                     zoom={15}
-                    style={{ width:'400px', height:'400px'}}
                 >
                     <TileLayer
                     url={url}
