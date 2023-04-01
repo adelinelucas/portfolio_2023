@@ -124,3 +124,19 @@
     bottom: 0;
     background: transparent;
 }
+
+/* RESPONSIVE */
+@media screen and (max-width:481px){
+    
+    .portfolio__section__article-project{
+        margin: 0;
+    }
+
+    .portfolio__section__article-content {
+        bottom: -460px;
+        height: 600px;
+    }
+    .portfolio__section__article-content:hover{
+        transform: translateY(-72%);
+    }
+}

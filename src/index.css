@@ -53,6 +53,7 @@ input, button, textarea {
   --DEEP-GREEN:#337F45;
 
   /* FONT SIZE */
+  --FONT-XL:2.5rem;
   --FONT-BIG:2rem;
   --FONT-MEDIUM: 1.5rem;
   --FONT-SMALL: 1.2rem;

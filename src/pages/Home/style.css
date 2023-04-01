@@ -27,7 +27,7 @@
     width: 90%;
     margin: auto;
     text-align: center;
-    font-size: var(--FONT-BIG);
+    font-size: var(--FONT-XL);
     letter-spacing: 5px;
     color: var(--LIGHT-PURPLE);
     margin: 1rem 0;
@@ -35,7 +35,7 @@
 
 .home__article p{
     color: var(--DARK-PURPLE);
-    font-size: var(--FONT-XS);
+    font-size: var(--FONT-SMALL);
     letter-spacing: 1px;
     margin: 1.5rem 0.5rem;
     text-align: left;
@@ -111,10 +111,14 @@
     }
 
     .home__article p{
-        font-size: 1rem;
+        font-size: var(--FONT-XS);
     }
 }
-
+@media screen and (max-width:768px){
+    .home__article p{
+        text-align: center;
+    }
+}
 @media screen and (max-width:481px){
 
     .home h1{
