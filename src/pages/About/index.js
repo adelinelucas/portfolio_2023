@@ -26,7 +26,7 @@ const About = () => {
                 <ul>
                     <li><a href="#avantReconversion"><FontAwesomeIcon icon={faSquare} color="#9959f7"/>Parcours avant reconversion</a></li>
                     <li><a href="#paroursReconversion"><FontAwesomeIcon icon={faSquare} color="#9959f7"/>Parcours de reconversion</a></li>
-                    <li><a href="#integrationEquipe"><FontAwesomeIcon icon={faSquare} color="#9959f7"/>Qualités - Défauts - Attente en entreprise</a></li>
+                    <li><a href="#integrationEquipe"><FontAwesomeIcon icon={faSquare} color="#9959f7"/>Qualités - Défauts - Attentes en entreprise</a></li>
                     <li><a href="#traitspersonnalites"><FontAwesomeIcon icon={faSquare} color="#9959f7" />Et sinon dans la vie</a></li>
                 </ul>
             </nav>

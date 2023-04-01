@@ -13,7 +13,6 @@
     padding: 0.5rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 60%;
     background-image: url('../../../public/images/bg_waves_v5.png');
     background-repeat: no-repeat;
@@ -30,7 +29,7 @@
 }
 
 .portfolio header div h2{
-    font-weight: var(--FONT-MEDIUM) ;
+    font-size: var(--FONT-XL) ;
     color: var(--ORANGE-POP);
     letter-spacing: 10px;
     font-weight: 600;
@@ -79,4 +78,41 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:768px){
+    .portfolio{
+        width: 95%;
+    }
+    .portfolio header div h2{
+        font-size: var(--FONT-MEDIUM);
+        letter-spacing: 8px;
+        margin: 0;
+    }
+    .portfolio__section__article-project {
+        width: 500px;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width:481px){
+    .portfolio header figure img {
+        width: 50px;
+    }
+    .portfolio header div {
+        width: 95%;
+        margin: auto;
+    }
+    .portfolio header div h2{
+        font-size: var(--FONT-XS);
+        padding: 0;
+    }
+
+    .portfolio header p{
+        font-size: var(--FONT-XXS);
+        text-align: center;
+    }
+
 }

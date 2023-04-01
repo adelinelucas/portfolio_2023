@@ -9,11 +9,12 @@ import { faComputerMouse } from '@fortawesome/free-solid-svg-icons';
 
 const Portfolio = () => {
     const {projetsWeb} = data;
-    const [projectToDisplay, setProjectToDisplay] = useState(projetsWeb);
+    const reverseArray = Object.values(projetsWeb).reverse();
+    const [projectToDisplay, setProjectToDisplay] = useState(reverseArray);
     const techArray = ['Javascript','NodeJS','PHP'];
     const handleClick = (tech)=>{
         const techTrim = tech.trim();
-        const selectedTech = projetsWeb.filter((tech)=> (tech.technosTag.includes(techTrim)));
+        const selectedTech = reverseArray.filter((tech)=> (tech.technosTag.includes(techTrim)));
         setProjectToDisplay(selectedTech);
     }   
 
@@ -21,11 +22,8 @@ const Portfolio = () => {
     useEffect(()=>{          
         const timer = setTimeout(() => {
             setRenderLoader(false) ;
-                    console.log(renderLoader)
             }, 1000);
-        
         return () => clearTimeout(timer);
-
     }, [])
 
     if(renderLoader) return <Loader type='ball-rotate'/>
@@ -42,7 +40,7 @@ const Portfolio = () => {
                         <img src="./images/screen.png" alt="formation développeur" width="70"/>
                     </figure>
                 </div>
-                <p>Projets webs réalisés en formation, en alternance.</p>
+                <p>Projets webs réalisés en formation ou en alternance.</p>
                 <nav>
                     <ul>
                         {

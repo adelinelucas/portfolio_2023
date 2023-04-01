@@ -3,7 +3,7 @@
     margin: 0.5rem 0;
 }
 .exp-pro__article h3{
-    font-size: var(--FONT-SMALL);
+    font-size: var(--FONT-MEDIUM);
     color: var(--PINK-POP);
     font-weight: 600;
     letter-spacing: 2px;
@@ -76,4 +76,11 @@
 }
 .exp-pro__article ul li svg {
     margin: 0 0.5rem;
+}
+/* RESPONSIVE */
+
+@media screen and (max-width:768px){
+    .exp-pro__article h3{
+        font-size: var(--FONT-SMALL);
+    }
 }
