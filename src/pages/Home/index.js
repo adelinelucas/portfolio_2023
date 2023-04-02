@@ -21,7 +21,6 @@ const Home = () => {
 
             if(baselineIndex < baselineComplete.length){
                 setBaseline(oldArray => [...oldArray,baselineComplete[baselineIndex]])
-                console.log(baselineIndex, baseline)
                 setBaselineIndex(baselineIndex++);
                 if(baselineIndex === baselineComplete.length){
                     injectTab()
