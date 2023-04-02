@@ -3,8 +3,8 @@ import './style.css';
 import data from '../../datas/qualitesDefauts.json';
 import DisplayAboutInfos from '../../components/DisplayAboutInfos';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquare, faSquareFull, faCheck,faBullseye } from '@fortawesome/free-solid-svg-icons';
-
+import { faSquare, faSquareFull, faCheck,faBullseye, faHandPointer } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const About = () => {
     const {qualites, defauts, attentes} = data;
@@ -50,14 +50,22 @@ const About = () => {
                 <p>J'ai réalisé une année d'alternance avec l'école <strong>3WAcademy</strong>, le format était de 3 semaines en entreprise et 1 semaine d'école.</p><p>Cette année d'alternance a été un vrai challenge et les premiers mois ont été une vraie confrontation à la réalité du métier de développeuse et m'a permis de mesurer que je n'étais qu'au tout début de cet apprentissage.</p>
                 <p>J'ai été accueilli dans une petite équipe de 3 personnes : 1 chargé de projet, un développeur et un alternant de 2ième année. J'ai travaillé en JS et PHP principalement, sur la création d'outil interne pour automatiser certains process:
                     <ul>
-                        <li><FontAwesomeIcon icon={faSquare} color="#9959f7"/>générateur de landings page, <a href="#">&lt;a&gt; voir le code&lt;/a&gt;</a></li>
-                        <li><FontAwesomeIcon icon={faSquare} color="#9959f7"/>générateur d'offre, <a href="#">&lt;a&gt; voir le code&lt;/a&gt;</a></li>
-                        <li><FontAwesomeIcon icon={faSquare} color="#9959f7"/>un outil pour gérer l'association des offres aux landings et gérer leur activation <a href="#">&lt;a&gt; voir le code&lt;/a&gt;</a>.</li>
+                        <li><FontAwesomeIcon icon={faSquare} color="#9959f7"/>générateur de landings page,</li>
+                        <li><FontAwesomeIcon icon={faSquare} color="#9959f7"/>générateur d'offre,</li>
+                        <li><FontAwesomeIcon icon={faSquare} color="#9959f7"/>un outil pour gérer l'association des offres aux landings et gérer leur activation.</li>
                     </ul>
                 </p>
                 <br/>
                 <p>Cette année d'alternance a été tout aussi intense, si les premiers mois ont vraiment été compliqués, j'ai continué à travailler les cours et les notions les weekends (FreeCodeCamp est devenu mon meilleur ami), j'ai toujours cherché à progresser.</p>
 
+                <p>Pour en savoir plus sur mon parcours, je vous laisse consulter une partie de mon rapport d'alternance :</p>
+                <Link to="./ressourcesPDF/rapportAlternance_SV.pdf" download target='_blank'>
+                    Rapport d'alternance<FontAwesomeIcon icon={faHandPointer} color="#fff" />
+                </Link> 
+                <p>Mais également la présentation réalisée à l'occasion de ma soutenance de projet :</p>
+                <Link to="./ressourcesPDF/projetFinAlternance_VA.pdf" download target='_blank'>
+                       Présentation projet de formation<FontAwesomeIcon icon={faHandPointer} color="#fff" />
+                </Link> 
                 <p>Forte de cette année d'alternance, j'espère pouvoir intégrer au mieux dans les missions qui me seront confiées.</p>
             </article>
             <article id="integrationEquipe">
