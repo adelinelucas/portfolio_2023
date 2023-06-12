@@ -92,7 +92,7 @@
             "description":"Réalisation from scratch d'un bakoffice interne à l'entreprise pour permettre le suivi de dossiers client en fonction de leur status. \nFonctionalités: \n -Récupération des datas et mise en forme dans une table avec DataTable, \n-Système d'authentification du user,\n-Accès différencié aux données des clients en fonction du user.\n Projet réalisé en utilisant la POO.",
             "technosTag": ["HTML","CSS","Javascript","PHP"],
             "frontBack": "front et back",
-            "url": "",
+            "url": "https://github.com/adelinelucas/projetsAlternance",
             "cover":"./images/outil_suivi_clients.jpg",
             "typeProjet": "alternance",
             "visibility": "true"
@@ -102,7 +102,7 @@
             "description":"Création from scratch d'un outil backoffice pour automatiser la génération de landing page (CRUD). Selon les paramètres renseignés certains éléments sont pré-rempli (url de la landing). Toutes les interactions sur la page ont été réalisées en JS, principalement en asynchrone.",
             "technosTag": ["HTML","CSS","Javascript","PHP"],
             "frontBack": "front",
-            "url": "",
+            "url": "https://github.com/adelinelucas/projetsAlternance",
             "cover":"./images/outil_generateur_lp.jpg",
             "typeProjet": "alternance",
             "visibility": "true"
@@ -112,17 +112,17 @@
             "description":"Création from scratch d'un outil backoffice pour la création/ mise à jour d'offres promotionnelles. Toutes les interactions sur la page ont été réalisées en JS, principalement en asynchrone. J'ai beaucoup aimé ce projet qui était dans le prolongement du générateur de landing et qui m'a permis de réaliser un projet complet front et back.",
             "technosTag": ["HTML","CSS","Javascript","PHP", "CodeIgniter"],
             "frontBack": "front et back",
-            "url": "",
+            "url": "https://github.com/adelinelucas/projetsAlternance",
             "cover":"./images/outil_gestion_offres.jpg",
             "typeProjet": "alternance",
             "visibility": "true"
         },
         {
             "titre": "Projet de fin de formation - Trashbuster",
-            "description":"Les consignes de l'école: créer un site web front et back comprenant un crud complet en en 2 semaines. Le site Trashbuster est une plateforme pour les particuliers/associations/écoles pour collecter les déchets polluants l'espace public. Un utilisateur peut :\n -créer un comptre, \n -créer une action de collecte, \n -commenter une autre action, \n -metter à jour/supprimer une action qu'il a créé. \n Les commentaires d'une action,(les kilos indiqués dans le commentaire) vont permettre de compléter l'objectif total de déchets collectés sur ce point de collecte.",
-            "technosTag": ["HTML","Tailwind_CSS","React", "Javascript", "Express", "MongoDB"],
+            "description":"Objectif: créer un site web front et back comprenant un crud complet en 2 semaines. Trashbuster est une plateforme pour les particuliers/associations/écoles pour collecter les déchets polluants l'espace public. Un utilisateur peut :\n -créer un comptre, \n -créer une action de collecte, \n -commenter une autre action, \n -metter à jour/supprimer une action qu'il a créé. \n Les commentaires d'une action (les kilos indiqués dans le commentaire) vont permettre de compléter l'objectif total de déchets collectés sur ce point de collecte.",
+            "technosTag": ["HTML","Tailwind_CSS","React", "Javascript", "Express", "MongoDB","NodeJS"],
             "frontBack": "front",
-            "url": "https://github.com/adelinelucas/Trashbuster_finalProject",
+            "url": "https://trashbuster-finalproject.netlify.app",
             "cover":"./images/trashbuster.jpg",
             "typeProjet": "formation",
             "visibility": "true"

@@ -34,7 +34,7 @@
     font-size: var(--FONT-MEDIUM);
     text-shadow: 1px 0px 0px var(--PINK-POP);
     color:var(--PINK-POP);
-    margin: 1.5rem auto;
+    margin: 0.5rem auto;
     width: fit-content;
     text-align: center;
 }
@@ -60,6 +60,12 @@
     transition: transform 0.5s;
     background-color: #dfdddd2b;
     background-image: none;
+}
+
+.about__section article ul li {
+    font-size: var(--FONT-XS);
+    letter-spacing: 1px;
+    line-height: 25px;
 }
 
 /* .about__section__aside.display-content h5{

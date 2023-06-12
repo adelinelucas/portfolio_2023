@@ -22,10 +22,10 @@
     padding:1rem 1.5rem;
 }
 .contact__section__article-infos h2 {
-    color: var(--DARK-PURPLE);
+    color: var(--ORANGE-POP);
     letter-spacing: 3px;
     font-size: var(--FONT-BIG);
-    font-weight: 600;
+    font-weight: bold;
     width: fit-content;
     margin: 0.5rem auto 1rem;
 }
@@ -59,6 +59,7 @@
     .contact__section{
         width: 95%;
         height: fit-content;
+        padding: 0.5rem;
     }
     .contact__section__article-infos {
         padding: 1rem 0.5rem;
@@ -68,7 +69,7 @@
         width: 60%;
     }
     .contact__section__article-infos h2{
-        font-size: var(--FONT-XS);
+        font-size: var(--FONT-SMALL);
         margin:0;
         font-weight: bold;
         width: 95%;
@@ -81,12 +82,16 @@
     .contact__section__article-infos img{
         width: 95px;
     }
+    .leaflet-container{
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media screen and (max-width:481px){
     .contact__section__article-infos {
         position: inherit;
-        width: 95%;
+        width: 100%;
         top:0;
         left: 0;
         padding: 1rem 0.3rem;
@@ -94,8 +99,8 @@
     }
 
     .leaflet-container{
-        width: 300px;
-        height: 300px;
+        width: 290px;
+        height: 290px;
     }
     .contact__section{
         width: 95%;

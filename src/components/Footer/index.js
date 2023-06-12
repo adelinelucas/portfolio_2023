@@ -14,7 +14,7 @@ const Footer = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/adeline-lucas-web-dev/" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/adelinelucas?tab=repositories" target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={faGithub} color="#4d4d4e"/>
                     </a>
                 </li>                

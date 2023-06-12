@@ -130,13 +130,32 @@
     
     .portfolio__section__article-project{
         margin: 0;
+        margin-bottom: 0.5rem
+    }
+
+    .portfolio__section__article-title{
+        font-size: var(--FONT-XS);
     }
 
     .portfolio__section__article-content {
-        bottom: -460px;
+        bottom: -450px;
         height: 600px;
     }
     .portfolio__section__article-content:hover{
-        transform: translateY(-72%);
+        transform: translateY(-75%);
+    }
+    .portfolio__section__article-content-header span {
+        margin-right: 0.2rem; 
+        padding: 1px 3px;
+    }
+    .portfolio__section__article-content {
+        padding: 10px 10px;
+    }
+    .portfolio__section__article-description {
+        padding-top: 10px;
+    }
+
+    .portfolio__section__article-content-footer {
+        bottom: 2%;
     }
 }

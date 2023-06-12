@@ -23,9 +23,9 @@
 
 .about__section__header h2 {
     color: var(--LIGHT-PURPLE);
-    font-size: var(--FONT-XL);
+    font-size: var(--FONT-BIG);
     letter-spacing: 10px;
-    font-weight: 600;
+    font-weight: bold;
     margin: 0.5rem 0;
 }
 
@@ -110,7 +110,10 @@
 .about__section article p {
     text-indent: 30px;
     width: 100%;
-    margin: 0.3rem auto;
+    margin: auto;
+    font-size: var(--FONT-XS);
+    letter-spacing: 1px;
+    line-height: 25px;
 }
 .about__section article ul {
     list-style: none;
@@ -147,7 +150,7 @@
     margin:auto;
 }
 .about__section article .about__section__aside-content p{
-    font-size: var(--FONT-SMALL);
+    font-size: var(--FONT-XXS);
 }
 
 .about__section__aside-content p {
@@ -164,7 +167,7 @@
 }
 
 #paroursReconversion a{
-    padding:0.3rem 0.5rem;
+    padding:0.5rem 0.7rem;
     border-radius: 5px;
     outline:none;
     margin: 1.5rem auto;
@@ -244,6 +247,9 @@
     }
     .about__section ul li {
         font-size: var(--FONT-XS);
+    }
+    #paroursReconversion a{
+        text-align: center;
     }
 }
 
