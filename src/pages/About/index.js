@@ -58,11 +58,11 @@ const About = () => {
                 <p>Cette année d'alternance a été tout aussi intense, si les premiers mois ont vraiment été compliqués, j'ai continué à travailler les cours et les notions les weekends (FreeCodeCamp est devenu mon meilleur ami), j'ai toujours cherché à progresser.</p>
 
                 <p>Pour en savoir plus sur mon parcours, je vous laisse consulter une partie de mon rapport d'alternance :</p>
-                <Link to="./ressourcesPDF/rapportAlternance_SV.pdf" download target='_blank'>
+                <Link to="../ressourcesPDF/rapportAlternance_SV.pdf" download target='_blank'>
                     Rapport d'alternance<FontAwesomeIcon icon={faHandPointer} color="#fff" />
                 </Link> 
                 <p>Mais également la présentation réalisée à l'occasion de ma soutenance de projet :</p>
-                <Link to="./ressourcesPDF/projetFinAlternance_VA.pdf" download target='_blank'>
+                <Link to="../ressourcesPDF/projetFinAlternance_VA.pdf" download target='_blank'>
                        Présentation projet de formation<FontAwesomeIcon icon={faHandPointer} color="#fff" />
                 </Link> 
                 <p>Forte de cette année d'alternance, j'espère pouvoir intégrer au mieux dans les missions qui me seront confiées.</p>

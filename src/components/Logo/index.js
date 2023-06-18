@@ -1,7 +1,9 @@
 import React, { useEffect, useReducer, useState } from 'react';
 import './style.css';
+import { useNavigate } from 'react-router-dom';
 
 const Logo = () => {
+    const navigate = useNavigate();
     const intro = ['Adeline', 'Web dev'];
     let speed = 600;
     const presArray = intro[0].split('');
@@ -13,6 +15,11 @@ const Logo = () => {
         else setTextToDisplay(intro[0].split(''))
     }   
 
+    const redirectHome = () => {
+        console.log('redirect');
+        navigate('/')
+    }
+  
     
     useEffect(()=>{
         const timeout = setTimeout(()=>{
@@ -38,9 +45,15 @@ const Logo = () => {
     },[textLogo])
 
     return (
-        <aside className='header__baseline'>
-            {textLogo.join('')}<span className="logo-tab"></span>
-        </aside>
+        <>
+            <aside className='header__baseline' >
+                {textLogo.join('')}<span className="logo-tab" ></span>            
+            </aside>
+            <aside className='header__basline-redirect' onClick={redirectHome} >
+                <i>Retourner à la page d'accueil</i>
+            </aside>
+        </>
+
     );
 };
 

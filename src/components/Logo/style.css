@@ -28,6 +28,31 @@
 	top:50px;
 	animation: blinkAnimation 2s ease 0s infinite forwards;
 }
+
+.header__basline-redirect{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 260px;
+	height: 80px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.header__basline-redirect i {
+	display: none;
+}
+
+.header__basline-redirect:hover i{
+	display: flex;
+	font-size: 12px;
+	color: var(--RED-ORANGE);
+	position: relative;
+	bottom: -100%;
+	right: -15%;
+	letter-spacing: 1px;
+}
+
 @keyframes animateLetters {
 	0% {
 		animation-timing-function: ease-in;

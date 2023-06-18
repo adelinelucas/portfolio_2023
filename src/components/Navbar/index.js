@@ -10,9 +10,9 @@ const Navbar = () => {
     return (
         <section className='header__nav-section'>
             <nav className='header_nav-section-desktop'>
-                <NavLink exact='true' activeclassname="active" to="/">
+                {/* <NavLink exact='true' activeclassname="active" to="/">
                     Home<FontAwesomeIcon icon={faHome} color="#D95B96" />
-                </NavLink>
+                </NavLink> */}
                 <NavLink exact='true' activeclassname="active" to="/about" className="about-link">
                     A propos<FontAwesomeIcon icon={faUser} color="#D95B96" />
                 </NavLink>
