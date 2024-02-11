@@ -1,4 +1,4 @@
-@import '../../App.css';
+@import '../../../App.css';
 #root{
     background-color: var(--BG-SECTION);
     height: fit-content;

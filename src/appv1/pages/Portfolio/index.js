@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../../App.scss';
+import '../../../App.scss';
 import Loader from 'react-loaders';
 import './style.css';
 import data from '../../datas/projetsweb.json';

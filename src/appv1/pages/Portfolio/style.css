@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: row;
     width: 60%;
-    background-image: url('../../../public/images/bg_waves_v5.png');
+    background-image: url('../../../../public/images/bg_waves_v5.png');
     background-repeat: no-repeat;
     background-size: left;
     background-position: bottom;

@@ -43,7 +43,7 @@
     display: flex;
     flex-wrap: wrap;
     /* background-color: var(--YELLOW); */
-    background-image: url('../../../public/images/bandeau_waves.png');
+    background-image: url('../../../../public/images/bandeau_waves.png');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;

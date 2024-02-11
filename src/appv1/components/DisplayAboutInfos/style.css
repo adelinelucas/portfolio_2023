@@ -1,6 +1,6 @@
 .about__section__aside{
     /* background-image: url('../../../public/images/bg_waves_v3.png'), linear-gradient(147deg, #726d6d45 0%, #726d6d45 74%); */
-    background-image: url('../../../public/images/bg_waves_v5.png');
+    background-image: url('../../../../public/images/bg_waves_v5.png');
     background-color: var(--WHITE);
     background-repeat: no-repeat;
     background-size: cover;
