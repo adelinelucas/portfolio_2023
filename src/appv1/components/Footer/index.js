@@ -6,7 +6,7 @@ import {faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
     return (
         <footer className='footer-section'>
-            <h4>Adeline LUCAS, web dev 2023 &copy;</h4>
+            <h4>Adeline LUCAS, web dev 2024 &copy;</h4>
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/adeline-lucas-web-dev/" target="_blank" rel="noreferrer">

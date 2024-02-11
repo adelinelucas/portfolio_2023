@@ -16,8 +16,7 @@ const Logo = () => {
     }   
 
     const redirectHome = () => {
-        console.log('redirect');
-        navigate('/')
+        navigate('/webdev')
     }
   
     

@@ -13,16 +13,16 @@ const Navbar = () => {
                 {/* <NavLink exact='true' activeclassname="active" to="/">
                     Home<FontAwesomeIcon icon={faHome} color="#D95B96" />
                 </NavLink> */}
-                <NavLink exact='true' activeclassname="active" to="/about" className="about-link">
+                <NavLink exact='true' activeclassname="active" to="/webdev/about" className="about-link">
                     A propos<FontAwesomeIcon icon={faUser} color="#D95B96" />
                 </NavLink>
-                <NavLink exact='true' activeclassname="active" to="/portfolio" className="portfolio-link">
+                <NavLink exact='true' activeclassname="active" to="/webdev/portfolio" className="portfolio-link">
                     Portfolio<FontAwesomeIcon icon={faSuitcase} color="#D95B96" />
                 </NavLink>
-                <NavLink exact='true' activeclassname="active" to="/experiences-pro" className="portfolio-link">
+                <NavLink exact='true' activeclassname="active" to="/webdev/experiences-pro" className="portfolio-link">
                     Experiences pro<FontAwesomeIcon icon={faGraduationCap} color="#D95B96" />
                 </NavLink>
-                <NavLink exact='true' activeclassname="active" to="/contact" className="contact-link">
+                <NavLink exact='true' activeclassname="active" to="/webdev/contact" className="contact-link">
                     Localisation<FontAwesomeIcon icon={faLocationDot} color="#D95B96" />
                 </NavLink>
             </nav>
@@ -36,19 +36,19 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={faX} color="#D95B96" />
                 </button>
                 <nav className={`${showLinks ? 'show-links':'' }`}>
-                    <NavLink exact='true' activeclassname="active" to="/" onClick={()=>setShowLinks(!showLinks)}>
+                    <NavLink exact='true' activeclassname="active" to="/webdev" onClick={()=>setShowLinks(!showLinks)}>
                         Home<FontAwesomeIcon icon={faHome} color="#D95B96" />
                     </NavLink>
-                    <NavLink exact='true' activeclassname="active" to="/about" className="about-link" onClick={()=>setShowLinks(!showLinks)}>
+                    <NavLink exact='true' activeclassname="active" to="/webdev/about" className="about-link" onClick={()=>setShowLinks(!showLinks)}>
                         A propos<FontAwesomeIcon icon={faUser} color="#D95B96" />
                     </NavLink>
-                    <NavLink exact='true' activeclassname="active" to="/portfolio" className="portfolio-link" onClick={()=>setShowLinks(!showLinks)}>
+                    <NavLink exact='true' activeclassname="active" to="/webdev/portfolio" className="portfolio-link" onClick={()=>setShowLinks(!showLinks)}>
                         Portfolio<FontAwesomeIcon icon={faSuitcase} color="#D95B96" />
                     </NavLink>
-                    <NavLink exact='true' activeclassname="active" to="/experiences-pro" className="portfolio-link" onClick={()=>setShowLinks(!showLinks)}>
+                    <NavLink exact='true' activeclassname="active" to="/webdev/experiences-pro" className="portfolio-link" onClick={()=>setShowLinks(!showLinks)}>
                         Experiences pro<FontAwesomeIcon icon={faGraduationCap} color="#D95B96" />
                     </NavLink>
-                    <NavLink exact='true' activeclassname="active" to="/contact" className="contact-link" onClick={()=>setShowLinks(!showLinks)}>
+                    <NavLink exact='true' activeclassname="active" to="/webdev/contact" className="contact-link" onClick={()=>setShowLinks(!showLinks)}>
                         Localisation<FontAwesomeIcon icon={faLocationDot} color="#D95B96" />
                     </NavLink>
                 </nav>

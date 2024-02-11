@@ -1,0 +1,14 @@
+.aside_navigate-profils{
+    position: absolute;
+    top:0;
+    right: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.aside_navigate-profils a {
+    padding: 0.5rem;
+    background-color: var(--WHITE);
+    font: var(--FONT-XS);
+    margin: 0 5px;
+}

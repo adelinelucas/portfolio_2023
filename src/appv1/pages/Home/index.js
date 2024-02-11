@@ -16,7 +16,7 @@ const Home = () => {
 
     useEffect(()=>{
         const interval = setInterval(()=>{
-            const baselineComplete= 'Adeline, développeuse junior'.split('');
+            const baselineComplete= 'Adeline, développeuse web'.split('');
 
             if(baselineIndex <= baselineComplete.length){
                 setBaseline(oldArray => [...oldArray,baselineComplete[baselineIndex]])
@@ -50,7 +50,7 @@ const Home = () => {
                     </Link>     
                 </article>
                 <figcaption>
-                    <img src="./images/tech_woman.png" alt="Illustration d'une développeuse web" width='300' height='auto' />
+                    <img src="../images/tech_woman.png" alt="Illustration d'une développeuse web" width='300' height='auto' />
                 </figcaption>
             </div>
             
