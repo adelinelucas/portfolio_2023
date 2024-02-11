@@ -1,14 +1,30 @@
-.aside_navigate-profils{
-    position: absolute;
-    top:0;
-    right: 5px;
-    display: flex;
-    flex-direction: row;
+
+@font-face {
+    font-family: Dongpora;
+    src: url('../../../../public/fonts/Dongpora-BF65c3a46d6cc22.otf');
 }
 
-.aside_navigate-profils a {
-    padding: 0.5rem;
-    background-color: var(--WHITE);
-    font: var(--FONT-XS);
-    margin: 0 5px;
+.page__salesforce-profil__header__navbar a{
+    font-family: Dongpora;
+    color: var(--FONT-Color);
+    font-size: var(--FONT-MEDIUM);
+    margin: 5px 10px;
+    text-decoration: none;
+}
+
+.page__salesforce-profil__header__navbar a:hover{
+    animation: linkAnim 2s ease-in-out 0s 1 reverse backwards;
+}
+
+
+@keyframes linkAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: dialektika;
+    src: url('../../../../public/fonts/dialektika.otf');
+}
+
+.page__salesforce-profil__header-title{
+    font-family: dialektika;
+    color: var(--FONT-COLOR);
+    color: var(--FONT-WHITE);
+    font-size: var(--FONT-XL);
+    letter-spacing: 3px;
+    margin: 5px 0;
+}
+
+.page__salesforce-profil__header-title span{
+    display: block;
+}

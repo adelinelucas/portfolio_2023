@@ -1,0 +1,19 @@
+.page__salesforce-profil__header{
+    position: inherit;
+}
+
+.page__salesforce-profil__header section{
+    padding: 2rem;
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 98vw;
+    margin: auto;
+}
+
+.page__salesforce-profil__header h1 {
+    position: relative;
+    left: 35%;
+    width: fit-content;
+    bottom: 61px;
+}
