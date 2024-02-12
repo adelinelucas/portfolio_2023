@@ -1,0 +1,18 @@
+.page__salesforce-profil-contact{
+    margin: auto;
+    padding: 5rem;
+    width: 75%;
+    color:var(--WHITE);
+    border-top: 2px solid var(--WHITE);
+}
+
+.page__salesforce-profil-contact h2 {
+    font-family: belgicademo;
+    letter-spacing: 3px;
+    font-size: var(--FONT-XL);
+}
+
+.page__salesforce-profil-contact-form{
+    display: flex;
+    justify-content: center;
+}

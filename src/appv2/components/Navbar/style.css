@@ -1,9 +1,3 @@
-
-@font-face {
-    font-family: Dongpora;
-    src: url('../../../../public/fonts/Dongpora-BF65c3a46d6cc22.otf');
-}
-
 .page__salesforce-profil__header__navbar a{
     font-family: Dongpora;
     color: var(--FONT-Color);

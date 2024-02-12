@@ -4,7 +4,7 @@ import './style.css';
 const Logo = () => {
     return (
         <h1 className='page__salesforce-profil__header-title'>
-           <span> Adeline,</span> B to C Commerce developer
+           <span>Adeline,</span><span>Salesforce</span> B to C Commerce developer
         </h1>
     );
 };

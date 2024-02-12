@@ -1,8 +1,37 @@
+/* fonts spécifiques à Salesforce */
+@font-face {
+    font-family: Dongpora;
+    src: url('../../../../public/fonts/Dongpora-BF65c3a46d6cc22.otf');
+}
+
+@font-face {
+    font-family: dialektika;
+    src: url('../../../../public/fonts/dialektika.otf');
+}
+
+@font-face {
+    font-family: belgicademo;
+    src: url('../../../../public/fonts/belgicademo-lvajd.otf');
+}
+/* end fonts  */
+
 .page__salesforce-profil{
-    background-image: linear-gradient(360deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    /* background-image: linear-gradient(360deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%); */
+    background-color: #ff1493;
+    background-image: linear-gradient(360deg, #ff1493 0%, #0000ff 37%, #ff8c00 100%);
+    
+   
     /*
     background: #1a2a6c;
     background: -webkit-linear-gradient(to top, #fdbb2d, #b21f1f, #1a2a6c); 
     background: linear-gradient(to top, #fdbb2d, #b21f1f, #1a2a6c); 
     */
+}
+
+.page__salesforce-profil-content{
+    background-color: var(--BG-FOOTER);
+    border-radius: 30px;
+    padding: 15px;
+    margin: auto;
+    width: 95%;
 }

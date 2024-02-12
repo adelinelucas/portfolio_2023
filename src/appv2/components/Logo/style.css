@@ -1,8 +1,3 @@
-@font-face {
-    font-family: dialektika;
-    src: url('../../../../public/fonts/dialektika.otf');
-}
-
 .page__salesforce-profil__header-title{
     font-family: dialektika;
     color: var(--FONT-COLOR);

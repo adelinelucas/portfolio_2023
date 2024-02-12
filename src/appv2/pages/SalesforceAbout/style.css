@@ -1,0 +1,61 @@
+.page__salesforce-profil-about{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.page__salesforce-profil-about article{
+    background-image: url('../../../../public/images/bluecloud.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    padding: 5rem;
+    width: 50rem;
+    height: fit-content;
+    z-index: 100;
+}
+
+.page__salesforce-profil-about article .page__salesforce-profil-about-bluecloud{
+    width: 80%;
+    margin: auto;
+}
+.page__salesforce-profil-about article p {
+    font-size: var(--FONT-SMALL);
+    color: var(--WHITE);
+    font-weight: 500;
+    line-height: 25px;
+    margin: 10px 0;
+}
+
+.page__salesforce-profil-about article p em{
+    font-style: normal;
+    color: var(--FONT-COLOR);
+    font-weight: 600;
+}
+
+.page__salesforce-profil-about-orangecloud{
+    background-image: url('../../../../public/images/orangecloud.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    top: -132px;
+    z-index: 0;
+    left: 420px;
+}
+
+.page__salesforce-profil-about-darkbluecloud{
+    background-image: url('../../../../public/images/darkbluecloud.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    top: -132px;
+    z-index: 0;
+    left: 841px;
+}

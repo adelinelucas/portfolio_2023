@@ -7,7 +7,7 @@ const Navbar = () => {
             <NavLink exact='true' activeclassname="active" to="/salesforce/about" className="salesforce-about-link">A propos</NavLink>
             <NavLink exact='true' activeclassname="active" to="/salesforce/portfolio" className="salesforce-portfolio-link">Mes projets</NavLink>
             <NavLink exact='true' activeclassname="active" to="/salesforce/experiences-pro" className="salesforce-experiences-link">Experiences pro</NavLink>
-            <NavLink exact='true' activeclassname="active" to="/salesforce/contact" className="salesforce-contact-link">Contact</NavLink>
+            <NavLink exact='true' activeclassname="active" to="/#page__salesforce-profil-contact" className="salesforce-contact-link">Contact</NavLink>
         </nav>
     );
 };
