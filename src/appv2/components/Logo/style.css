@@ -1,7 +1,7 @@
 .page__salesforce-profil__header-title{
     font-family: dialektika;
-    color: var(--FONT-COLOR);
-    color: var(--FONT-WHITE);
+    /* color: var(--FONT-COLOR); */
+    color: var(--WHITE);
     font-size: var(--FONT-XL);
     letter-spacing: 3px;
     margin: 5px 0;

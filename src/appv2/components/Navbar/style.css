@@ -1,9 +1,10 @@
 .page__salesforce-profil__header__navbar a{
     font-family: Dongpora;
-    color: var(--FONT-Color);
+    color: #b2bec3;
     font-size: var(--FONT-MEDIUM);
     margin: 5px 10px;
     text-decoration: none;
+	letter-spacing: 2px;
 }
 
 .page__salesforce-profil__header__navbar a:hover{
