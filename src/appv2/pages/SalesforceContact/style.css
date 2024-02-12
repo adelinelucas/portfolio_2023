@@ -1,6 +1,6 @@
 .page__salesforce-profil-contact{
-    margin: auto;
-    padding: 5rem;
+    margin: 5rem auto;
+    padding: 2rem;
     width: 75%;
     color:var(--WHITE);
     border-top: 2px solid var(--WHITE);

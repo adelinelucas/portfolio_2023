@@ -24,6 +24,19 @@
             "visibility": "true",
             "dateDebut": "décembre 2021",
             "dateFin": "décembre 2022"
+        },
+        {
+            "titre":"Formation développeur BtoC Salesforce",
+            "organisme" : "ISDI",
+            "description":"Formation de 3 mois intensifs orientés autour de projet web e-commerce concrets",
+            "miseEnPratique": "Alternance réalisée au sein d'une équipe de 2 développeurs et 1 chargé de projet. J'ai eu pour mission de travailler sur la création de 3 outils interne pour faciliter ou automatiser des taches de l'équipes : réalisation d'un backoffice avec un système d'authentification des users permettant de visualiser les dossiers à traiter, réalisation d'un backoffice pour automatiser la création de landing page, réalisation d'un backoffice pour automatiser la mise à création/ mise à jour d'offre, réalisation d'un backoffice pour associer une offre à une landing page en cours, intégration de landing page en Tailwind CSS, création d'un helper pour faciliter la personnalisation de formulaire.",
+            "langages": ["HTML5", "CSS3", "Javascript", "SQL","NODE JS","NO SQL"],
+            "framework" : ["Boostrap", "Tailwind CSS", "React JS", "Express", "SFRA", "Business Manager"],
+            "diplome": ["Certificat Salesforce BtoC Commerce Developer"],
+            "image": "",
+            "visibility": "true",
+            "dateDebut": "septembre 2023",
+            "dateFin": "décembre 2023"
         }
     ],
 

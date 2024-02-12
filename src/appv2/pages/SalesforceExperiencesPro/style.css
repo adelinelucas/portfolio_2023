@@ -1,0 +1,57 @@
+.page__salesforce-profil-exppro{
+    margin: 5rem auto;
+    padding: 2rem;
+    width: 75%;
+    color:var(--WHITE);
+    border-top: 2px solid var(--WHITE);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page__salesforce-profil-exppro>h2{
+    font-family: belgicademo;
+    letter-spacing: 3px;
+    font-size: var(--FONT-XL);
+    text-align: center;
+}
+
+.page__salesforce-profil-exppro h3 {
+    font-family: belgicademo;
+    letter-spacing: 3px;
+    font-size: var(--FONT-MEDIUM);
+    margin: 15px auto 30px;
+}
+
+.page__salesforce-profil-exppro>div {
+    margin: 15px auto;
+    width: 100%;
+}
+
+.page__salesforce-profil-exppro div .title-icon{
+    position: relative;
+    top: 4px;
+    margin: 0 15px;
+    font-size: var(--FONT-MEDIUM);
+}
+.page__salesforce-profil-exppro ul li button svg{
+    color: #504EE8;
+}
+
+.page__salesforce-profil-exppro-horizontal-timeline{
+    margin: auto;
+}
+
+.page__salesforce-profil-exppro-horizontal-timeline #timeline-main-wrapper{
+    min-height: 250px;
+}
+
+.page__salesforce-profil-exppro-horizontal-timeline .timeline-main-wrapper .feYzNX{
+    height: 250px;
+}
+.page__salesforce-profil-exppro-horizontal-timeline .timeline-main-wrapper .kbQZhB{
+    left: 30%;
+}
+.page__salesforce-profil-exppro-horizontal-timeline-deux .timeline-main-wrapper .kbQZhB{
+    left: 15%;
+}
