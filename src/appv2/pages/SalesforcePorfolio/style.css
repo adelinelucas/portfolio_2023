@@ -1,0 +1,19 @@
+.page__salesforce-portfolio{
+    margin: 5rem auto;
+    padding: 2rem;
+    width: 75%;
+    color:var(--WHITE);
+    border-top: 2px solid var(--WHITE);
+}
+
+.page__salesforce-portfolio h2 {
+    font-family: belgicademo;
+    letter-spacing: 3px;
+    font-size: var(--FONT-XL);
+    text-align: center;
+    margin:30px auto;
+}
+
+.page__salesforce-portfolio>div{
+    display: block;
+}
