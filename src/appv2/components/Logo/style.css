@@ -1,3 +1,9 @@
+.page__salesforce-profil__header-banner {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
 .page__salesforce-profil__header-title{
     font-family: dialektika;
     /* color: var(--FONT-COLOR); */

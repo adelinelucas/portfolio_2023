@@ -3,5 +3,6 @@
 }
 .page__salesforce-profil__header-socials h4{
     font-size: var(--FONT-BIG);
+    color:  var(--BG-PAGES);
     margin: 5px;
 }

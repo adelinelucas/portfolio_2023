@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+#root{
+  overflow: hidden;
+}
+
 img{
   display: block;
   max-width: 100%;
