@@ -1,8 +1,10 @@
 .swiper {
-  width: 90%;
+  width: 75%;
   margin: auto;
-  height: 28rem;
+  padding: 1px 0;
+  height: 40rem;
   box-shadow: 0 4px 0px 0 rgba(252, 249, 249, 0.541), 0 0px 14px 0 rgba(245, 242, 242, 0.719);
+  border-radius: 10px;
 }
 
 .swiper-slide {
@@ -37,30 +39,33 @@
 
 /*  CSS pour la card */
 .webproject-card {
-  /* width: fit-content;
-  height: 35rem; */
+  /* width: fit-content;*/
+  height: 10rem; 
   border: 1px solid var(--FONT-COLOR);
   border-radius: 15px;
   position: relative;
-  background-color: var(--WHITE);
+  background-color: var(--BG-PAGES);
 }
 
 .webproject-card figure {
   position: absolute;
+  width: 100%;
   /* top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
-  /* width: fit-content;
-  height: 35rem; */
-  top: 150px;
+  /* width: fit-content;*/
+  height: 27rem; 
+  top: 160px;
   z-index: 10;
-  border-radius: 5px;
+  border-radius: 15px;
   border: 1px solid #1212110f;
-  ;
+  background-color: var(--BG-PAGES);
 }
 .webproject-card figure img{
-  width: fit-content;
   object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .webproject-card .webproject-card-content-hover{
@@ -100,13 +105,10 @@
 }
 
 .webproject-card .webproject-card-content header p {
-  position: absolute;
-  padding: 5px;
+  padding: 2px auto 3px;
   color: var(--FONT-COLOR);
   font-size: var(--FONT-XXS);
   letter-spacing: 3px;
-  top: 19px;
-  right: 15px;
 }
 
 .webproject-card .webproject-card-content footer button{
@@ -118,7 +120,7 @@
   font-family: belgicademo;
   cursor: pointer;
   display: block;
-  margin: 10px auto;
+  margin: 2px auto;
 }
 .webproject-card .webproject-card-content footer button:hover {
   scale: 1.01;
@@ -136,3 +138,7 @@
 }
 
 /* CSS pour le hover de la card */
+
+.swiper-pagination-bullet{
+  background:  var(--WHITE) !important;
+}

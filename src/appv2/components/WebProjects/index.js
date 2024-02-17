@@ -35,15 +35,15 @@ const WebProjects = () => {
                     <SwiperSlide key={index}>
                         <article className='webproject-card'>
                             <figure className='webproject-card-bg'>
-                                <img src={projet.cover ? projet.cover : ''} alt={projet.titre} />
+                                <img src={projet.cover ? projet.cover : './images/internet.png'} alt={projet.titre} />
                             </figure>
                             <div className='webproject-card-content'>
                                 <header>
                                     <h4>{projet.titre}</h4>
+                                    <p><TbTargetArrow /> Projet {projet.typeProjet}</p>
                                     <h5>{projet.technosTag.map((tech, i)=>(
                                         <span key={i}>{tech}</span>
                                     ))}</h5>
-                                    <p><TbTargetArrow /> Projet {projet.typeProjet}</p>
                                 </header>
                                 <footer>
                                     { projet.url ?  
