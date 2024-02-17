@@ -1,10 +1,22 @@
 .page__salesforce-profil-contact-form label, 
 .page__salesforce-profil-contact-form input,
+.page__salesforce-profil-contact-form  textarea,
 .page__salesforce-profil-contact-form button{
     font-family: 'belgicademo';
     font-size: var(--FONT-MEDIUM);
     margin: 5px;
 }
+
+.page__salesforce-profil-contact-form article form {
+    width: 35rem;
+    margin: auto;
+}
+.page__salesforce-profil-contact-form article form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .page__salesforce-profil-contact-form article form button {
     display: flex;
     flex-direction: column;

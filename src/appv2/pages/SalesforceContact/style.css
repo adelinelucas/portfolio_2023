@@ -4,12 +4,16 @@
     width: 75%;
     color:var(--WHITE);
     border-top: 2px solid var(--WHITE);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .page__salesforce-profil-contact h2 {
     font-family: belgicademo;
     letter-spacing: 3px;
     font-size: var(--FONT-XL);
+    margin: 0rem auto 2rem;
 }
 
 .page__salesforce-profil-contact-form{
