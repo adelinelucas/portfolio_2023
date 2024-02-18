@@ -122,6 +122,11 @@
   display: block;
   margin: 2px auto;
 }
+
+.webproject-card .webproject-card-content footer button{
+  cursor: url('../../../../public/images/cursorpointer_hover.png'), auto;
+}
+
 .webproject-card .webproject-card-content footer button:hover {
   scale: 1.01;
   background-image: linear-gradient(211deg, #231557 0%, #3f4ae2 35%, #44107A 60%, #FF1361 100%);

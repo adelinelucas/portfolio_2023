@@ -1,22 +1,19 @@
 import React, {useState, useEffect} from 'react';
-import { IoIosInformationCircle } from "react-icons/io";
 import './style.css';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
 
-    const [formSubmited, setFormSubmited]= useState(false)
+    const [formSubmited, setFormSubmited]= useState(false);
+    const [successMessage, setSuccessMessage] = useState(false);
     const [formSumitedMessage, setFormSubmitedMessage] = useState('')
-    // const url = "https://mo2i-back.onrender.com/message/";
-    const url = "";
-    // Votre mail a bien été soumis! Nous vous recontacterons.
-    // Une erreur est survenue, veuillez nous contacter par téléphone ou par mail pour toute demande de contact. 
 
     const [formData, setFormData] = useState({
         lastname: '',
         email: '',
         phone: '',
         title: '',
-       content: '',
+        content: '',
     });
 
     const [errors, setErrors] = useState({
@@ -51,7 +48,7 @@ const Contact = () => {
       };
 
     const submitMessage = async() =>{
-          // Validation des champs
+        // Validation des champs
         const newErrors = {
             lastname: formData.lastname.trim() === '' ? 'Le nom est requis.' : '',
             email:
@@ -77,29 +74,17 @@ const Contact = () => {
   
         setErrors(newErrors);
         if (Object.values(newErrors).every((error) => error === '')) {
-            const response = await fetch(url, {
-                method: 'POST',
-                headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({...formData}) 
-                })
-                .then((response) => {
-                    console.log(response)
-                    if(response.status >= 200 ||response.status < 300) setFormSubmitedMessage("Votre mail a bien été énvoyé! Merci.")
-                    else if(response.status >= 400) {
-                        setFormSubmitedMessage("Une erreur est survenue lors de l'envoi du formulaire, contactez-moi sur <a href='https://www.linkedin.com/in/adeline-lucas-web-dev/' target='_blank'>LinkedIn</a>.")
-                    }
-                    else {
-                        setFormSubmitedMessage("Une erreur est survenue lors de l'envoi du formulaire, contactez-moi sur <a href='https://www.linkedin.com/in/adeline-lucas-web-dev/' target='_blank'>LinkedIn</a>.")
-                    }
-                    setFormSubmited(true)
-                })
-                .catch((err) => {
-                    console.log(err.message)
-                    setFormSubmitedMessage("Une erreur est survenue lors de l'envoi du formulaire, contactez-moi sur <a href='https://www.linkedin.com/in/adeline-lucas-web-dev/' target='_blank'>LinkedIn</a>.")
-                })
+            emailjs.send('service_4ejylwo__', 'template_4895oxe', formData, 'lpg5Kq3KbN46sKY3t__')
+            .then((response) => {
+              console.log('E-mail envoyé avec succès:', response);
+              setFormSubmitedMessage("")
+              setFormSubmited(true)
+            })
+            .catch((error) => {
+              console.error('Erreur lors de l\'envoi de l\'e-mail:', error);
+              setFormSubmitedMessage("")
+              setFormSubmited(true)
+            });
         }
     }
 
@@ -111,7 +96,24 @@ const Contact = () => {
         <article className=''>
             {
                 formSubmited ? 
-                <h2 className=''>{formSumitedMessage}</h2>
+                <>
+                    {successMessage ? 
+                        <div className='page__salesforce-profil-contact-form-message'>
+                            <p className='sucess-message'>Votre mail a bien été énvoyé! Merci.</p>
+                            <p>Entrons également en contact sur <a href='https://www.linkedin.com/in/adeline-lucas-web-dev/' target='_blank'>LinkedIn</a></p>
+                            <figure>
+                                <iframe src="https://giphy.com/embed/7bumBQjZX8BgaE2zjv" width="280" height="280" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                            </figure>
+                        </div>
+                        :
+                        <div className='page__salesforce-profil-contact-form-message'>
+                            <p className='error-message'>Une erreur est survenue lors de l'envoi du formulaire, contactez-moi sur <a href='https://www.linkedin.com/in/adeline-lucas-web-dev/' target='_blank'>LinkedIn</a>.</p>
+                            <figure>
+                                <iframe src="https://giphy.com/embed/q1I4fUo5cYyKQFQKef"  width="260" height="380" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                            </figure>
+                        </div>
+                    }
+                </>
                 :
                 <>
                     <h2 className=''>Me contacter</h2>
@@ -185,7 +187,7 @@ const Contact = () => {
                                 value={formData.title}
                                 onChange={handleInputChange}
                                 required
-                                placeholder='Sujet de votre demande'
+                                placeholder='Objet de votre message'
                             />
                         </div>
                         <span className="error">{errors.title}</span>

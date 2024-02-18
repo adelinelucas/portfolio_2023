@@ -6,7 +6,10 @@
     font-size: var(--FONT-MEDIUM);
     margin: 5px;
 }
-
+.page__salesforce-profil-contact-form article {
+    z-index: 100;
+    height: 25rem;
+}
 .page__salesforce-profil-contact-form article form {
     width: 35rem;
     margin: auto;
@@ -36,13 +39,40 @@
 .page__salesforce-profil-contact-form button:hover{
     background-color: #784288;
     background-image: linear-gradient(51deg, #ff1493 0%, #0000ff 27%, #ff8c00 100%);
+    cursor: url('../../../../public/images/cursorpointer_hover.png'), auto;
 }
+
 .page__salesforce-profil-contact-form label{
-    width: 10rem;
+    width: 16rem;
     margin-left:0;
 }
 .page__salesforce-profil-contact-form input,
 .page__salesforce-profil-contact-form textarea{
-    width: 25rem;
+    width: 30rem;
     padding: 2px 5px;
+}
+
+.page__salesforce-profil-contact-form article form .error{
+    font-size: var(--FONT-XS);
+}
+
+/* Message part */
+article .page__salesforce-profil-contact-form-message{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article .page__salesforce-profil-contact-form-message p {
+    text-align: center;
+}
+
+article .page__salesforce-profil-contact-form-message a {
+    text-decoration: underline;
+    color: var(--WHITE);
+    font-size: var(--FONT-MEDIUM);
+    font-weight: 600;
+    cursor: url('../../../../public/images/cursorpointer_hover.png'), auto;
 }

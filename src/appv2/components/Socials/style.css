@@ -1,8 +1,13 @@
 .page__salesforce-profil__header-socials{
     display: flex ;
 }
-.page__salesforce-profil__header-socials h4{
+.page__salesforce-profil__header-socials h4 a{
     font-size: var(--FONT-BIG);
     color:  var(--BG-PAGES);
-    margin: 5px;
+    margin: 0 5px;
+}
+
+.page__salesforce-profil__header-socials h4 a:hover,
+.page__salesforce-profil__header-socials h4 a svg:hover{
+    cursor: url('../../../../public/images/cursorpointer_hover.png'), auto;
 }

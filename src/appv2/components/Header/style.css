@@ -1,14 +1,28 @@
 .page__salesforce-profil__header{
-    position: inherit;
+    z-index: 200;
+    position: relative;
 }
 
-.page__salesforce-profil__header section{
-    padding: 2rem;
+.page__salesforce-profil__header__section{
+    padding: 3rem 2rem 2rem;
     display: flex ;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 98vw;
+    width: 98%;
     margin: auto;
+    align-items: center;
+    z-index: 300;
+}
+
+.page__salesforce-profil__header__section.fixed{
+    padding: 0.5rem ;
+	position: fixed;
+    width: 100%;
+    flex-wrap: wrap;
+	background-color: black;
+	opacity: 0.8;
+	z-index: 300;
+    align-items: center
 }
 
 /* .page__salesforce-profil__header h1 {

@@ -19,9 +19,9 @@ const Navbar = () => {
             <div className={salesforceProfil ? 'salesforce-profil' : 'salesforce-profil-off'}>
             <FaSalesforce/>Profil Salesforce
             </div>
-            <label class="switch">
+            <label className="switch">
                 <input type="checkbox" onClick={handleSwitch}/>
-                <span class="slider"></span>
+                <span className="slider"></span>
             </label>
             <div className={salesforceProfil ? 'webdev-profil-off' : 'webdev-profil'}>
                 <HiOutlineDesktopComputer/>Profil Web dev
