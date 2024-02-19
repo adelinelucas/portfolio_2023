@@ -28,7 +28,7 @@ const Header = () => {
         <header className='page__salesforce-profil__header' id="hautPage">
             <section className={`page__salesforce-profil__header__section ${bgNavbar ? 'fixed' : ''}`}>
                 <Navbar />
-                <Socials/>
+                <Socials chooseLang={true}/>
             </section>
             <Logo />
         </header>
