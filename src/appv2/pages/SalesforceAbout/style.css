@@ -43,6 +43,12 @@
     font-weight: 600;
 }
 
+.page__salesforce-profil-about article p span{
+    display: block;
+    text-align: center;
+    margin: 0.2rem 0;
+}
+
 .page__salesforce-profil-about-badge{
     display: flex;
     justify-content: center;
