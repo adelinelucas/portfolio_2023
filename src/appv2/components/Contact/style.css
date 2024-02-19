@@ -39,7 +39,7 @@
 .page__salesforce-profil-contact-form button:hover{
     background-color: #784288;
     background-image: linear-gradient(51deg, #ff1493 0%, #0000ff 27%, #ff8c00 100%);
-    cursor: url('../../../../public/images/cursorpointer_hover.png'), auto;
+    /* cursor: url('../../../../public/images/cursorpointer_hover.png'), auto; */
 }
 
 .page__salesforce-profil-contact-form label{

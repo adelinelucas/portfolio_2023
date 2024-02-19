@@ -9,5 +9,5 @@
 
 .page__salesforce-profil__header-socials h4 a:hover,
 .page__salesforce-profil__header-socials h4 a svg:hover{
-    cursor: url('../../../../public/images/cursorpointer_hover.png'), auto;
+    /* cursor: url('../../../../public/images/cursorpointer_hover.png'), auto; */
 }

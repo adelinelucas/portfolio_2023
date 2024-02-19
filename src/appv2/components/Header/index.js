@@ -25,7 +25,7 @@ const Header = () => {
       }, []);
 
     return (
-        <header className='page__salesforce-profil__header'>
+        <header className='page__salesforce-profil__header' id="hautPage">
             <section className={`page__salesforce-profil__header__section ${bgNavbar ? 'fixed' : ''}`}>
                 <Navbar />
                 <Socials/>

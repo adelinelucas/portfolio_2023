@@ -3,24 +3,47 @@
     /* color: #b2bec3; */
 	color: var( --BG-PAGES);
     font-size: var(--FONT-MEDIUM);
-    margin: 5px 10px;
+    /* margin: 5px 10px; */
     text-decoration: none;
 	letter-spacing: 2px;
+	overflow: hidden;
+	overflow: hidden;
 }
 
-.page__salesforce-profil__header__navbar a:hover{
-    animation: linkAnim 2s ease-in-out 0s 1 reverse backwards;
+.page__salesforce-profil__header__navbar ul {
+	display: flex;
+	text-decoration: none;
+	height: 2rem;
+}
+
+.page__salesforce-profil__header__navbar ul li{
+	list-style-type: none;
+	width: fit-content;
+	margin: 0 15px;
+	overflow: hidden;
+}
+
+.page__salesforce-profil__header__navbar a span{
+	display: block;
+}
+
+.page__salesforce-profil__header__navbar .hidden-content{
+	position: relative;
+	bottom: 10px;
+	transition: transform 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+	transform: translateY(100%);
+}
+.page__salesforce-profil__header__navbar a .displayed-content{
+	transition: transform 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    transform: translateY(0%);
+}
+
+.page__salesforce-profil__header__navbar a:hover .displayed-content{
+	transition: transform 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    transform: translateY(-100%);
 }
 
 
-@keyframes linkAnim {
-	0% {
-		opacity: 0;
-		transform: translateY(50px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
+.page__salesforce-profil__header__navbar a:hover .hidden-content{
+	transform: translateY(-68%);
+} 

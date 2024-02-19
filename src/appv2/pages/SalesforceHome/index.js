@@ -6,6 +6,7 @@ import SalesforceAbout from '../SalesforceAbout';
 import SalesforceContact from '../SalesforceContact';
 import SalesforceExperiencesPro from '../SalesforceExperiencesPro';
 import SalesforcePortfolio from '../SalesforcePorfolio';
+import ScrollButton from '../../components/ScrollButton';
 const SalesforceHome = () => {
     return (
         <main className='page__salesforce-profil'>
@@ -17,6 +18,7 @@ const SalesforceHome = () => {
                 <SalesforceContact />
             </div>
             <Footer/>
+            <ScrollButton/>
         </main>
     );
 };
