@@ -1,0 +1,46 @@
+section.page__salesforce-profil-competencesWeb{
+    margin: 5rem auto 0rem;
+    padding: 2rem;
+    width: 75%;
+    color:var(--WHITE);
+    border-top: 2px solid var(--WHITE);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page__salesforce-profil-competencesWeb>h2{
+    font-family: belgicademo;
+    letter-spacing: 3px;
+    font-size: var(--FONT-XL);
+    text-align: center;
+}
+.page__salesforce-profil-competencesWeb-title{
+    border-bottom: 2px solid var(--WHITE);
+    margin: 0 auto 15px;
+    width:35%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page__salesforce-profil-competencesWeb h3 {
+    font-family: belgicademo;
+    letter-spacing: 3px;
+    font-size: var(--FONT-MEDIUM);
+    margin: 15px auto;
+    width: 5rem;
+}
+
+section>div {
+    margin: 15px auto 0;
+    width: 100%;
+}
+
+.page__salesforce-profil-competencesWeb article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

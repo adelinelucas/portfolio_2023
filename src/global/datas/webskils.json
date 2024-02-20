@@ -1,0 +1,79 @@
+{
+    "webLanguages":[
+        {
+            "name": "HTML",
+            "pourcentage": "80"
+        },
+        {
+            "name": "CSS",
+            "pourcentage": "75"
+        }, 
+        {
+            "name": "JS",
+            "pourcentage": "65"
+        },
+        {
+            "name": "NODE JS",
+            "pourcentage": "60"
+        },
+        {
+            "name": "PHP",
+            "pourcentage": "55"
+        }
+        ,
+        {
+            "name": "SQL",
+            "pourcentage": "60"
+        }
+        ,
+        {
+            "name": "MongoDB",
+            "pourcentage": "60"
+        }
+    ],
+    "frameworks":[
+        {
+            "name": "Bootstrap",
+            "pourcentage": "65"
+        },
+        {
+            "name": "Tailwind",
+            "pourcentage": "70"
+        },
+        {
+            "name": "React JS",
+            "pourcentage": "60"
+        },
+        {
+            "name": "Express JS",
+            "pourcentage": "65"
+        },
+        {
+            "name": "Symfony",
+            "pourcentage": "45"
+        }
+        ,
+        {
+            "name": "Code Igniter",
+            "pourcentage": "45"
+        }
+    ],
+    "webTools":[
+        {
+            "name": "Postman",
+            "pourcentage": "60"
+        },
+        {
+            "name": "API",
+            "pourcentage": "70"
+        },
+        {
+            "name": "Figma",
+            "pourcentage": "60"
+        },
+        {
+            "name": "Methode Agile",
+            "pourcentage": "65"
+        }
+    ]
+}

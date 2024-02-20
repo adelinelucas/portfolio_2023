@@ -11,3 +11,8 @@
 .page__salesforce-profil__header-socials h4 a svg:hover{
     /* cursor: url('../../../../public/images/cursorpointer_hover.png'), auto; */
 }
+
+.page__salesforce-profil__header-socials h4 img{
+    position: relative;
+    bottom: -5px;
+}

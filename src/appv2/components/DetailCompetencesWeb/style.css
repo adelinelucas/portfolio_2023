@@ -1,0 +1,51 @@
+.page__salesforce-profil-competencesWeb-details{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 10px;
+    padding: 5px auto;
+}
+
+.page__salesforce-profil-competencesWeb-details h4{
+    letter-spacing: 3px;
+    font-size: var(--FONT-XXS);
+}
+
+.page__salesforce-profil-competencesWeb-details .progress-bar-container{
+    width:350px;
+    height: 2rem;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+    will-change: transform;
+    box-shadow: 0 0 5px #f3f2f2;
+}
+
+.page__salesforce-profil-competencesWeb-details .progress-bar {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    bottom: -2px;
+    left: 3px;
+    border-radius: inherit;
+}
+
+.page__salesforce-profil-competencesWeb-details .progress-bar.neon-blue{
+    /* background-color: #4A47ED; */
+    background-color: #00CFFF;
+}
+
+.page__salesforce-profil-competencesWeb-details .progress-bar.neon-purple{
+    background-color: #976DF2;
+}
+.page__salesforce-profil-competencesWeb-details .progress-bar.neon-orange{
+    background-color: #F25C05
+}
+.page__salesforce-profil-competencesWeb-details .progress-bar.green{
+    background-color: #07ED00;
+}
+.page__salesforce-profil-competencesWeb-details .progress-bar.gold{
+    background-color: #FDC925;
+}

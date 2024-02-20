@@ -7,12 +7,14 @@ import SalesforceContact from '../SalesforceContact';
 import SalesforceExperiencesPro from '../SalesforceExperiencesPro';
 import SalesforcePortfolio from '../SalesforcePorfolio';
 import ScrollButton from '../../components/ScrollButton';
+import SalesforceCompetencesWeb from '../SalesforceCompetencesWeb';
 const SalesforceHome = () => {
     return (
         <main className='page__salesforce-profil'>
             <Header/>
             <SalesforceAbout/>
             <div className='page__salesforce-profil-content'>
+                <SalesforceCompetencesWeb />
                 <SalesforcePortfolio/>
                 <SalesforceExperiencesPro />
                 <SalesforceContact />
