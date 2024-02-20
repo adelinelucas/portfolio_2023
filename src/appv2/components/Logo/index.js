@@ -5,7 +5,7 @@ const Logo = () => {
     return (
         <div className='page__salesforce-profil__header-banner'>
             <figure>
-                <img src="./images/salesforce_img2.png" alt=""  width="250px"/>
+                <img src="./images/salesforce_img2.png" alt="Salesforce environnement illustration"  width="250px"/>
             </figure>
             <h1 className='page__salesforce-profil__header-title'>
                 <span>Adeline,</span><span>Salesforce</span> B to C Commerce developer

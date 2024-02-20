@@ -1,0 +1,59 @@
+{
+    "webDev": [
+        {
+            "title": "Salesforce BtoC Developer Training - ISDI",
+            "cardDetailedText": "3-month intensive training focused on concrete e-commerce web projects. Internship within a team of 2 developers and 1 project manager. My mission was to work on the creation of 3 internal tools to facilitate or automate team tasks: creation of a backoffice with a user authentication system to view folders to be processed, creation of a backoffice to automate landing page creation, creation of a backoffice to automate offer creation/update, creation of a backoffice to associate an offer with an ongoing landing page, integration of landing pages in Tailwind CSS, creation of a helper to facilitate form customization.",
+            "cardSubtitle": "HTML5 CSS3 Javascript SQL NODE JS NO SQL Boostrap Tailwind CSS React JS Express SFRA Business Manager",
+            "cardTitle": "Salesforce BtoC Commerce Developer Certificate - September 2023 - December 2023",
+            "media": ""
+        },
+        {
+            "title": "Web Developer Apprenticeship Training - 3W Academy",
+            "cardDetailedText": "1-year apprenticeship training with a 3 weeks in the company / 1 week in school format. Internship within a team of 2 developers and 1 project manager. My mission was to work on the creation of 3 internal tools to facilitate or automate team tasks: creation of a backoffice with a user authentication system to view folders to be processed, creation of a backoffice to automate landing page creation, creation of a backoffice to automate offer creation/update, creation of a backoffice to associate an offer with an ongoing landing page, integration of landing pages in Tailwind CSS, creation of a helper to facilitate form customization.",
+            "cardSubtitle": "HTML5 CSS3 Javascript SQL NODE JS NO SQL Boostrap Tailwind CSS Alpine JS eact JS Express CodeIgniter",
+            "cardTitle": "Web Integration Techniques Certificate - Web Development Techniques Certificate - December 2021 - December 2022",
+            "media": ""
+        },
+        {
+            "title": "Women In Digital Training - Social Builder and Web Force 3",
+            "cardDetailedText": "6-month training (4 months of technical training and 2 months of internship) including 490 hours of technical training. After the training, I had the opportunity to do a 2-month internship in Symfony: Optimization and addition of features to an existing site Championnat-Perplexus. Site based on Sébastien Castro's open-source project GogoCarto Symfony with Sonata Bundle and using MongoDB database. Internship carried out with the company Kidz And Family.",
+            "cardSubtitle": "HTML5 CSS3 Javascript Ajax GIT SQL PHP Symfony Wordpress",
+            "cardTitle": "Web Integration Techniques Certificate - Web Development Techniques Certificate - March 2021 - September 2021",
+            "media": ""
+        }
+    ],
+
+    "avantReconversion": [
+        {
+            "title": "Account Manager and Key Accounts Manager",
+            "cardTitle": "Energy Savings",
+            "cardSubtitle": "May 2019 - January 2021",
+            "cardDetailedText": ["Customer support and enrichment of the commercial offer", "Regulatory monitoring of Energy Savings Certificates", "Management of relations with other departments of the company: regulatory service, IT service, production service, marketing service, accounting service", "Development of additional services, invoicing"],
+            "media": ""
+        },
+        {
+            "title": "Development Officer",
+            "cardTitle": "Les Joyeux Recycleurs",
+            "cardSubtitle": "August 2018 - February 2019",
+            "cardDetailedText": ["Commercial development", "Management and loyalty of the customer base (management of a portfolio of 650 clients)", "Management of schedules, collection tour planning, and warehouse management (5 collection trucks and management of a team of 13 collectors)", "Support and advice to clients regarding sorting and awareness of employees"],
+            "media": ""
+        }
+    ],
+    "formationUniversitaire": [
+        {
+            "cardTitle": "University of Nantes, Faculty of Law and Political Science",
+            "cardSubtitle": "2013 - 2015",
+            "title": "Master I and Master II in Environmental Law and Sustainable Development"
+        },
+        {
+            "cardTitle": "University of Zaragoza, Spain (Erasmus)",
+            "cardSubtitle": "2012 - 2013",
+            "title": "Master I in European Law"
+        },
+        {
+            "cardTitle": "University of Rennes I, Faculty of Law and Political Science",
+            "cardSubtitle": "2009 - 2012",
+            "title": "Bachelor's degree in Law"
+        }
+    ]
+}

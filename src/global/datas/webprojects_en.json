@@ -1,0 +1,170 @@
+{
+    "webProjects": [
+        {
+            "title": "Adding Features to GogoCarto Project - Kids and Family Internship",
+            "description": "The internship context was to work on the GogoCarto Open Source project and add additional features. The GogoCarto project (https://gitlab.com/Seballot/gogocarto) is an open-source project created by Sébastien Ballot in Symfony, using Sonata Bundle and MongoDB for database administration. During the 2-month internship, I learned about MongoDB and the use of Sonata Bundle. Worked features include: \n - Adding a scroll button on pages, \n - Creating a 'Resources' page allowing visitors to view site resources. Elements are presented as clickable cards, \n - When a visitor clicks on a card, they access the details of the resource. If the resource has a link, a button linking to the URL appears on the resource, \n - Adding 'social share' buttons to share the publication on Facebook, Twitter, Email, and copy the page URL, \n - On the Administrator side, adding a 'Resources' page to allow the administrator to create a resource via a form.",
+            "techTags": ["CSS", "PHP", "Symfony", "MongoDB"],
+            "url": "",
+            "cover": "./resources/",
+            "projectType": "Internship",
+            "visibility": false
+        },
+        {
+            "title": "Final Training Project - Outings Website",
+            "description": "For this final training project, we had 10 days to develop a complete project with the Symfony framework in a group (with CRUD). The construction of the site, from choosing the theme to graphic direction, was free. We brainstormed as a team to find a theme, a coherent graphic charter, and features to propose. We created an outings website targeting only a female audience, in homage to our Women In Digital promotion. The site offers visits (paid or free) to discover the tourist, culinary, and cultural gems of Ile de France. Site features: \n - A homepage with a login link to identify registered users on the site, a search bar for activities based on the theme of the outing, a clickable image block leading to corresponding outings, a modal indicating to site users that the site is reserved for women, \n - A site registration page, \n - A page displaying outings with an action button to access all 'visits' / or access all 'outings', a carousel of the last 3 visits, a carousel of the last 3 free outings.",
+            "techTags": ["HTML", "CSS", "PHP", "Symfony", "SQL"],
+            "url": "",
+            "cover": "./images/projetPetiteCouronne.png",
+            "projectType": "Training",
+            "visibility": false
+        },
+        {
+            "title": "Pink Inspiration - Solo Project",
+            "description": "This project allowed me to work with Brizy, which is very intuitive and simplified with the provided blocks.",
+            "techTags": ["WordPress", "Brizy"],
+            "url": "http://pinkinspiration.000webhostapp.com/",
+            "cover": "./images/maquettePinkInspiration.png",
+            "projectType": "Training",
+            "visibility": false
+        },
+        {
+            "title": "Review of the 'Stop-Ancre' Website - BootCamp Into Tech -",
+            "description": "The project is the most exciting one I've had the opportunity to work on. It involved proposing a redesign of an entrepreneur's website. The project allowed us to work as a group on the substantive and formal elements of the site (review of the logo, review of the site architecture, addition of an e-commerce section). Initial site: https://www.eco-nautisme.com/",
+            "techTags": ["WordPress", "Brizy"],
+            "url": "http://git134.dreamhosters.com/",
+            "cover": "./images/wordpress_stopAncre1.png",
+            "projectType": "Training",
+            "visibility": false
+        },
+        {
+            "title": "Creation of an Online E-commerce Store",
+            "description": "A homepage with all products loaded dynamically from the database. In case of product stockout, in JavaScript, we disable the 'add to cart' button. A product page allowing adding the product to the cart. The ability to delete a product from the cart. Verification of product availability from the database stock.",
+            "techTags": ["HTML", "CSS", "Javascript", "PHP", "Symfony"],
+            "frontBack": "front",
+            "url": "",
+            "cover": "",
+            "projectType": "Training",
+            "visibility": false
+        },
+        {
+            "title": "Button to Generate an Automatic Customer File Number",
+            "description": "First apprenticeship project, create a button calling the back to dynamically generate a file number. The file number had to be the next number after the last number in the database, I used the 'MAX' SQL query.",
+            "techTags": ["SQL", "PHP"],
+            "frontBack": "back",
+            "url": "",
+            "cover": "",
+            "projectType": "Apprenticeship",
+            "visibility": true
+        },
+        {
+            "title": "Integration of Landing Page",
+            "description": "Integration of a funnel end page with the Tailwind CSS framework. Responsive page.",
+            "techTags": ["HTML", "CSS", "Tailwind CSS"],
+            "frontBack": "front",
+            "url": "",
+            "cover": "",
+            "projectType": "Apprenticeship",
+            "visibility": true
+        },
+        {
+            "title": "Adding a Client Follow-up Button",
+            "description": "Conditionally adding a button to allow teams to easily resend a contract to the client by email.",
+            "techTags": ["HTML", "CSS", "PHP", "CodeIgniter"],
+            "frontBack": "back",
+            "url": "",
+            "cover": "",
+            "projectType": "Apprenticeship",
+            "visibility": true
+        },
+        {
+            "title": "Form Helper",
+            "description": "Creation of a helper for generating a form on multiple landing pages, the helper aims to allow the integrator to customize the form more easily on the landing page without intervening on the back end.",
+            "techTags": ["HTML", "CSS", "Javascript", "PHP"],
+            "frontBack": "front",
+            "url": "https://github.com/adelinelucas/helper_form",
+            "cover": "",
+            "projectType": "Apprenticeship",
+            "visibility": true
+        },
+        {
+            "title": "Backoffice for Client File Management",
+            "description": "From scratch realization of an internal back office for the company to track client files based on their status. \nFeatures: \n - Data retrieval and formatting in a table with DataTable, \n - User authentication system, \n - Differentiated access to client data depending on the user. \nProject implemented using OOP.",
+            "techTags": ["HTML", "CSS", "Javascript", "PHP"],
+            "frontBack": "front and back",
+            "url": "https://github.com/adelinelucas/projetsAlternance",
+            "cover": "./images/outil_suivi_clients.jpg",
+            "projectType": "Apprenticeship",
+            "visibility": true
+        },
+        {
+            "title": "Backoffice for Landing Page Generation",
+            "description": "From scratch creation of a back office tool to automate landing page generation (CRUD). Depending on the entered parameters, certain elements are pre-filled (landing page URL). All interactions on the page were done in JS, mainly asynchronously.",
+            "techTags": ["HTML", "CSS", "Javascript", "PHP"],
+            "frontBack": "front",
+            "url": "https://github.com/adelinelucas/projetsAlternance",
+            "cover": "./images/outil_generateur_lp.jpg",
+            "projectType": "Apprenticeship",
+            "visibility": true
+        },
+        {
+            "title": "Backoffice for Offer Generation",
+            "description": "From scratch creation of a back office tool for the creation/update of promotional offers. All interactions on the page were done in JS, mainly asynchronously. I really enjoyed this project, which was an extension of the landing page generator and allowed me to complete a full front and back project.",
+            "techTags": ["HTML", "CSS", "Javascript", "PHP", "CodeIgniter"],
+            "frontBack": "front and back",
+            "url": "https://github.com/adelinelucas/projetsAlternance",
+            "cover": "./images/outil_gestion_offres.jpg",
+            "projectType": "Apprenticeship",
+            "visibility": true
+        },
+        {
+            "title": "End of Training Project - Trashbuster",
+            "description": "Objectives: create a front and back-end website with a complete CRUD in 2 weeks. Trashbuster is a platform for individuals/associations/schools to collect pollutants in public spaces. A user can: \n - create an account, \n - create a collection action, \n - comment on another action, \n - update/delete an action they created. \n Comments on an action (kilos indicated in the comment) will help complete the total objectives of waste collected at that collection point.",
+            "techTags": ["HTML", "Tailwind_CSS", "React", "Javascript", "Express", "MongoDB", "NodeJS"],
+            "frontBack": "front",
+            "url": "https://trashbuster-finalproject.netlify.app",
+            "cover": "./images/trashbuster.jpg",
+            "projectType": "Training",
+            "visibility": true
+        },
+        {
+            "title": "E-commerce Site - Ara Beauty - V1",
+            "description": "Objectives: create an e-commerce website - product catalog page and management of adding/removing to the cart or adding/removing to favorites. -Creation of an e-commerce mockup with the Figma tool - Usage - Development in JS & HTML CSS – Bootstrap - Features developed in JS: Asynchronous retrieval of data stored in JSON / Modal to view the cart / Adding/Removing products in the cart and calculating the cart / Adding/Removing products in favorites / Adding a loader for initial data loading - Project supervision",
+            "techTags": ["HTML", "Bootstrap", "Javascript"],
+            "frontBack": "front",
+            "url": "",
+            "cover": "./images/Ara_BeautyJS.jpg",
+            "projectType": "Training",
+            "visibility": true
+        },
+        {
+            "title": "E-commerce Site - Ara Beauty - V2",
+            "description": "Objectives: create an e-commerce website - product catalog page and management of adding/removing to the cart or adding/removing to favorites. -Creation of an e-commerce mockup with the Figma tool - Usage - Development in JS & HTML CSS – Bootstrap - Features developed in JS: Asynchronous retrieval of data stored in JSON / Modal to view the cart / Adding/Removing products in the cart and calculating the cart / Adding/Removing products in favorites / Adding a loader for initial data loading - Project supervision",
+            "techTags": ["HTML", "Bootstrap", "Javascript", "React", "Express", "MongoDB", "NodeJS"],
+            "frontBack": "front",
+            "url": "",
+            "cover": "./images/Ara_BeautyJS_mobile.jpg",
+            "projectType": "Training",
+            "visibility": true
+        },
+        {
+            "title": "E-commerce Site - Salesforce - SFRA",
+            "description": "Objectives: - Retrieve SFRA from the official Salesforce Git - Set up the working environment with Salesforce Commerce Cloud (Sandbox) - Redesign and customization of an e-commerce site following the specifications - Modification of the Home page from Page Designer - Addition of a 'Newsletter' field associated with a Custom Object - Creation of a new catalog - Creation of a promotional campaign - Git Admin role",
+            "techTags": ["HTML", "Bootstrap", "Javascript", "React", "Express", "MongoDB", "NodeJS"],
+            "frontBack": "front",
+            "url": "",
+            "cover": "./images/Salesforce_E-com_site.jpg",
+            "projectType": "Training",
+            "visibility": true
+        },
+        {
+            "title": "Landing Page - Cap Formation",
+            "description": "Objectives: create a landing page to present support services for post-baccalaureate orientation. Definition of graphic orientations and construction of the page based on client needs and desires. Creation of a contact form. Addition of a WhatsApp button to facilitate communication. Hosting the site on Netlify and redirection to the domain purchased by the client.",
+            "techTags": ["HTML", "Tailwind CSS", "Javascript", "React", "Express", "MongoDB", "NodeJS"],
+            "frontBack": "front and back",
+            "url": "https://cap-orientationpro.com/",
+            "cover": "./images/capOrientationLP.png",
+            "projectType": "Professional",
+            "visibility": true
+        }
+    ]
+}

@@ -2,8 +2,10 @@ import React from 'react';
 import './style.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import data from '../../../global/datas/webprojects.json';
+import data_en from '../../../global/datas/webprojects_en.json';
 import { FaLaptopCode } from "react-icons/fa6";
 import { TbTargetArrow } from "react-icons/tb";
+import {useLanguageContext} from '../../../global/contextes/LanguageContexte';
 
 
 // Import Swiper styles
@@ -14,10 +16,12 @@ import { Pagination } from 'swiper/modules';
 import { EffectCards } from 'swiper/modules';
 
 const WebProjects = () => {
+    const {languageEng} = useLanguageContext();
+
     let {projetsWeb} = data;
+    if(languageEng) projetsWeb = data_en;
 
     projetsWeb = [...projetsWeb].reverse().filter((projet) => projet.visibility === "true");
-    console.log(projetsWeb)
 
     return (
         <Swiper
@@ -40,14 +44,20 @@ const WebProjects = () => {
                             <div className='webproject-card-content'>
                                 <header>
                                     <h4>{projet.titre}</h4>
-                                    <p><TbTargetArrow /> Projet {projet.typeProjet}</p>
+                                    <p><TbTargetArrow /> 
+                                        {languageEng ? "Project" : "Projet" } {projet.typeProjet}
+                                    </p>
                                     <h5>{projet.technosTag.map((tech, i)=>(
                                         <span key={i}>{tech}</span>
                                     ))}</h5>
                                 </header>
                                 <footer>
                                     { projet.url ?  
-                                        <button><FaLaptopCode /><a href={projet.url} target='_blank'>Voir le projet</a></button>
+                                        <button><FaLaptopCode />
+                                            <a href={projet.url} target='_blank'>
+                                                {languageEng ? "See project" : "Voir le projet"}
+                                            </a>
+                                        </button>
                                         :''
                                     }
                                 </footer>
