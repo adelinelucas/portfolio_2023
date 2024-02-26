@@ -10,6 +10,10 @@ const SalesforceCompetencesWeb = () => {
     const webTools = [...data.webTools];
 
     const {languageEng} = useLanguageContext();
+    let languageTitle; 
+    let webToolsTitle;
+    languageEng ? languageTitle ="Stack" : languageTitle ="Langages"; 
+    languageEng ? webToolsTitle ="Tools" : webToolsTitle ="Outils" ;
 
     return (
         <section className='page__salesforce-profil-competencesWeb' id="page__salesforce-profil-competencesWeb">
@@ -20,13 +24,13 @@ const SalesforceCompetencesWeb = () => {
                     <h2 className=''>Mes compétences web</h2>
             }
             <div className='page__salesforce-profil-competencesWeb languages'>
-                <CompetenceWeb competences={languages} title="Langages"/>
+                <CompetenceWeb competences={languages} title={languageTitle}/>
             </div>
             <div className='page__salesforce-profil-competencesWeb frameworks'>
                 <CompetenceWeb competences={frameworks} title="Frameworks"/>
             </div>
             <div className='page__salesforce-profil-competencesWeb tools'>
-                <CompetenceWeb competences={webTools} title="Outils"/>
+                <CompetenceWeb competences={webTools} title={languageTitle}/>
             </div>
         </section>
     );
