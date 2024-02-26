@@ -1,11 +1,13 @@
 import React from 'react';
 import { FaGithub, FaLinkedin  } from "react-icons/fa";
 import './style.css';
+import {useLanguageContext} from '../../../global/contextes/LanguageContexte';
 
 const Socials = ({chooseLang}) => {
+    const {languageEng, setLanguageEng} = useLanguageContext();
+
     const handleLanguage = () =>{
-        // changer le context pour passer en anglais
-        console.log('test');
+        setLanguageEng(!languageEng)
     }
 
     return (
