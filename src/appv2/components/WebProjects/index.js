@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './style.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import data from '../../../global/datas/webprojects.json';
@@ -17,11 +17,25 @@ import { EffectCards } from 'swiper/modules';
 
 const WebProjects = () => {
     const {languageEng} = useLanguageContext();
-
     let {projetsWeb} = data;
-    if(languageEng) projetsWeb = data_en;
-
     projetsWeb = [...projetsWeb].reverse().filter((projet) => projet.visibility === "true");
+
+    // if(languageEng) {
+    //     projetsWeb = data_en.webProjects;
+    //     projetsWeb = [...projetsWeb].reverse().filter((project) => project.visibility === "true");
+    // }else{
+    //     projetsWeb = [...projetsWeb].reverse().filter((projet) => projet.visibility === "true");
+    // }
+    
+    useEffect(()=>{
+        if(languageEng) {
+            projetsWeb = data_en.webProjects;
+            projetsWeb = [...projetsWeb].reverse().filter((projet) => projet.visibility === "true");
+        }else{
+            projetsWeb = data.projetsWeb;
+            projetsWeb = [...projetsWeb].reverse().filter((projet) => projet.visibility === "true");
+        }
+    },[languageEng])
 
     return (
         <Swiper

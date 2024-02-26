@@ -50,43 +50,32 @@ const Contact = () => {
 
     // changement des élement si langue anglaise
     useEffect(()=>{ 
-        languageEng ?? 
-        setContactInputDatas(
+        if(languageEng) setContactInputDatas(
             {
                 lastname: {
                     label: 'Last Name',
                     placeholder: 'Your last name',
                     title: 'Mandatory field to send the contact form',
-                    error: '',
-                    dataValue: ''
                 },
                 email: {
                     label: 'Email',
                     placeholder: 'email@gmail.com',
                     title: 'Mandatory field to send the contact form',
-                    error: '',
-                    dataValue: ''
                 },
                 phone: {
                     label: 'Phone',
                     placeholder: '01 01 01 01 01',
                     title: 'Mandatory field to send the contact form',
-                    error: '',
-                    dataValue: ''
                 },
                 title: {
                     label: 'Message Subject',
                     placeholder: 'Your subject',
                     title: 'Subject of your message',
-                    error: '',
-                    dataValue: ''
                 },
                 content: {
                     label: 'Message Content',
                     placeholder: '',
                     title: 'Mandatory content to send the contact form',
-                    error: '',
-                    dataValue: ''
                 },
                 button: 'Send',
                 confirmMessage: {
@@ -96,7 +85,7 @@ const Contact = () => {
             }
         )
     },[languageEng])
-
+    
     const [formData, setFormData] = useState({
         lastname: '',
         email: '',
@@ -383,7 +372,7 @@ const Contact = () => {
                         </div>
                         <span className="error">{contactInputDatas.content.error}</span>
 
-                        <button className='' type="submit">Envoyer</button>
+                        <button className='' type="submit">{contactInputDatas.button}</button>
                     </form>
                 </>
             }
