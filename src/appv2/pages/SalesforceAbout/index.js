@@ -32,7 +32,7 @@ const SalesforceAbout = () => {
                 }
                 
                 <figure className='page__salesforce-profil-about-badge'>
-                    <img src="./images/b2c_badge.png" alt="Badge Salesforce B2C Commerce developer" width="150px" />
+                    <img src="./images/b2c_badge.png" className='rotating' alt="Badge Salesforce B2C Commerce developer" width="150px" />
                 </figure >
             </article>
         </section>
