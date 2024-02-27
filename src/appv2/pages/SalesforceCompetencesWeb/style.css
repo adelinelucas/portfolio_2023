@@ -63,7 +63,5 @@ section>div {
 @media (min-width: 993px) and (max-width: 1400px){
     section.page__salesforce-profil-competencesWeb{
         width:80%;
-        margin: 2rem auto 0rem;
-        padding: 1rem;
     }
 }

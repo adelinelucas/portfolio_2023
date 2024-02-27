@@ -17,3 +17,21 @@
 .page__salesforce-portfolio>div{
     display: block;
 }
+@media (max-width: 992px){
+    .page__salesforce-portfolio{
+        width:100%;
+        margin: 2rem auto 0rem;
+        padding: 1rem;
+    }
+    .page__salesforce-portfolio h2{
+        font-size: var(--FONT-MEDIUM); 
+        margin:0px auto 30px;
+    }
+}
+
+
+@media (min-width: 993px) and (max-width: 1400px){
+    .page__salesforce-portfolio{
+        width:80%;
+    }
+}
