@@ -65,7 +65,7 @@ input, button, textarea {
   --FONT-SMALL: 1.2rem;
   --FONT-XS: 1.1rem;
   --FONT-XXS: 0.9rem;
-  --FONT-XXXS: 0.5rem;
+  --FONT-XXXS: 0.7rem;
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

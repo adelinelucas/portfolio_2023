@@ -30,8 +30,6 @@
 }
 
 @media (max-width: 1200px){
-    .page__salesforce-profil__header-title{
-    }
     .page__salesforce-profil__header-banner {
         width: 80%;
     }

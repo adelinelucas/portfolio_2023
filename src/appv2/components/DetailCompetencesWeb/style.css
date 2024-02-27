@@ -21,6 +21,7 @@
     transition: all 0.5s;
     will-change: transform;
     box-shadow: 0 0 5px #f3f2f2;
+    margin: 6px 0 0;
 }
 
 .page__salesforce-profil-competencesWeb-details .progress-bar {
@@ -48,4 +49,24 @@
 }
 .page__salesforce-profil-competencesWeb-details .progress-bar.gold{
     background-color: #FDC925;
+}
+
+@media (max-width: 992px){
+    .page__salesforce-profil-competencesWeb-details{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .page__salesforce-profil-competencesWeb-details .progress-bar-container{
+        width: 175px;
+    }
+    .page__salesforce-profil-competencesWeb-details h4{
+        font-size: var(--FONT-XXXS);
+    }   
+}
+
+@media (min-width: 993px) and (max-width: 1400px){
+    .page__salesforce-profil-competencesWeb-details .progress-bar-container{
+        width: 200px;
+    }
 }
