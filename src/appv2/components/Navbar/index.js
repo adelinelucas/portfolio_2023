@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import {useLanguageContext} from '../../../global/contextes/LanguageContexte';
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdClose } from "react-icons/md";
 
 import './style.css';
 const Navbar = () => {
     const {languageEng} = useLanguageContext();
-
+    const [showMobileMenu, setShowMobileMenu]= useState(false)
     const navigate = useNavigate();
 
     const redirectToAnchor = (anchor) => {
@@ -15,7 +17,7 @@ const Navbar = () => {
 
     return (
         <nav className='page__salesforce-profil__header__navbar'>
-            <ul>
+            <ul className='page__salesforce-profil__header__navbar desktop-version'>
                 <li>
                     {   languageEng ? 
                         <a href="#page__salesforce-profil-about" className='salesforce-contact-link'>
@@ -61,6 +63,54 @@ const Navbar = () => {
                     </a>
                 </li>
             </ul> 
+            <div className={`${showMobileMenu ? 'menu-mobile open ':'menu-mobile' }`}>            
+                <button  onClick={()=> setShowMobileMenu(!showMobileMenu)}>
+                    {!showMobileMenu ? <GiHamburgerMenu /> : <MdClose />}
+                </button>
+                
+                {
+                    showMobileMenu && 
+                    <ul className='page__salesforce-profil__header__navbar mobile-version'>
+                    <li>
+                        {   languageEng ? 
+                            <a href="#page__salesforce-profil-about" className='salesforce-contact-link'>
+                                <span className=''>About</span>
+                            </a>:
+                            <a href="#page__salesforce-profil-about" className='salesforce-contact-link'>
+                                <span className=''>A propos</span>
+                            </a>
+                        }
+                    </li>
+                    <li>
+                        {   languageEng ?
+                            <a href="#page__salesforce-portfolio" className='salesforce-contact-link'>
+                                <span className=''>Webs projects</span>
+                            </a>
+                            :
+                            <a href="#page__salesforce-portfolio" className='salesforce-contact-link'>
+                                <span className=''>Projets webs</span>
+                            </a>
+                        }
+                    </li>
+                    <li>
+                        {   languageEng ?
+                            <a href="#page__salesforce-profil-exppro" className='salesforce-contact-link'>
+                                <span className=''>Professional Experiences</span>
+                            </a>
+                            :
+                            <a href="#page__salesforce-profil-exppro" className='salesforce-contact-link'>
+                                <span className=''>Experiences pro</span>
+                            </a>
+                        }
+                    </li>
+                    <li>
+                        <a href="#page__salesforce-profil-contact" className='salesforce-contact-link'>
+                            <span className=''>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                }
+            </div>
         </nav>
     );
 };

@@ -6,7 +6,7 @@
 .page__salesforce-profil__header__section{
     padding: 3rem 2rem 2rem;
     display: flex ;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     width: 98%;
     margin: auto;
@@ -31,3 +31,13 @@
     width: fit-content;
     bottom: -3px;
 } */
+
+/* Responsive */
+@media (max-width: 576px) {
+    .page__salesforce-profil__header__section{
+        /* justify-content: flex-end;
+        flex-direction: column-reverse;
+        align-items: flex-end; */
+    }
+
+ }
