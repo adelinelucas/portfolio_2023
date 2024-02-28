@@ -33,7 +33,7 @@ section.page__salesforce-profil-competencesWeb{
     width: 5rem;
 }
 
-section>div {
+.page__salesforce-profil-competencesWeb section>div {
     margin: 15px auto 0;
     width: 100%;
 }

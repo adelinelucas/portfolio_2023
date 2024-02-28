@@ -18,6 +18,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 15px auto;
 }
 
 .page__salesforce-profil-contact-form article form button {
@@ -76,4 +77,31 @@ article .page__salesforce-profil-contact-form-message a {
     font-size: var(--FONT-MEDIUM);
     font-weight: 600;
     cursor: url('../../../../public/images/cursorpointer_hover.png'), auto;
+}
+
+@media (max-width: 576px){
+    
+    .page__salesforce-profil-contact-form article form div{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 992px){
+    
+    .page__salesforce-profil-contact-form article{
+        height: fit-content;
+    }
+    .page__salesforce-profil-contact-form article form{
+        width: 100%;
+    }
+    .page__salesforce-profil-contact-form input, 
+    .page__salesforce-profil-contact-form textarea{
+        width:100%;
+    }
+    .page__salesforce-profil-contact-form label, 
+    .page__salesforce-profil-contact-form input, 
+    .page__salesforce-profil-contact-form textarea, 
+    .page__salesforce-profil-contact-form button {
+        font-size: var(--FONT-XS);
+    }
 }

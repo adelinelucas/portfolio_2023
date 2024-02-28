@@ -20,3 +20,24 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 992px){
+    section.page__salesforce-profil-contact{
+        width:100%;
+        margin: 2rem auto 0rem;
+        padding: 1rem;
+    }
+    .page__salesforce-profil-contact h2{
+        font-size: var(--FONT-MEDIUM); 
+        margin: 0rem auto 0rem;
+        text-align: center;
+    }
+    
+}
+
+
+@media (min-width: 993px) and (max-width: 1400px){
+    section.page__salesforce-profil-contact{
+        width:80%;
+    }
+}
