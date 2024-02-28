@@ -32,7 +32,7 @@ const WebProjects = () => {
     };
 
     const switchSwiper = () => {
-        if(widthSize < '1400'){
+        if(widthSize.width < '1400'){
             setSmallScreenSwiper(true)
         }else{
             setSmallScreenSwiper(false)
@@ -51,7 +51,7 @@ const WebProjects = () => {
 
     useEffect(()=>{
         window.addEventListener('resize', handleResize);
-        switchSwiper(widthSize);
+        switchSwiper();
         return () => {
             window.removeEventListener('resize', handleResize);
           };
@@ -59,98 +59,99 @@ const WebProjects = () => {
 
     return (
         <>
-        { !smallScreenSwiper ?
-        <Swiper
-            slidesPerView={2}
-            spaceBetween={30}
-            centeredSlides={true}
+        { !smallScreenSwiper &&
+            <Swiper
+                slidesPerView={2}
+                spaceBetween={30}
+                centeredSlides={true}
+                pagination={{
+                clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper"
+            >
+                {
+                    projetsWeb.map((projet, index)=>(
+                        <SwiperSlide key={index}>
+                            <article className='webproject-card'>
+                                <figure className='webproject-card-bg'>
+                                    <img src={projet.cover ? projet.cover : './images/internet.png'} alt={projet.titre} />
+                                </figure>
+                                <div className='webproject-card-content'>
+                                    <header>
+                                        <h4>{projet.titre}</h4>
+                                        <p><TbTargetArrow /> 
+                                            {languageEng ? "Project" : "Projet" } {projet.typeProjet}
+                                        </p>
+                                        <h5>{projet.technosTag.map((tech, i)=>(
+                                            <span key={i}>{tech}</span>
+                                        ))}</h5>
+                                    </header>
+                                    <footer>
+                                        { projet.url ?  
+                                            <button><FaLaptopCode />
+                                                <a href={projet.url} target='_blank'>
+                                                    {languageEng ? "See project" : "Voir le projet"}
+                                                </a>
+                                            </button>
+                                            :''
+                                        }
+                                    </footer>
+                                </div>
+                                <div className='webproject-card-content-hover'>
+                                    <p>{projet.description}</p>
+                                </div>
+                            </article>
+                        </SwiperSlide>
+                    ))
+                }
+            </Swiper>
+        } 
+        // SWIPER VUE MOBILE TABLETTE
+        { smallScreenSwiper &&
+            <Swiper
             pagination={{
-            clickable: true,
+                dynamicBullets: true,
             }}
             modules={[Pagination]}
-            className="mySwiper"
-        >
-            {
-                projetsWeb.map((projet, index)=>(
-                    <SwiperSlide key={index}>
-                        <article className='webproject-card'>
-                            <figure className='webproject-card-bg'>
-                                <img src={projet.cover ? projet.cover : './images/internet.png'} alt={projet.titre} />
-                            </figure>
-                            <div className='webproject-card-content'>
-                                <header>
-                                    <h4>{projet.titre}</h4>
-                                    <p><TbTargetArrow /> 
-                                        {languageEng ? "Project" : "Projet" } {projet.typeProjet}
-                                    </p>
-                                    <h5>{projet.technosTag.map((tech, i)=>(
-                                        <span key={i}>{tech}</span>
-                                    ))}</h5>
-                                </header>
-                                <footer>
-                                    { projet.url ?  
-                                        <button><FaLaptopCode />
-                                            <a href={projet.url} target='_blank'>
-                                                {languageEng ? "See project" : "Voir le projet"}
-                                            </a>
-                                        </button>
-                                        :''
-                                    }
-                                </footer>
-                            </div>
-                            <div className='webproject-card-content-hover'>
-                                <p>{projet.description}</p>
-                            </div>
-                        </article>
-                    </SwiperSlide>
-                ))
-            }
-        </Swiper>
-        : 
-        // SWIPER VUE MOBILE TABLETTE
-        <Swiper
-        pagination={{
-            dynamicBullets: true,
-        }}
-        modules={[Pagination]}
-        className="mobileSwiper"
-        >
-            {
-                projetsWeb.map((projet, index)=>(
-                    <SwiperSlide key={index}>
-                        <article className='webproject-card'>
-                            <figure className='webproject-card-bg'>
-                                <img src={projet.cover ? projet.cover : './images/internet.png'} alt={projet.titre} />
-                            </figure>
-                            <div className='webproject-card-content'>
-                                <header>
-                                    <h4>{projet.titre}</h4>
-                                    <p><TbTargetArrow /> 
-                                        {languageEng ? "Project" : "Projet" } {projet.typeProjet}
-                                    </p>
-                                    <h5>{projet.technosTag.map((tech, i)=>(
-                                        <span key={i}>{tech}</span>
-                                    ))}</h5>
-                                </header>
-                                <footer>
-                                    { projet.url ?  
-                                        <button><FaLaptopCode />
-                                            <a href={projet.url} target='_blank'>
-                                                {languageEng ? "See project" : "Voir le projet"}
-                                            </a>
-                                        </button>
-                                        :''
-                                    }
-                                </footer>
-                            </div>
-                            <div className='webproject-card-content-hover'>
-                                <p>{projet.description}</p>
-                            </div>
-                        </article>
-                    </SwiperSlide>
-                ))
-            }
-        </Swiper>
+            className="mobileSwiper"
+            >
+                {
+                    projetsWeb.map((projet, index)=>(
+                        <SwiperSlide key={index}>
+                            <article className='webproject-card'>
+                                <figure className='webproject-card-bg'>
+                                    <img src={projet.cover ? projet.cover : './images/internet.png'} alt={projet.titre} />
+                                </figure>
+                                <div className='webproject-card-content'>
+                                    <header>
+                                        <h4>{projet.titre}</h4>
+                                        <p><TbTargetArrow /> 
+                                            {languageEng ? "Project" : "Projet" } {projet.typeProjet}
+                                        </p>
+                                        <h5>{projet.technosTag.map((tech, i)=>(
+                                            <span key={i}>{tech}</span>
+                                        ))}</h5>
+                                    </header>
+                                    <footer>
+                                        { projet.url ?  
+                                            <button><FaLaptopCode />
+                                                <a href={projet.url} target='_blank'>
+                                                    {languageEng ? "See project" : "Voir le projet"}
+                                                </a>
+                                            </button>
+                                            :''
+                                        }
+                                    </footer>
+                                </div>
+                                <div className='webproject-card-content-hover'>
+                                    <p>{projet.description}</p>
+                                </div>
+                            </article>
+                        </SwiperSlide>
+                    ))
+                }
+            </Swiper>
         }
         </>
     );

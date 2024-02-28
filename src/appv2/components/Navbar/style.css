@@ -84,6 +84,11 @@
 		top:8%;
 		z-index: 100;
 	}
+
+	.page__salesforce-profil__header__section.fixed .menu-mobile{
+		left: 0;
+		top: -9%;
+	}
 	.menu-mobile.open{
 		background-color: rgba(10, 10, 10, 0.97);
 		border-radius: 5px;

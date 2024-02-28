@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './style.css'; 
 import { Chrono } from "react-chrono";
 import data from '../../../global/datas/exppro.json';
@@ -12,6 +12,29 @@ import {useLanguageContext} from '../../../global/contextes/LanguageContexte';
 const SalesforceExperiencesPro = () => {
     const {languageEng} = useLanguageContext();
     let {webDev, avantReconversion, formationUniversitaire} = data 
+    const [widthSize, setWidthSize] = useState( window.innerWidth);
+    const [smallScreen, setSmallScreen] = useState(false)
+
+    const handleResize = () => {
+        setWidthSize(window.innerWidth);
+    };
+
+    const detectSmallScreen = () => {
+        if(widthSize < '1400'){
+            setSmallScreen(true)
+        }else{
+            setSmallScreen(false)
+        }
+    };
+
+    useEffect(()=>{
+        window.addEventListener('resize', handleResize);
+        detectSmallScreen();
+        return () => {
+            window.removeEventListener('resize', handleResize);
+          };
+    },[])
+
     if(languageEng){
         webDev = data_en.webDev;
         avantReconversion = data_en.avantReconversion;
@@ -57,11 +80,78 @@ const SalesforceExperiencesPro = () => {
                         : 'Mes expériences avant reconversion'
                     }
                 </h3>
-                <div className='page__salesforce-profil-exppro-horizontal-timeline'>
+                <div className={`${smallScreen ? 'page__salesforce-profil-exppro-horizontal-timeline small-screen ':'page__salesforce-profil-exppro-horizontal-timeline big-screen' }`}>
+                    {
+                        smallScreen && 
+                        <Chrono
+                            items={avantReconversion}
+                            mode="VERTICAL"
+                            timelinePointShape="square"
+                            timelinePointDimension={20}
+                            theme={{
+                                primary: "white",
+                                secondary: "#504EE8",
+                                cardTitleColor: "#504EE8",
+                                cardSubtitleColor:"#8878B2",
+                                titleColorActive:"#F2F0F2",
+                                titleColor:"#F2F0F2",
+                            }}
+                        />
+                    }
+                    {!smallScreen &&
+                        <Chrono
+                            items={avantReconversion}
+                            mode="HORIZONTAL"
+                            itemWidth={250}
+                            showSingle
+                            timelinePointShape="square"
+                            timelinePointDimension={20}
+                            theme={{
+                                primary: "white",
+                                secondary: "#504EE8",
+                                cardTitleColor: "#504EE8",
+                                cardSubtitleColor:"#8878B2",
+                                titleColorActive:"#F2F0F2",
+                                titleColor:"#F2F0F2",
+                            }}
+                            fontSizes={{
+                                cardSubtitle: '0.85rem',
+                                cardText: '0.8rem',
+                                cardTitle: '1rem',
+                                title: '1rem',
+                            }}
+                        />
+                    }
+                </div>
+            </div>
+            <div className={`${smallScreen ? 'page__salesforce-profil-exppro-horizontal-timeline-deux small-screen ':'page__salesforce-profil-exppro-horizontal-timeline-deux big-screen' }`}>
+                <h3 className=''><span className='title-icon'><TiBusinessCard /></span>                 
+                    { languageEng ? 
+                        'University Education'
+                        : 'Ma formation universitaire'
+                    }
+                </h3>
+                {smallScreen && 
                     <Chrono
-                        items={avantReconversion}
+                        items={formationUniversitaire}
+                        mode="VERTICAL"
+                        timelinePointShape="square"
+                        timelinePointDimension={20}
+                        theme={{
+                            primary: "white",
+                            secondary: "#504EE8",
+                            cardTitleColor: "#504EE8",
+                            cardSubtitleColor:"#8878B2",
+                            titleColorActive:"#F2F0F2",
+                            titleColor:"#F2F0F2",
+                        }}
+                    />
+                }
+                {!smallScreen &&
+                    <Chrono
+                        items={formationUniversitaire}
                         mode="HORIZONTAL"
-                        itemWidth={250}
+                        itemWidth={350}
                         showSingle
                         timelinePointShape="square"
                         timelinePointDimension={20}
@@ -79,39 +169,9 @@ const SalesforceExperiencesPro = () => {
                             cardTitle: '1rem',
                             title: '1rem',
                         }}
+                        cardHeight={50}
                     />
-                </div>
-            </div>
-            <div className='page__salesforce-profil-exppro-horizontal-timeline-deux'>
-                <h3 className=''><span className='title-icon'><TiBusinessCard /></span>                 
-                    { languageEng ? 
-                        'University Education'
-                        : 'Ma formation universitaire'
-                    }
-                </h3>
-                <Chrono
-                    items={formationUniversitaire}
-                    mode="HORIZONTAL"
-                    itemWidth={350}
-                    showSingle
-                    timelinePointShape="square"
-                    timelinePointDimension={20}
-                    theme={{
-                        primary: "white",
-                        secondary: "#504EE8",
-                        cardTitleColor: "#504EE8",
-                        cardSubtitleColor:"#8878B2",
-                        titleColorActive:"#F2F0F2",
-                        titleColor:"#F2F0F2",
-                    }}
-                    fontSizes={{
-                        cardSubtitle: '0.85rem',
-                        cardText: '0.8rem',
-                        cardTitle: '1rem',
-                        title: '1rem',
-                    }}
-                    cardHeight={50}
-                 />
+                }
             </div>
         </section>
     );

@@ -38,20 +38,94 @@
     color: #504EE8;
 }
 
-.page__salesforce-profil-exppro-horizontal-timeline{
+.page__salesforce-profil-exppro-horizontal-timeline.big-screen{
     margin: auto;
 }
 
-.page__salesforce-profil-exppro-horizontal-timeline #timeline-main-wrapper{
+.page__salesforce-profil-exppro-horizontal-timeline.big-screen #timeline-main-wrapper{
     min-height: 250px;
 }
 
-.page__salesforce-profil-exppro-horizontal-timeline .timeline-main-wrapper .feYzNX{
+.page__salesforce-profil-exppro-horizontal-timelin.big-screen .timeline-main-wrapper .feYzNX{
     height: 250px;
 }
-.page__salesforce-profil-exppro-horizontal-timeline .timeline-main-wrapper .kbQZhB{
+.page__salesforce-profil-exppro-horizontal-timeline.big-screen .timeline-main-wrapper .kbQZhB{
     left: 30%;
 }
-.page__salesforce-profil-exppro-horizontal-timeline-deux .timeline-main-wrapper .kbQZhB{
+.page__salesforce-profil-exppro-horizontal-timeline-deux.big-screen .timeline-main-wrapper .kbQZhB{
     left: 15%;
+}
+
+@media (max-width: 992px){
+    .page__salesforce-profil-exppro{
+        width:100%;
+        margin: 2rem auto 0rem;
+        padding: 1rem 0 ;
+    }
+    .page__salesforce-profil-exppro h2{
+        font-size: var(--FONT-MEDIUM); 
+    }
+    .page__salesforce-profil-exppro h3{
+        font-size: var(--FONT-XS); 
+    }
+    #timeline-main-wrapper{
+        padding: 0;
+    }
+    #timeline-main-wrapper>div{
+        padding: 0;
+    }
+    #timeline-main-wrapper div>li>div:first-child{
+        width: 30%;
+    }
+    #timeline-main-wrapper div>li>div:first-child>div{
+        font-size: var(--FONT-XXXS);
+    }
+
+    #timeline-main-wrapper .rc-card-title{
+        font-size: var(--FONT-XXS);
+        text-align: center;
+    }
+    #timeline-main-wrapper .rc-card-subtitle{
+        font-size: var(--FONT-XXS);
+        text-align: center;
+
+    }
+    #timeline-main-wrapper .timeline-card-content .rc-card-text{
+        scrollbar-width: thin;
+        overflow: scroll;
+    }
+
+    #timeline-main-wrapper .timeline-card-content .rc-card-text p {
+        font-size: var(--FONT-XXXS);
+    }
+}
+@media (max-width: 992px){
+    .page__salesforce-profil-exppro-horizontal-timeline.small-screen .timeline-card-content .rc-card-text,
+    .page__salesforce-profil-exppro-horizontal-timeline-deux.small-screen .timeline-card-content .rc-card-text {
+        font-size: var(--FONT-XXXS);
+    }
+    .page__salesforce-profil-exppro-horizontal-timeline-deux.small-screen .timeline-card-content{
+        justify-content: center;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px){
+    .page__salesforce-profil-exppro{
+        width: 100%;
+    }
+    #timeline-main-wrapper .timeline-card-content .rc-card-text{
+        scrollbar-width: thin;
+        overflow: scroll;
+        font-size: var(--FONT-XXS);
+    }
+    #timeline-main-wrapper div>li>div:first-child>div{
+        font-size: var(--FONT-XXS);
+    }
+    .page__salesforce-profil-exppro-horizontal-timeline-deux.small-screen .timeline-card-content{
+        justify-content: center;
+    }
+    .page__salesforce-profil-exppro-horizontal-timeline-deux.small-screen .timeline-card-content h1,
+    .page__salesforce-profil-exppro-horizontal-timeline-deux.small-screen .timeline-card-content h2{
+        text-align: center;
+    }
 }
