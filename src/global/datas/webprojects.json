@@ -11,7 +11,7 @@
         },
         {
             "titre": "Projet de final de formation - Site de sorties",
-            "description":"Pour ce projet final de formation, nous avions 10 jours pour développer un projet complet avec le framwork Symfony en groupe (avec CRUD). \n La construction du site du choix du thème à la direction graphique étant libre, nous avons brainstormé en équipe pour trouver un thème, une charte graphique cohérente et des fonctionnalités à proposer. \n Nous avons créé un site de sorties visant uniquement un public féminin, en hommage à notre promotion Women In Digital. Le site proposant des visites (payantes ou gratuites) pour découvrir les pépites touristiques, culinaires, culturelles d'Ile de France. \n Fonctionnalités du site :\n - Une page d'accueil comprenant un lien de connexion pour identifier les personnes inscrites sur le site,une barre de recherche d'activité en fonction du thème de la sortie, un bloc d'image cliquable renvoyant vers les sorties correspondantes, un modal indiquant aux utilisateurs du site que le site est réservé aux femmes, \n - Une page d'inscription au site, \n -Une page d'affichage des sorties comprenant un bouton action afin d'accéder à l'ensemble des fiches \"visites\" / ou d'accéder à l'ensemble des fiches \"sorties\" , un carrousel des 3 dernières visites, un carrousel des 3 dernières sorties gratuites.",
+            "description":"Pour ce projet final de formation, nous avions 10 jours pour développer un projet complet avec le framework Symfony en groupe (avec CRUD). \n La construction du site du choix du thème à la direction graphique étant libre, nous avons brainstormé en équipe pour trouver un thème, une charte graphique cohérente et des fonctionnalités à proposer. \n Nous avons créé un site de sorties visant uniquement un public féminin, en hommage à notre promotion Women In Digital. Le site proposant des visites (payantes ou gratuites) pour découvrir les pépites touristiques, culinaires, culturelles d'Ile de France. \n Fonctionnalités du site :\n - Une page d'accueil comprenant un lien de connexion pour identifier les personnes inscrites sur le site,une barre de recherche d'activité en fonction du thème de la sortie, un bloc d'image cliquable renvoyant vers les sorties correspondantes, un modal indiquant aux utilisateurs du site que le site est réservé aux femmes, \n - Une page d'inscription au site, \n -Une page d'affichage des sorties comprenant un bouton action afin d'accéder à l'ensemble des fiches \"visites\" / ou d'accéder à l'ensemble des fiches \"sorties\" , un carrousel des 3 dernières visites, un carrousel des 3 dernières sorties gratuites.",
             "technosTag": ["HTML", "CSS", "PHP", "Symfony", "SQL"],
             "url": "",
             "cover":"./images/projetPetiteCouronne.png",
@@ -38,7 +38,7 @@
         },
         {
             "titre": "Création d'une boutique e-commerce en ligne",
-            "description":"Une page d'accueil avec l'ensemble des produits chargés dynamiquement depuis la base de données. En cas de rupture de stock de produits, en Javascript nous désactivons le bouton \"ajout au panier\". Une page produit permettant d'ajouter le produit dans le panier. La possibilité de supprimer un produit depuis le panier. Vérification de la disponibilité des produits depuis le stock en BDD",
+            "description":"Une page d'accueil avec l'ensemble des produits chargés dynamiquement depuis la base de données. En cas de rupture de stock de produits, en Javascript, nous désactivons le bouton \"ajout au panier\". Une page produit permettant d'ajouter le produit dans le panier. La possibilité de supprimer un produit depuis le panier. Vérification de la disponibilité des produits depuis le stock en BDD.",
             "technosTag": ["HTML","CSS","Javascript","PHP","Symfony"],
             "frontBack": "front",
             "url": "",
@@ -149,7 +149,7 @@
         },
         {
             "titre": "Site E-commerce - Salesforce - SFRA ",
-            "description":"Objectifs: - Récupération de SFRA depuis le Git officiel de Salesforce - Mise en place de l’environnement de travail avec Salesforce Commerce Cloud (Sandbox) - Refonte et personnalisation d’un site E-commerce en suivant le cahier des charges - Modification de la Home page depuis Page Designer - Ajout d’un champs « Newsletter » associé à un Custom Object - Création d’un nouveau catalogue - Création de campagne promotionnelle - Rôle de Git Admin ",
+            "description":"Objectifs: - Récupération de SFRA depuis le Git officiel de Salesforce - Mise en place de l’environnement de travail avec Salesforce Commerce Cloud (Sandbox) - Refonte et personnalisation d’un site E-commerce en suivant le cahier des charges - Modification de la Home page depuis Page Designer - Ajout d’un champs « Newsletter » associé à un Custom Object - Création d’un nouveau catalogue - Création de campagne promotionnelle - Rôle de Git Admin",
             "technosTag": ["HTML","Bootstrap", "Javascript","React","Express", "MongoDB","NodeJS"],
             "frontBack": "front",
             "url": "",

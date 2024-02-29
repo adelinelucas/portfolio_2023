@@ -2,14 +2,14 @@
     "webDev": [
         {
             "title":"Formation développeur BtoC Salesforce - ISDI",
-            "cardDetailedText":"Formation de 3 mois intensifs orientés autour de projet web e-commerce concrets. Alternance réalisée au sein d'une équipe de 2 développeurs et 1 chargé de projet. J'ai eu pour mission de travailler sur la création de 3 outils interne pour faciliter ou automatiser des taches de l'équipes : réalisation d'un backoffice avec un système d'authentification des users permettant de visualiser les dossiers à traiter, réalisation d'un backoffice pour automatiser la création de landing page, réalisation d'un backoffice pour automatiser la mise à création/ mise à jour d'offre, réalisation d'un backoffice pour associer une offre à une landing page en cours, intégration de landing page en Tailwind CSS, création d'un helper pour faciliter la personnalisation de formulaire.",
+            "cardDetailedText":"Formation de 3 mois intensifs orientés autour de projets web e-commerce concrets. Alternance réalisée au sein d'une équipe de 2 développeurs et 1 chargé de projet. J'ai eu pour mission de travailler sur la création de 3 outils interne pour faciliter ou automatiser des taches de l'équipe : réalisation d'un backoffice avec un système d'authentification des users permettant de visualiser les dossiers à traiter, réalisation d'un backoffice pour automatiser la création de landing page, réalisation d'un backoffice pour automatiser la mise à création/mise à jour d'offre, réalisation d'un backoffice pour associer une offre à une landing page en cours, intégration de landing page en Tailwind CSS, création d'un helper pour faciliter la personnalisation de formulaire.",
             "cardSubtitle": "HTML5 CSS3 Javascript SQL NODE JS NO SQL Boostrap Tailwind CSS React JS Express SFRA Business Manager",
             "cardTitle":"Certificat Salesforce BtoC Commerce Developer - septembre 2023 - décembre 2023",
             "media": ""
         },
         {
             "title":"Formation développeur web en alternance - 3W Academy",
-            "cardDetailedText":"Formation de 1 an en alternance sur le format 3 semaines en entreprise / 1 semaine d'école. Alternance réalisée au sein d'une équipe de 2 développeurs et 1 chargé de projet. J'ai eu pour mission de travailler sur la création de 3 outils interne pour faciliter ou automatiser des taches de l'équipes : réalisation d'un backoffice avec un système d'authentification des users permettant de visualiser les dossiers à traiter, réalisation d'un backoffice pour automatiser la création de landing page, réalisation d'un backoffice pour automatiser la mise à création/ mise à jour d'offre, réalisation d'un backoffice pour associer une offre à une landing page en cours, intégration de landing page en Tailwind CSS, création d'un helper pour faciliter la personnalisation de formulaire.",
+            "cardDetailedText":"Formation de 1 an en alternance sur le format 3 semaines en entreprise/1 semaine d'école. Alternance réalisée au sein d'une équipe de 2 développeurs et 1 chargé de projet. J'ai eu pour mission de travailler sur la création de 3 outils interne pour faciliter ou automatiser des taches de l'équipe : réalisation d'un backoffice avec un système d'authentification des users permettant de visualiser les dossiers à traiter, réalisation d'un backoffice pour automatiser la création de landing page, réalisation d'un backoffice pour automatiser la mise à création/ mise à jour d'offre, réalisation d'un backoffice pour associer une offre à une landing page en cours, intégration de landing page en Tailwind CSS, création d'un helper pour faciliter la personnalisation de formulaire.",
             "cardSubtitle": "HTML5 CSS3 Javascript SQL NODE JS NO SQL Boostrap Tailwind CSS Alpine JS eact JS Express CodeIgniter",
             "cardTitle": "Certificat Techniques d'intégration Web - Certificat Techniques de développement Web - décembre 2021 - décembre 2022",
             "media": ""
@@ -28,7 +28,7 @@
             "title" :"Gestionnaire de compte et reponsable Grands Comptes",
             "cardTitle": "Economie d'Energie",
             "cardSubtitle":"mai 2019 - janvier 2021",
-            "cardDetailedText":["Accompagnement clients et enrichissement de l’offre commerciale", "Veille réglementaire des Certificats d’Economies d’Energie", "Gestion des relations avec les autres départements de l’entreprise : service réglementaire, service informatique, service production, service marketing, service comptabilité", "Elaboration des prestations additionnelles, facturation"],
+            "cardDetailedText":["Accompagnements clients et enrichissement de l’offre commerciale", "Veille réglementaire des Certificats d’Economies d’Energie", "Gestion des relations avec les autres départements de l’entreprise : service réglementaire, service informatique, service production, service marketing, service comptabilité", "Elaboration des prestations additionnelles, facturation"],
             "media": ""
         },
         {
