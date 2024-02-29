@@ -107,7 +107,7 @@ const WebProjects = () => {
                 }
             </Swiper>
         } 
-        // SWIPER VUE MOBILE TABLETTE
+        {/* SWIPER VUE MOBILE TABLETTE */}
         { smallScreenSwiper &&
             <Swiper
             pagination={{
