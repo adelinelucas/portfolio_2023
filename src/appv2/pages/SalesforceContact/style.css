@@ -1,0 +1,43 @@
+.page__salesforce-profil-contact{
+    margin: 5rem auto 1rem;
+    padding: 2rem;
+    width: 75%;
+    color:var(--WHITE);
+    border-top: 2px solid var(--WHITE);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page__salesforce-profil-contact h2 {
+    font-family: belgicademo;
+    letter-spacing: 3px;
+    font-size: var(--FONT-XL);
+    margin: 0rem auto 2rem;
+}
+
+.page__salesforce-profil-contact-form{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 992px){
+    section.page__salesforce-profil-contact{
+        width:100%;
+        margin: 2rem auto 0rem;
+        padding: 1rem;
+    }
+    .page__salesforce-profil-contact h2{
+        font-size: var(--FONT-MEDIUM); 
+        margin: 0rem auto 0rem;
+        text-align: center;
+    }
+    
+}
+
+
+@media (min-width: 993px) and (max-width: 1400px){
+    section.page__salesforce-profil-contact{
+        width:80%;
+    }
+}

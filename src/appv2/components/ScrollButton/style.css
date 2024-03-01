@@ -1,0 +1,19 @@
+.scroll-button{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 2rem;
+    height: 2rem;
+    background:#881161;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 1px 0px rgba(232, 231, 243, 0.73);
+    transition: 0.3s ease;
+}
+
+.scroll-button a {
+    color: var(--WHITE);
+    font-size: var(--FONT-MEDIUM);
+    font-weight: 600;
+}

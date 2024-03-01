@@ -1,0 +1,36 @@
+.page__salesforce-profil__header-banner {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+.page__salesforce-profil__header-title{
+    font-family: dialektika;
+    color: var(--WHITE);
+    font-size: var(--FONT-XXL);
+    letter-spacing: 3px;
+    margin: 5px 0;
+}
+
+.page__salesforce-profil__header-title span{
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .page__salesforce-profil__header-banner {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .page__salesforce-profil__header-title{
+        font-size: var(--FONT-MEDIUM);
+        width: 75%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px){
+    .page__salesforce-profil__header-banner {
+        width: 80%;
+    }
+}

@@ -1,0 +1,184 @@
+.swiper {
+  width: 75%;
+  margin: auto;
+  padding: 1px 0;
+  height: 40rem;
+  box-shadow: 6px 6px 7px 0px rgb(128 118 131 / 54%), -1px -4px 14px 0 rgb(128 118 131 / 54%);
+  border-radius: 10px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: none;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
+}
+
+/*  CSS pour la card */
+.webproject-card {
+  /* width: fit-content;*/
+  height: 10rem; 
+  border: 1px solid var(--FONT-COLOR);
+  border-radius: 5px;
+  position: relative;
+  background-color: var(--WHITE);
+}
+
+.webproject-card figure {
+  position: absolute;
+  width: 100%;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* width: fit-content;*/
+  height: 27rem; 
+  top: 160px;
+  z-index: 10;
+  border-radius: 5px;
+  border: 1px solid #1212110f;
+  background-color: var(--WHITE);
+}
+.webproject-card figure img{
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.webproject-card .webproject-card-content-hover{
+  display: none;
+}
+
+.webproject-card .webproject-card-content{
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: inherit;
+  height: 100%;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.webproject-card .webproject-card-content header{
+  margin: 10px auto 0 ;
+}
+.webproject-card .webproject-card-content footer{
+  margin: 5px auto 0;
+}
+.webproject-card .webproject-card-content h4 {
+  font-size: var(--FONT-MEDIUM);
+  font-family: belgicademo;
+  color: var(--LIGHT-BLUE);
+  letter-spacing: 3px;
+  margin: 5px auto;
+  font-weight: 600;
+}
+
+.webproject-card .webproject-card-content h5{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 4px 5px 0 ;
+}
+
+.webproject-card .webproject-card-content h5 span::before{
+  content: '-';
+}
+.webproject-card .webproject-card-content h5 span:first-child::before{
+  content: '';
+}
+.webproject-card .webproject-card-content h5 span{
+  font-family: belgicademo;
+  letter-spacing: 2px;
+  color: var(--FONT-COLOR);
+  margin: 0 2px;
+}
+
+.webproject-card .webproject-card-content header p {
+  padding: 2px auto 3px;
+  color: var(--FONT-COLOR);
+  font-size: var(--FONT-XXS);
+  letter-spacing: 3px;
+}
+
+.webproject-card .webproject-card-content footer button{
+  width: fit-content;
+  padding: 5px 10px;
+  background-image: linear-gradient(26deg, #231557 0%, #3f4ae2 35%, #44107A 60%, #FF1361 100%);
+  color: var(--WHITE);
+  letter-spacing: 3px;
+  font-family: belgicademo;
+  cursor: pointer;
+  display: block;
+  margin: 2px auto;
+  border-radius: 10px;
+  border:2px solid transparent
+}
+
+.webproject-card .webproject-card-content footer button{
+  /* cursor: url('../../../../public/images/cursorpointer_hover.png'), auto; */
+}
+
+.webproject-card .webproject-card-content footer button:hover {
+  scale: 1.01;
+  background-image: linear-gradient(211deg, #231557 0%, #3f4ae2 35%, #44107A 60%, #FF1361 100%);
+}
+.webproject-card .webproject-card-content footer button svg{
+  margin: 0 5px;
+  position: relative;
+  top:3px;
+}
+.webproject-card .webproject-card-content footer button a {
+  text-decoration: none;
+  color: var(--WHITE);
+
+}
+
+/* CSS pour le hover de la card */
+
+.swiper-pagination-bullet{
+  background:  var(--WHITE) !important;
+}
+
+@media (max-width: 992px){
+  .swiper{
+    width: 100%;
+  }
+
+  .webproject-card .webproject-card-content header{
+    width: inherit;
+    word-break: break-word;
+  }
+  .webproject-card .webproject-card-content h4 {
+    font-size: var(--FONT-XS);
+  }
+
+  .webproject-card {
+    width: 100%;
+  }
+}

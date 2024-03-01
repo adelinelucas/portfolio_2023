@@ -1,0 +1,119 @@
+.page__salesforce-profil__header__navbar a{
+    font-family: BourbonRough;
+    /* color: #b2bec3; */
+	color: var( --BG-PAGES);
+    font-size: var(--FONT-MEDIUM);
+    /* margin: 5px 10px; */
+    text-decoration: none;
+	letter-spacing: 2px;
+	overflow: hidden;
+	overflow: hidden;
+}
+
+.page__salesforce-profil__header__navbar ul {
+	display: flex;
+	text-decoration: none;
+	height: 2rem;
+}
+
+.page__salesforce-profil__header__navbar ul li{
+	list-style-type: none;
+	width: fit-content;
+	margin: 0 15px;
+	overflow: hidden;
+}
+
+.page__salesforce-profil__header__navbar a span{
+	display: block;
+}
+
+.page__salesforce-profil__header__navbar .hidden-content{
+	position: relative;
+	bottom: 10px;
+	transition: transform 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+	transform: translateY(100%);
+}
+.page__salesforce-profil__header__navbar a .displayed-content{
+	transition: transform 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    transform: translateY(0%);
+}
+
+.page__salesforce-profil__header__navbar a:hover .displayed-content{
+	transition: transform 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    transform: translateY(-100%);
+}
+
+
+.page__salesforce-profil__header__navbar a:hover .hidden-content{
+	transform: translateY(-68%);
+} 
+
+
+
+/* Responsive */
+@media (max-width: 576px) {}
+
+@media (max-width: 992px) {
+    .page__salesforce-profil__header__navbar{
+
+	}
+
+	.page__salesforce-profil__header__navbar.mobile-version{
+		display: flex;
+    	flex-direction: column;
+	}
+	.page__salesforce-profil__header__navbar.desktop-version{
+		display: none;
+	}
+    .page__salesforce-profil__header__navbar button {
+		display: flex;
+		margin: 1rem 0 1rem;
+		font-size: 2rem;
+	}
+	.page__salesforce-profil__header__navbar ul {
+		height: fit-content;
+	}
+	.page__salesforce-profil__header__navbar ul li {
+		margin: 14px 0px;
+	}
+
+	.menu-mobile{
+		padding: 2px 5px;
+		position: absolute;
+		left: 0;
+		top:8%;
+		z-index: 100;
+	}
+
+	.page__salesforce-profil__header__section.fixed .menu-mobile{
+		left: 0;
+		top: -9%;
+	}
+	.menu-mobile.open{
+		background-color: rgba(10, 10, 10, 0.97);
+		border-radius: 5px;
+		height: fit-content;
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		align-content: flex-start;
+
+	}
+}
+@media (min-width: 993px){
+	.page__salesforce-profil__header__navbar.mobile-version{
+		display: none;
+	}
+
+	.menu-mobile {
+		display: none;
+	}
+	
+}
+@media (min-width: 1200px){
+	.page__salesforce-profil__header__navbar.desktop-version{
+		display: flex;
+	}
+}

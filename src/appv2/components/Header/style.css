@@ -1,0 +1,43 @@
+.page__salesforce-profil__header{
+    z-index: 200;
+    position: relative;
+}
+
+.page__salesforce-profil__header__section{
+    padding: 3rem 2rem 2rem;
+    display: flex ;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    width: 98%;
+    margin: auto;
+    align-items: center;
+    z-index: 300;
+}
+
+.page__salesforce-profil__header__section.fixed{
+    padding: 0.5rem ;
+	position: fixed;
+    width: 100%;
+    flex-wrap: wrap;
+	background-color: black;
+	opacity: 0.8;
+	z-index: 300;
+    align-items: center
+}
+
+/* .page__salesforce-profil__header h1 {
+    position: relative;
+    left: 35%;
+    width: fit-content;
+    bottom: -3px;
+} */
+
+/* Responsive */
+@media (max-width: 576px) {
+    .page__salesforce-profil__header__section{
+        /* justify-content: flex-end;
+        flex-direction: column-reverse;
+        align-items: flex-end; */
+    }
+
+ }

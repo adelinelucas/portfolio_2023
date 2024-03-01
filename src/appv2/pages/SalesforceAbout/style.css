@@ -1,0 +1,103 @@
+.page__salesforce-profil-about{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 5rem auto 0;
+    background-color:#339adc;
+    width: 75%;
+    align-items: start;
+    border-radius: 15px;
+    box-shadow: 5px 5px 12px 0px rgb(32 31 39 / 73%);
+}
+
+.page__salesforce-profil-about article{
+    margin: auto;
+    padding: 3rem 0 2rem;
+    width: 50rem;
+    height: fit-content;
+    z-index: 100;
+    font-family: belgicademo;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.page__salesforce-profil-about article .page__salesforce-profil-about-bluecloud{
+    width: 80%;
+    margin: auto;
+}
+.page__salesforce-profil-about article p {
+    font-size: var(--FONT-SMALL);
+    color: var(--BG-PAGES);
+    font-weight: 500;
+    line-height: 25px;
+    margin: 10px 0;
+}
+.page__salesforce-profil-about article p:nth-child(2){
+    color: var(--FONT-COLOR);
+    font-weight: 600;
+}
+
+.page__salesforce-profil-about article p em{
+    font-style: normal;
+    color: var(--FONT-COLOR);
+    font-weight: 600;
+}
+
+.page__salesforce-profil-about article p span{
+    display: block;
+    text-align: center;
+    margin: 0.2rem 0;
+}
+
+.page__salesforce-profil-about-badge{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto 1rem ;
+}
+
+@keyframes loader {
+    0% {
+      rotate: 0deg;
+    }
+    25% {
+      rotate: y 360deg;
+      scale: 0.5;
+    }
+    50% {
+      rotate: 0deg;
+    }
+    75% {
+      rotate: x 90deg;
+    }
+    100% {
+      rotate: 360deg;
+    }
+}
+.rotating {
+    transition: 0.5s ease-in-out;
+    animation: loader 10s infinite;
+}
+
+@media (max-width: 992px) {
+  .page__salesforce-profil-about{
+    width: 90%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .page__salesforce-profil-about article{
+    width: 95%;
+    padding: 1rem 0 1rem;
+  }
+  .page__salesforce-profil-about article p {
+    font-size: var(--FONT-XXS);
+    width: fit-content;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1400px){
+  .page__salesforce-profil-about{
+    width: 85%;
+  }
+}

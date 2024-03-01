@@ -1,0 +1,59 @@
+{
+    "webDev": [
+        {
+            "title":"Formation développeur BtoC Salesforce - ISDI",
+            "cardDetailedText":"Formation de 3 mois intensifs orientés autour de projets web e-commerce concrets. Alternance réalisée au sein d'une équipe de 2 développeurs et 1 chargé de projet. J'ai eu pour mission de travailler sur la création de 3 outils interne pour faciliter ou automatiser des taches de l'équipe : réalisation d'un backoffice avec un système d'authentification des users permettant de visualiser les dossiers à traiter, réalisation d'un backoffice pour automatiser la création de landing page, réalisation d'un backoffice pour automatiser la mise à création/mise à jour d'offre, réalisation d'un backoffice pour associer une offre à une landing page en cours, intégration de landing page en Tailwind CSS, création d'un helper pour faciliter la personnalisation de formulaire.",
+            "cardSubtitle": "HTML5 CSS3 Javascript SQL NODE JS NO SQL Boostrap Tailwind CSS React JS Express SFRA Business Manager",
+            "cardTitle":"Certificat Salesforce BtoC Commerce Developer - septembre 2023 - décembre 2023",
+            "media": ""
+        },
+        {
+            "title":"Formation développeur web en alternance - 3W Academy",
+            "cardDetailedText":"Formation de 1 an en alternance sur le format 3 semaines en entreprise/1 semaine d'école. Alternance réalisée au sein d'une équipe de 2 développeurs et 1 chargé de projet. J'ai eu pour mission de travailler sur la création de 3 outils interne pour faciliter ou automatiser des taches de l'équipe : réalisation d'un backoffice avec un système d'authentification des users permettant de visualiser les dossiers à traiter, réalisation d'un backoffice pour automatiser la création de landing page, réalisation d'un backoffice pour automatiser la mise à création/ mise à jour d'offre, réalisation d'un backoffice pour associer une offre à une landing page en cours, intégration de landing page en Tailwind CSS, création d'un helper pour faciliter la personnalisation de formulaire.",
+            "cardSubtitle": "HTML5 CSS3 Javascript SQL NODE JS NO SQL Boostrap Tailwind CSS Alpine JS eact JS Express CodeIgniter",
+            "cardTitle": "Certificat Techniques d'intégration Web - Certificat Techniques de développement Web - décembre 2021 - décembre 2022",
+            "media": ""
+        },
+        {
+            "title":"Formation Women In Digital - Social Builder et Web Force 3",
+            "cardDetailedText":"Formation de 6 mois (4 mois de formation technique et 2 mois de stage) comprenant 490 heures de formation technique.A l'issue de la formation, j'ai eu l'occasion de réaliser un stage de 2 mois en Symfony : Optimisation et ajout de fonctionnalités à un site existant Championnat-Perplexus. Site basé sur le projet open source de Sébastien Castro GogoCarto Symfony avec Sonata Bundle et utilisant la base de données MongoDB. Stage réalisé avec l'entreprise Kidz And Family.",
+            "cardSubtitle": "HTML5 CSS3 Javascript Ajax GIT SQL PHP Symfony Wordpress",
+            "cardTitle": "Certificat Techniques d'intégration Web - Certificat Techniques de développement Web - mars 2021 - septembre 2021",
+            "media": ""
+        }
+    ],
+
+    "avantReconversion": [
+        {
+            "title" :"Gestionnaire de compte et reponsable Grands Comptes",
+            "cardTitle": "Economie d'Energie",
+            "cardSubtitle":"mai 2019 - janvier 2021",
+            "cardDetailedText":["Accompagnements clients et enrichissement de l’offre commerciale", "Veille réglementaire des Certificats d’Economies d’Energie", "Gestion des relations avec les autres départements de l’entreprise : service réglementaire, service informatique, service production, service marketing, service comptabilité", "Elaboration des prestations additionnelles, facturation"],
+            "media": ""
+        },
+        {
+            "title" :"Chargée de développement",
+            "cardTitle": "Les Joyeux Recycleurs",
+            "cardSubtitle": "août 2018 - février 2019",
+            "cardDetailedText":["Développement commercial", "Gestion et fidélisation de la clientèle (gestion d’un portefeuille de 650 clients)", "Gestion des plannings, des tournées de collecte, et gestion de l'entrepôt (5 camions de collecte et management d’une équipe de 13 collecteurs)", "Accompagnement et conseils auprès des clients concernant le tri et la sensibilisation des collaborateurs"],
+            "media": ""
+        }
+    ],
+    "formationUniversitaire": [
+        {
+            "cardTitle": "Université de Nantes, Faculté de Droit et de Sciences Politiques",
+            "cardSubtitle": "2013 - 2015",
+            "title":"Master I et Master II Droit de l’Environnement et du Développement Durable"
+        },
+        {
+            "cardTitle": "Université de Saragosse, Espagne (Erasmus)",
+            "cardSubtitle": "2012 - 2013",
+            "title":"Master I Droit Européen"
+        },
+        {
+            "cardTitle": "Université de Rennes I, Faculté de Droit et de Sciences politiques",
+            "cardSubtitle": "2009 - 2012",
+            "title":"Licence de Droit"        
+        }
+    ]
+}
