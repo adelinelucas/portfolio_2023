@@ -21,8 +21,11 @@
 	width: fit-content;
 	margin: 0 15px;
 	overflow: hidden;
+	cursor: url('./../../../../public/images/cursorpointer.png'), auto;
 }
-
+.page__salesforce-profil__header__navbar ul li:hover span{
+	cursor: url('./../../../../public/images/cursorpointer_hover.png'), auto;
+}
 .page__salesforce-profil__header__navbar a span{
 	display: block;
 }

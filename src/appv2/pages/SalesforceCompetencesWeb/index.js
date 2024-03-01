@@ -23,15 +23,15 @@ const SalesforceCompetencesWeb = () => {
                     :
                     <h2 className=''>Mes compétences web</h2>
             }
-            <div className='page__salesforce-profil-competencesWeb languages'>
-                <CompetenceWeb competences={languages} title={languageTitle}/>
-            </div>
-            <div className='page__salesforce-profil-competencesWeb frameworks'>
-                <CompetenceWeb competences={frameworks} title="Frameworks"/>
-            </div>
-            <div className='page__salesforce-profil-competencesWeb tools'>
-                <CompetenceWeb competences={webTools} title={languageTitle}/>
-            </div>
+                <div className='page__salesforce-profil-competencesWeb languages'>
+                    <CompetenceWeb competences={languages} title={languageTitle}/>
+                </div>
+                <div className='page__salesforce-profil-competencesWeb frameworks'>
+                    <CompetenceWeb competences={frameworks} title="Frameworks"/>
+                </div>
+                <div className='page__salesforce-profil-competencesWeb tools'>
+                    <CompetenceWeb competences={webTools} title={languageTitle}/>
+                </div>
         </section>
     );
 };

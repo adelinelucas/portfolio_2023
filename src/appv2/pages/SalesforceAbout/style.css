@@ -28,19 +28,19 @@
 .page__salesforce-profil-about article p {
     font-size: var(--FONT-SMALL);
     color: var(--BG-PAGES);
-    font-weight: 500;
+    font-weight: 600;
     line-height: 25px;
     margin: 10px 0;
 }
 .page__salesforce-profil-about article p:nth-child(2){
     color: var(--FONT-COLOR);
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .page__salesforce-profil-about article p em{
     font-style: normal;
     color: var(--FONT-COLOR);
-    font-weight: 600;
+    font-weight: bolder;
 }
 
 .page__salesforce-profil-about article p span{

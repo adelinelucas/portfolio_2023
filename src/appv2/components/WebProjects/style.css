@@ -141,7 +141,7 @@
 }
 
 .webproject-card .webproject-card-content footer button{
-  /* cursor: url('../../../../public/images/cursorpointer_hover.png'), auto; */
+  cursor: url('../../../../public/images/cursorpointer_hover.png'), auto;
 }
 
 .webproject-card .webproject-card-content footer button:hover {

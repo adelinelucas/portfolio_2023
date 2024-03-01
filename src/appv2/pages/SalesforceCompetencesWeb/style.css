@@ -14,7 +14,9 @@ section.page__salesforce-profil-competencesWeb{
     letter-spacing: 3px;
     font-size: var(--FONT-XL);
     text-align: center;
+    margin: 30px auto;
 }
+
 .page__salesforce-profil-competencesWeb-title{
     border-bottom: 2px solid var(--WHITE);
     margin: 0 auto 15px;

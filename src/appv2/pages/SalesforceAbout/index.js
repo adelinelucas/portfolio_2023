@@ -15,7 +15,7 @@ const SalesforceAbout = () => {
                     <div className='page__salesforce-profil-about-bluecloud'>
                         <p>After 3 years of experience in commercial management and customer relations, I wanted to take a professional turn towards a technical job, autonomous and constantly evolving. 
                         </p>
-                        <p>After a year of alternating between being a full-stack developer, I specialized in the Salesforce environment as a <span><em>B2C developer.</em>.</span>
+                        <p>After a year of alternating between being a full-stack developer, I specialized in the Salesforce environment as a <span><em>B2C developer</em>.</span>
                         </p>
                         <p>My objective is to join a dynamic team where I can continue to grow and apply my technical skills while contributing to the development of an e-commerce platform. 
                         </p>
