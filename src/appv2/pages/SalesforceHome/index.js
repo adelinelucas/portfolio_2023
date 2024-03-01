@@ -27,6 +27,7 @@ const SalesforceHome = () => {
     
         return () => {
           window.removeEventListener('resize', updateBackgroundHeight);
+          window.removeEventListener('scroll', updateBackgroundHeight);
         };
       }, []);
     return (

@@ -261,3 +261,9 @@
         font-size:var(--FONT-XS) ;
     }
 }
+
+@media screen and (max-width:1400px){
+    .about__section article p {
+        line-height: 20px;
+    }
+}

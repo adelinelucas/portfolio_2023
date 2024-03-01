@@ -4,9 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, chev } from '@fortawesome/free-solid-svg-icons';
 const DisplayWebProjects = ({project, idx}) => {
 
+    if(project.cover) project.cover = '../../' + project.cover;
+    
     return (
         <article className='portfolio__section__article-project' key={idx}>
-           <img className='portfolio__section__article-cover' src={project.cover?project.cover : './images/internet.png' } alt={project.title}/>
+           <img className='portfolio__section__article-cover' src={project.cover ? project.cover : '../../images/internet.png' } alt={project.title}/>
             <div className='portfolio__section__article-content'>
                 <div className='portfolio__section__article-content-header'>
                     <h3 className='portfolio__section__article-title'>{project.titre} <FontAwesomeIcon icon={faChevronDown} color="#fff" /></h3>

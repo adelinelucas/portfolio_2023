@@ -28,7 +28,7 @@
     */
     /* cursor: url('./../../../../public/images/cursorpointer.png'), auto; */
 }
-main::before {
+.page__salesforce-profil::before {
     content: "";
     position: absolute;
     width: 100%;

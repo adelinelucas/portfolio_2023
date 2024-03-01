@@ -13,13 +13,13 @@ const About = () => {
             <header className='about__section__header'>
                 <div> 
                     <figcaption>
-                        <img src="./images/laptop.png" alt="illustration câble internet" width="100"   />
+                        <img src="../../images/laptop.png" alt="illustration câble internet" width="100"   />
                     </figcaption>
                     <h2>Hello world ;)</h2>
                 </div>
                     <i>A travers cette page, je vous propose de faire connaissance, d'en savoir un peu plus sur les raisons de ma reconversion et comment je pourrais m'intégrer dans votre équipe! (et oui, je n'oublie pas l'essentiel)! </i>
                     <figcaption>
-                        <img src="./images/ethernet_cable_v2.png" alt="illustration câble internet" width="120"   />
+                        <img src="../../images/ethernet_cable_v2.png" alt="illustration câble internet" width="120"   />
                     </figcaption>
             </header>
             <nav className='about__section__nav'>
@@ -58,11 +58,11 @@ const About = () => {
                 <p>Cette année d'alternance a été tout aussi intense, si les premiers mois ont vraiment été compliqués, j'ai continué à travailler les cours et les notions les weekends (FreeCodeCamp est devenu mon meilleur ami), j'ai toujours cherché à progresser.</p>
 
                 <p>Pour en savoir plus sur mon parcours, je vous laisse consulter une partie de mon rapport d'alternance :</p>
-                <Link to="../ressourcesPDF/rapportAlternance_SV.pdf" download target='_blank'>
+                <Link to="../../ressourcesPDF/rapportAlternance_SV.pdf" download target='_blank'>
                     Rapport d'alternance<FontAwesomeIcon icon={faHandPointer} color="#fff" />
                 </Link> 
                 <p>Mais également la présentation réalisée à l'occasion de ma soutenance de projet :</p>
-                <Link to="../ressourcesPDF/projetFinAlternance_VA.pdf" download target='_blank'>
+                <Link to="../../ressourcesPDF/projetFinAlternance_VA.pdf" download target='_blank'>
                        Présentation projet de formation<FontAwesomeIcon icon={faHandPointer} color="#fff" />
                 </Link> 
                 <p>Forte de cette année d'alternance, j'espère pouvoir intégrer au mieux dans les missions qui me seront confiées.</p>
@@ -114,7 +114,7 @@ const About = () => {
             </article>
             <aside className='about__section__footer'>
                 <figcaption>
-                    <img src="./images/internet.png" alt="illustration câble internet" width="120"   />
+                    <img src="../../images/internet.png" alt="illustration câble internet" width="120"   />
                 </figcaption>
             </aside>
         </section>

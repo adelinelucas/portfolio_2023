@@ -27,7 +27,7 @@ const Contact = () => {
                 <p>Je recherche une entreprise basée sur Paris ou au nord de l'Ile-de-France.</p>
                 <p>100 % présentiel ou avec une partie en distanciel, mais je ne suis pas fan du 100 % distanciel en tant que junior ! :)</p>
                 <figure>
-                    <img src="./images/team_work.png" alt="Réunion d'équipe" width="155" />
+                    <img src="../../images/team_work.png" alt="Réunion d'équipe" width="155" />
                 </figure>
             </article>
             <article className="contact__section__article-map">

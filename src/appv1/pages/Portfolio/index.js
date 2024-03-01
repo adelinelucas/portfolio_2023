@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../../../App.scss';
 import Loader from 'react-loaders';
 import './style.css';
-import data from '../../datas/projetsweb.json';
+import data from '../../../global/datas/webprojects.json';
 import DisplayWebProjects from '../../components/DisplayWebProjects';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComputerMouse } from '@fortawesome/free-solid-svg-icons';
@@ -33,11 +33,11 @@ const Portfolio = () => {
             <header>
                 <div>
                     <figure>
-                        <img src="./images/screen.png" alt="formation développeur" width="70"/>
+                        <img src="../../images/screen.png" alt="formation développeur" width="70"/>
                     </figure>
                     <h2>Projets webs</h2>
                     <figure>
-                        <img src="./images/screen.png" alt="formation développeur" width="70"/>
+                        <img src="../../images/screen.png" alt="formation développeur" width="70"/>
                     </figure>
                 </div>
                 <p>Projets webs réalisés en formation ou en alternance.</p>

@@ -104,3 +104,9 @@
         margin: 0 0 0.3rem 0;
     }
 }
+
+@media screen and (max-width:1400px){
+    .about__section__aside {
+        height: 350px;
+    }
+}
