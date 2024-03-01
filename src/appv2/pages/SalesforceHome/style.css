@@ -13,6 +13,12 @@
     font-family: belgicademo;
     src: url('../../../../public/fonts/belgicademo-lvajd.otf');
 }
+
+@font-face {
+    font-family: BourbonRough;
+    src: url('../../../../public/fonts/BourbonTest-Rough-BF65e12eb3ea268.otf');
+}
+
 /* end fonts  */
 
 .page__salesforce-profil{

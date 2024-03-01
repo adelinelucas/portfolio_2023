@@ -113,9 +113,12 @@
     .page__salesforce-profil-exppro{
         width: 100%;
     }
-    #timeline-main-wrapper .timeline-card-content .rc-card-text{
+    #timeline-main-wrapper .timeline-card-content>.rc-card-text{
         scrollbar-width: thin;
-        overflow: scroll;
+        overflow-y: scroll;
+        font-size: var(--FONT-XXS);
+    }
+    #timeline-main-wrapper .timeline-card-content .rc-card-text{
         font-size: var(--FONT-XXS);
     }
     #timeline-main-wrapper div>li>div:first-child>div{
