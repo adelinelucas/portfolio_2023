@@ -112,7 +112,6 @@ const Contact = () => {
       const handleSubmit = async(e) => {
         e.preventDefault();
         formData.phone = (formData.phone).replace(/\s/g,"");
-        ;
         submitMessage()
     };
 
@@ -177,7 +176,7 @@ const Contact = () => {
             };
         }
         setErrors(newErrors);
-        if (Object.values(contactInputDatas).every((error) => error === '')) {
+        if (Object.values(newErrors).every((error) => error === '')) {
 
             emailjs.send('service_4ejylwo', 'template_4895oxe', formData, 'lpg5Kq3KbN46sKY3t')
             .then((response) => {
