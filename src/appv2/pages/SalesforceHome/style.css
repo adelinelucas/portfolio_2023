@@ -32,7 +32,7 @@
     background: -webkit-linear-gradient(to top, #fdbb2d, #b21f1f, #1a2a6c); 
     background: linear-gradient(to top, #fdbb2d, #b21f1f, #1a2a6c); 
     */
-    /* cursor: url('./../../../../public/images/cursorpointer.png'), auto; */
+    cursor: url('./../../../../public/images/cursorpointer.png'), auto;
 }
 .page__salesforce-profil::before {
     content: "";

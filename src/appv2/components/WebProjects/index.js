@@ -6,7 +6,7 @@ import data_en from '../../../global/datas/webprojects_en.json';
 import { FaLaptopCode } from "react-icons/fa6";
 import { TbTargetArrow } from "react-icons/tb";
 import {useLanguageContext} from '../../../global/contextes/LanguageContexte';
-
+import { BiSolidInfoSquare } from "react-icons/bi";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -80,7 +80,7 @@ const WebProjects = () => {
                                 <div className='webproject-card-content'>
                                     <header>
                                         <h4>{projet.titre}</h4>
-                                        <p><TbTargetArrow /> 
+                                        <p className='target-icon'><TbTargetArrow /> 
                                             {languageEng ? "Project" : "Projet" } {projet.typeProjet}
                                         </p>
                                         <h5>{projet.technosTag.map((tech, i)=>(
@@ -98,8 +98,18 @@ const WebProjects = () => {
                                         }
                                     </footer>
                                 </div>
-                                <div className='webproject-card-content-hover'>
-                                    <p>{projet.description}</p>
+                                <div className='webproject-card-content-details'>
+                                    <div className='webproject-card-content-details-show'>
+                                        <h3><BiSolidInfoSquare />
+                                            Details
+                                            <BiSolidInfoSquare />
+                                        </h3>
+                                    </div>
+                                    <div className='webproject-card-content-details-hover'>
+                                        <p>{projet.description.map((project,key)=>(
+                                            <span key={key}>{project}</span>
+                                        ))}</p>
+                                    </div>
                                 </div>
                             </article>
                         </SwiperSlide>
@@ -126,7 +136,7 @@ const WebProjects = () => {
                                 <div className='webproject-card-content'>
                                     <header>
                                         <h4>{projet.titre}</h4>
-                                        <p><TbTargetArrow /> 
+                                        <p className='target-icon'><TbTargetArrow /> 
                                             {languageEng ? "Project" : "Projet" } {projet.typeProjet}
                                         </p>
                                         <h5>{projet.technosTag.map((tech, i)=>(
@@ -144,8 +154,18 @@ const WebProjects = () => {
                                         }
                                     </footer>
                                 </div>
-                                <div className='webproject-card-content-hover'>
-                                    <p>{projet.description}</p>
+                                <div className='webproject-card-content-details'>
+                                    <div className='webproject-card-content-details-show'>
+                                        <h3><BiSolidInfoSquare />
+                                            Details
+                                            <BiSolidInfoSquare />
+                                        </h3>
+                                    </div>
+                                    <div className='webproject-card-content-details-hover'>
+                                        <p>{projet.description.map((project,key)=>(
+                                            <span key={key}>{project}</span>
+                                        ))}</p>
+                                    </div>
                                 </div>
                             </article>
                         </SwiperSlide>

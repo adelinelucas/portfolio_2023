@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './style.css';
 import emailjs from 'emailjs-com';
 import {useLanguageContext} from '../../../global/contextes/LanguageContexte';
+import { IoIosWarning } from "react-icons/io";
 
 const Contact = () => {
     const {languageEng} = useLanguageContext();
@@ -11,35 +12,31 @@ const Contact = () => {
     const [formSumitedMessage, setFormSubmitedMessage] = useState('')
 
     const [contactInputDatas,setContactInputDatas ] = useState({
+        test:'truc',
         lastname:{
             label :'Nom',
             placeholder:"Votre nom",
             title:'Champ obligatoire pour envoyer le formulaire de contact',
-            error :''
         },
         email:{
             label : 'Email',
             placeholder :"email@gmail.com",
             title : 'Champ obligatoire pour envoyer le formulaire de contact',
-            error : ''
         },
         phone:{
             label : 'Téléphone',
             placeholder :"01 01 01 01 01",
             title : 'Champ obligatoire pour envoyer le formulaire de contact',
-            error : ''
         },
         title:{
             label : 'Sujet du message',
             placeholder :"Votre nom",
             title : 'Objet de votre message',
-            error : ''
         },
         content:{
             label : 'Contenu de votre message',
             placeholder :"",
             title : 'Contenu obligatoire pour envoyer le formulaire de contact',
-            error : ''
         },
         button: 'Envoyer',
         confirmMessage : {
@@ -133,123 +130,71 @@ const Contact = () => {
         // Validation des champs
         let newErrors = {};
         if(languageEng){
-            setContactInputDatas({...contactInputDatas, 
-                [contactInputDatas.lastname.error] : formData.lastname.trim() === '' ? 'Name is required.' : '',
-                [contactInputDatas.email.error] :  formData.email.trim() === ''
-                                                        ? 'Email is required.'
-                                                        : !validateEmail(formData.email)
-                                                        ? 'Please enter a valid email address.'
-                                                        : '',
-                [contactInputDatas.phone.error] : formData.phone.trim() === ''
-                                                    ? 'Phone number is required.'
-                                                    : !validatePhone(formData.phone)
-                                                    ? 'Please enter a valid phone number.'
-                                                    : '',
-                [contactInputDatas.title.error] : formData.title.trim() === '' ? 'The message title is required' : '',
-                [contactInputDatas.content.error] : formData.content.trim() === ''
-                                                    ? 'The message content is required.'
-                                                    : formData.content.length < 5
-                                                    ? 'The message content must be at least 5 characters long.'
-                                                    : '',
-            })
-            // newErrors = {
-            //     lastname: formData.lastname.trim() === '' ? 'Name is required.' : '',
-            //     email:
-            //     formData.email.trim() === ''
-            //         ? 'Email is required.'
-            //         : !validateEmail(formData.email)
-            //         ? 'Please enter a valid email address.'
-            //         : '',
-            //     phone:
-            //     formData.phone.trim() === ''
-            //         ? 'Phone number is required.'
-            //         : !validatePhone(formData.phone)
-            //         ? 'Please enter a valid phone number.'
-            //         : '',
-            //     title: formData.title.trim() === '' ? 'The message title is required' : '',
-            //     content:
-            //     formData.content.trim() === ''
-            //         ? 'The message content is required.'
-            //         : formData.content.length < 5
-            //         ? 'The message content must be at least 5 characters long.'
-            //         : '',
-            // };
+            newErrors = {
+                lastname: formData.lastname.trim() === '' ? 'Name is required.' : '',
+                email:
+                formData.email.trim() === ''
+                    ? 'Email is required.'
+                    : !validateEmail(formData.email)
+                    ? 'Please enter a valid email address.'
+                    : '',
+                phone:
+                formData.phone.trim() === ''
+                    ? 'Phone number is required.'
+                    : !validatePhone(formData.phone)
+                    ? 'Please enter a valid phone number.'
+                    : '',
+                title: formData.title.trim() === '' ? 'The message title is required' : '',
+                content:
+                formData.content.trim() === ''
+                    ? 'The message content is required.'
+                    : formData.content.length < 5
+                    ? 'The message content must be at least 5 characters long.'
+                    : '',
+            };
         }else{
-            // newErrors = {
-            //     lastname: formData.lastname.trim() === '' ? 'Le nom est requis.' : '',
-            //     email:
-            //     formData.email.trim() === ''
-            //         ? 'L\'email est requis.'
-            //         : !validateEmail(formData.email)
-            //         ? 'Veuillez entrer une adresse email valide.'
-            //         : '',
-            //     phone:
-            //     formData.phone.trim() === ''
-            //         ? 'Le numéro de téléphone est requis.'
-            //         : !validatePhone(formData.phone)
-            //         ? 'Veuillez entrer un numéro de téléphone valide.'
-            //         : '',
-            //     title: formData.title.trim() === '' ? 'Le titre du message est requis.' : '',
-            //     content:
-            //     formData.content.trim() === ''
-            //         ? 'Le contenu du message est requis.'
-            //         : formData.content.length < 5
-            //         ? 'Le contenu du message doit contenir au moins 5 caractères.'
-            //         : '',
-            // };
-            setContactInputDatas({...contactInputDatas, 
-                [contactInputDatas.lastname.error] : formData.lastname.trim() === '' ? 'Le nom est requis.' : '',
-                [contactInputDatas.email.error] :  formData.email.trim() === ''
-                                                        ? 'L\'email est requis.'
-                                                        : !validateEmail(formData.email)
-                                                        ? 'Veuillez entrer une adresse email valide.'
-                                                        : '',
-                [contactInputDatas.phone.error] : formData.phone.trim() === ''
-                                                    ? 'Le numéro de téléphone est requis.'
-                                                    : !validatePhone(formData.phone)
-                                                    ? 'Veuillez entrer un numéro de téléphone valide.'
-                                                    : '',
-                [contactInputDatas.title.error] : formData.title.trim() === '' ? 'The message title is required' : '',
-                [contactInputDatas.content.error] : formData.content.trim() === ''
-                                                    ? 'Le contenu du message est requis.'
-                                                    : formData.content.length < 5
-                                                    ? 'Le contenu du message doit contenir au moins 5 caractères.'
-                                                    : '',
-            })
+            newErrors = {
+                lastname: formData.lastname.trim() === '' ? 'Le nom est requis.' : '',
+                email:
+                formData.email.trim() === ''
+                    ? 'L\'email est requis.'
+                    : !validateEmail(formData.email)
+                    ? 'Veuillez entrer une adresse email valide.'
+                    : '',
+                phone:
+                formData.phone.trim() === ''
+                    ? 'Le numéro de téléphone est requis.'
+                    : !validatePhone(formData.phone)
+                    ? 'Veuillez entrer un numéro de téléphone valide.'
+                    : '',
+                title: formData.title.trim() === '' ? 'Le titre du message est requis.' : '',
+                content:
+                formData.content.trim() === ''
+                    ? 'Le contenu du message est requis.'
+                    : formData.content.length < 5
+                    ? 'Le contenu du message doit contenir au moins 5 caractères.'
+                    : '',
+            };
         }
-        
-  
-        // setErrors(newErrors);
-        // if (Object.values(contactInputDatas).every((error) => error === '')) {
-        let noError = {}; 
-        for (const [key, value] of Object.entries(contactInputDatas)) {
-            console.log(`${key}: ${value}`);
-            let objectValues = typeof(value)=== 'object' ? value : null;
-            if(objectValues){
-                for (const [keyObj, valueObj] of Object.entries(objectValues)) {
-                    console.log(`${keyObj}: ${valueObj}`);
-                    if(keyObj === 'error'){
-                        noError.keyObj = valueObj;
-                    }
-                }
-            }
-        }
-        if(Object.keys(noError).length){
-            emailjs.send('service_4ejylwo__', 'template_4895oxe', formData, 'lpg5Kq3KbN46sKY3t__')
+        setErrors(newErrors);
+        if (Object.values(contactInputDatas).every((error) => error === '')) {
+
+            emailjs.send('service_4ejylwo', 'template_4895oxe', formData, 'lpg5Kq3KbN46sKY3t')
             .then((response) => {
               console.log('E-mail envoyé avec succès:', response);
               setFormSubmitedMessage("")
+              setSuccessMessage(true)
               setFormSubmited(true)
             })
             .catch((error) => {
               console.error('Erreur lors de l\'envoi de l\'e-mail:', error);
               setFormSubmitedMessage("")
+              setSuccessMessage(false)
               setFormSubmited(true)
             });
         }
     }
 
-    
     useEffect(()=>{
        
     },[formSubmited])
@@ -266,14 +211,14 @@ const Contact = () => {
                             </p>
                             <p>{contactInputDatas.confirmMessage.successMessage[1]} <a href='https://www.linkedin.com/in/adeline-lucas-web-dev/' target='_blank'>LinkedIn</a></p>
                             <figure>
-                                <iframe src="https://giphy.com/embed/7bumBQjZX8BgaE2zjv" width="280" height="280" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                                <iframe src="https://giphy.com/embed/7bumBQjZX8BgaE2zjv" width="280" height="280" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
                             </figure>
                         </div>
                         :
                         <div className='page__salesforce-profil-contact-form-message'>
                             <p className='error-message'>{contactInputDatas.confirmMessage.errorMessage[0]} <a href='https://www.linkedin.com/in/adeline-lucas-web-dev/' target='_blank'>LinkedIn</a>.</p>
                             <figure>
-                                <iframe src="https://giphy.com/embed/q1I4fUo5cYyKQFQKef"  width="260" height="380" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                                <iframe src="https://giphy.com/embed/q1I4fUo5cYyKQFQKef"  width="260" height="380" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
                             </figure>
                         </div>
                     }
@@ -298,8 +243,9 @@ const Contact = () => {
                                 required
                                 placeholder={contactInputDatas.lastname.placeholder}
                             />
+                            <span className="error">{errors.lastname ? <IoIosWarning /> + errors.lastname : ''}</span>
                         </div>
-                        <span className="error">{contactInputDatas.lastname.error}</span>
+
                         <div className=''>
                             <label 
                                 className=''
@@ -316,8 +262,8 @@ const Contact = () => {
                                 required
                                 placeholder={contactInputDatas.email.placeholder}
                             />
+                            <span className="error">{errors.email? <IoIosWarning /> + errors.email : ''}</span>
                         </div>
-                        <span className="error">{contactInputDatas.email.error}</span>
 
                         
                         <div className=''>
@@ -336,8 +282,8 @@ const Contact = () => {
                                 required
                                 placeholder={contactInputDatas.phone.placeholder}
                             />
+                            <span className="error">{errors.phone ? <IoIosWarning /> + errors.phone : ''}</span>
                         </div>
-                        <span className="error">{contactInputDatas.phone.error}</span>
 
                         <div className=''>
                             <label 
@@ -353,8 +299,8 @@ const Contact = () => {
                                 required
                                 placeholder={contactInputDatas.title.placeholder}
                             />
+                            <span className="error">{errors.title ? <IoIosWarning /> + errors.title :''}</span>
                         </div>
-                        <span className="error">{contactInputDatas.title.error}</span>
 
                         <div className=''>
                             <label 
@@ -369,8 +315,8 @@ const Contact = () => {
                                 required
                                 rows="5"
                             />
+                            <span className="error">{errors.content ? <IoIosWarning /> + errors.content : ''}</span>
                         </div>
-                        <span className="error">{contactInputDatas.content.error}</span>
 
                         <button className='' type="submit">{contactInputDatas.button}</button>
                     </form>
