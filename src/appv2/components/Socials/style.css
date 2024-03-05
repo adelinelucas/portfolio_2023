@@ -8,7 +8,8 @@
 }
 
 .page__salesforce-profil__header-socials h4 a:hover,
-.page__salesforce-profil__header-socials h4 a svg:hover{
+.page__salesforce-profil__header-socials h4 a svg:hover,
+.page__salesforce-profil__header-socials h4 img:hover{
     cursor: url('../../../../public/images/cursorpointer_hover.png'), auto;
 }
 
@@ -17,4 +18,5 @@
     bottom: -4px;
     margin: 0 5px;
     cursor: pointer;
+    cursor: url('../../../../public/images/cursorpointer.png'), auto;
 }

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './style.css';
 import emailjs from 'emailjs-com';
 import {useLanguageContext} from '../../../global/contextes/LanguageContexte';
+import { IoIosWarning } from "react-icons/io";
 
 const Contact = () => {
     const {languageEng} = useLanguageContext();
@@ -242,7 +243,7 @@ const Contact = () => {
                                 required
                                 placeholder={contactInputDatas.lastname.placeholder}
                             />
-                            <span className="error">{errors.lastname}</span>
+                            <span className="error">{errors.lastname ? <IoIosWarning /> + errors.lastname : ''}</span>
                         </div>
 
                         <div className=''>
@@ -261,7 +262,7 @@ const Contact = () => {
                                 required
                                 placeholder={contactInputDatas.email.placeholder}
                             />
-                            <span className="error">{errors.email}</span>
+                            <span className="error">{errors.email? <IoIosWarning /> + errors.email : ''}</span>
                         </div>
 
                         
@@ -281,7 +282,7 @@ const Contact = () => {
                                 required
                                 placeholder={contactInputDatas.phone.placeholder}
                             />
-                            <span className="error">{errors.phone}</span>
+                            <span className="error">{errors.phone ? <IoIosWarning /> + errors.phone : ''}</span>
                         </div>
 
                         <div className=''>
@@ -298,7 +299,7 @@ const Contact = () => {
                                 required
                                 placeholder={contactInputDatas.title.placeholder}
                             />
-                            <span className="error">{errors.title}</span>
+                            <span className="error">{errors.title ? <IoIosWarning /> + errors.title :''}</span>
                         </div>
 
                         <div className=''>
@@ -314,7 +315,7 @@ const Contact = () => {
                                 required
                                 rows="5"
                             />
-                            <span className="error">{errors.content}</span>
+                            <span className="error">{errors.content ? <IoIosWarning /> + errors.content : ''}</span>
                         </div>
 
                         <button className='' type="submit">{contactInputDatas.button}</button>

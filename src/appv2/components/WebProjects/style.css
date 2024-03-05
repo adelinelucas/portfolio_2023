@@ -61,6 +61,12 @@
   border: 1px solid #1212110f;
   background-color: var(--WHITE);
 }
+
+.target-icon svg{
+  position: relative;
+  top:2px;
+  margin-right: 5px;
+}
 .webproject-card figure img{
   object-fit: contain;
   object-position: center;
@@ -68,8 +74,53 @@
   margin: 0 auto;
 }
 
-.webproject-card .webproject-card-content-hover{
+.webproject-card-content-details{
+  position: relative;
+  z-index: 300;
+  background-color: #060508db;
+  bottom: -230%;
+  padding: 1rem 0.5rem;
+  color: var(--WHITE);
+  transition: bottom ease-in 2s;
+  width: 100%;
+
+}
+.webproject-card-content-details:hover{
+  bottom: -66%;
+}
+.webproject-card-content-details .webproject-card-content-details-show:hover .webproject-card-content-details-hover{
+  display: inherit;
+  transition: display ease-in 2s;
+}
+
+.webproject-card-content-details .webproject-card-content-details-show .webproject-card-content-details-hover{
   display: none;
+}
+.webproject-card-content-details h3{
+  margin: 0.5rem auto;
+  font-size: var(--FONT-XS);
+}
+
+.webproject-card-content-details h3 svg{
+  position: relative; 
+  bottom: -4px;
+  margin: 0 5px;
+}
+/* MANAGE DETAILS CARD INFO */
+.webproject-card-content-details .webproject-card-content-details-hover{
+  display: none;
+}
+.webproject-card-content-details:hover .webproject-card-content-details-hover{
+  display: block;
+  transition: ease-in-out;
+  font-size: var(--FONT-XXS);
+  letter-spacing: 1px;
+}
+
+.webproject-card .webproject-card-content-details-hover p span{
+  display: block;
+  margin: 4px auto;
+  font-size: var(--FONT-XXS);
 }
 
 .webproject-card .webproject-card-content{
@@ -180,5 +231,29 @@
 
   .webproject-card {
     width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width:1400px){
+  .webproject-card-content-details:hover{
+    bottom: -116%;
+  }
+  /* .webproject-card-content-details{
+    bottom: -390%;
+  } */
+}
+
+@media (min-width:1400px){
+  .webproject-card-content-details{
+    bottom: -230%;
+  }
+  .webproject-card-content-details:hover{
+    bottom: -103%;
+  }
+}
+
+@media (min-width:2500px){
+  .webproject-card-content-details:hover{
+    bottom: -116%;
   }
 }

@@ -38,7 +38,7 @@
         },
         {
             "titre": "Création d'une boutique e-commerce en ligne",
-            "description":"Une page d'accueil avec l'ensemble des produits chargés dynamiquement depuis la base de données. En cas de rupture de stock de produits, en Javascript, nous désactivons le bouton \"ajout au panier\". Une page produit permettant d'ajouter le produit dans le panier. La possibilité de supprimer un produit depuis le panier. Vérification de la disponibilité des produits depuis le stock en BDD.",
+            "description":["Une page d'accueil avec l'ensemble des produits chargés dynamiquement depuis la base de données.","-En cas de rupture de stock de produits, en JS gestion du boutton pour le desactiver","-Ajout/Supression au panier.","-Une page produit permettant d'ajouter le produit dans le panier.","-Vérification de la disponibilité des produits depuis le stock en BDD."],
             "technosTag": ["HTML","CSS","Javascript","PHP","Symfony"],
             "frontBack": "front",
             "url": "",
@@ -49,7 +49,7 @@
         ,
         {
             "titre": "Bouton pour générer un numéro de dossier client automatique",
-            "description":"1er projet d'alternance, créer un bouton appelant le back pour générer dynamiquement un numéro de dossier. Le numéro de dossier devait être le numéro suivant le dernier numéro de la base de données, j'ai utilisé la requête 'MAX' de SQL.",
+            "description":["-1er projet d'alternance, créer un bouton appelant le back pour générer dynamiquement un numéro de dossier.","Le numéro de dossier devait être le numéro suivant le dernier numéro de la base de données, j'ai utilisé la requête 'MAX' de SQL."],
             "technosTag": ["SQL","PHP"],
             "frontBack": "back",
             "url": "",
@@ -59,7 +59,7 @@
         },
         {
             "titre": "Intégration de landing page",
-            "description":"Intégration d'une page de fin de funnel avec le framework Tailwind CSS. Page responsive.",
+            "description":["Intégration d'une page de fin de funnel avec le framework Tailwind CSS. Page responsive."],
             "technosTag": ["HTML","CSS","Tailwind CSS"],
             "frontBack": "front",
             "url": "",
@@ -69,7 +69,7 @@
         },
         {
             "titre": "Ajout d'un bouton de relance clients",
-            "description":"Ajout conditionnel d'un bouton pour permettre aux équipes concernées de renvoyer simplement un contrat par mail au client.",
+            "description":["Ajout conditionnel d'un bouton pour permettre aux équipes concernées de renvoyer simplement un contrat par mail au client."],
             "technosTag": ["HTML","CSS","PHP", "CodeIgniter"],
             "frontBack": "back",
             "url": "",
@@ -79,7 +79,7 @@
         },
         {
             "titre": "Helper Form",
-            "description":"Création d'un helper pour la génération d'un formulaire sur plusieurs landings, le helper ayant pour but de permettre à l'intégrateur de personnaliser plus facilement le formulaire nécessaire sur la landing page tout en n'intervenant pas coté back.",
+            "description":["Création d'un helper pour la génération d'un formulaire sur plusieurs landings, le helper ayant pour but de permettre à l'intégrateur de personnaliser plus facilement le formulaire nécessaire sur la landing page tout en n'intervenant pas coté back."],
             "technosTag": ["HTML","CSS","Javascript","PHP"],
             "frontBack": "front",
             "url": "https://github.com/adelinelucas/helper_form",
@@ -89,7 +89,7 @@
         },
         {
             "titre": "Backoffice pour la gestion de dossier clients",
-            "description":"Réalisation from scratch d'un bakoffice interne à l'entreprise pour permettre le suivi de dossiers client en fonction de leur status. \nFonctionalités: \n -Récupération des datas et mise en forme dans une table avec DataTable, \n-Système d'authentification du user,\n-Accès différencié aux données des clients en fonction du user.\n Projet réalisé en utilisant la POO.",
+            "description":["-Réalisation from scratch d'un bakoffice interne à l'entreprise pour permettre le suivi de dossiers client en fonction de leur status.","-Récupération des datas et mise en forme dans une table avec DataTable","-Système d'authentification du user","-Accès différencié aux données des clients en fonction du user.","-Projet réalisé en utilisant la POO."],
             "technosTag": ["HTML","CSS","Javascript","PHP"],
             "frontBack": "front et back",
             "url": "https://github.com/adelinelucas/projetsAlternance",
@@ -99,7 +99,7 @@
         },
         {
             "titre": "Backoffice pour la génération de landing page",
-            "description":"Création from scratch d'un outil backoffice pour automatiser la génération de landing page (CRUD). Selon les paramètres renseignés certains éléments sont pré-rempli (url de la landing). Toutes les interactions sur la page ont été réalisées en JS, principalement en asynchrone.",
+            "description":["-Création from scratch d'un outil backoffice pour automatiser la génération de landing page (CRUD).","-Selon les paramètres renseignés certains éléments sont pré-rempli (url de la landing).","-Toutes les interactions sur la page ont été réalisées en JS, principalement en asynchrone."],
             "technosTag": ["HTML","CSS","Javascript","PHP"],
             "frontBack": "front",
             "url": "https://github.com/adelinelucas/projetsAlternance",
@@ -109,7 +109,7 @@
         },
         {
             "titre": "Backoffice pour la génération de offre",
-            "description":"Création from scratch d'un outil backoffice pour la création/ mise à jour d'offres promotionnelles. Toutes les interactions sur la page ont été réalisées en JS, principalement en asynchrone. J'ai beaucoup aimé ce projet qui était dans le prolongement du générateur de landing et qui m'a permis de réaliser un projet complet front et back.",
+            "description":["-Création from scratch d'un outil backoffice pour la création/ mise à jour d'offres promotionnelles.","-Toutes les interactions sur la page ont été réalisées en JS, principalement en asynchrone.","J'ai beaucoup aimé ce projet qui était dans le prolongement du générateur de landings et qui m'a permis de réaliser un projet complet front et back."],
             "technosTag": ["HTML","CSS","Javascript","PHP", "CodeIgniter"],
             "frontBack": "front et back",
             "url": "https://github.com/adelinelucas/projetsAlternance",
@@ -119,7 +119,7 @@
         },
         {
             "titre": "Projet de fin de formation - Trashbuster",
-            "description":"Objectifs: créer un site web front et back comprenant un crud complet en 2 semaines. Trashbuster est une plateforme pour les particuliers/associations/écoles pour collecter les déchets polluants l'espace public. Un utilisateur peut :\n -créer un comptre, \n -créer une action de collecte, \n -commenter une autre action, \n -metter à jour/supprimer une action qu'il a créé. \n Les commentaires d'une action (les kilos indiqués dans le commentaire) vont permettre de compléter l'Objectifs total de déchets collectés sur ce point de collecte.",
+            "description":["-Création un site web front et back comprenant un crud complet en 2 semaines.","-Trashbuster est une plateforme pour les particuliers/associations/écoles pour collecter les déchets polluants l'espace public.","-Un utilisateur peut :\n -créer un comptre, \n -créer une action de collecte, \n -commenter une autre action, \n -metter à jour/supprimer une action qu'il a créé. \n Les commentaires d'une action (les kilos indiqués dans le commentaire) vont permettre de compléter l'Objectifs total de déchets collectés sur ce point de collecte."],
             "technosTag": ["HTML","Tailwind_CSS","React", "Javascript", "Express", "MongoDB","NodeJS"],
             "frontBack": "front",
             "url": "https://trashbuster-finalproject.netlify.app",
@@ -129,8 +129,8 @@
         },
         {
             "titre": "Site E-commerce - Ara Beauty - V1",
-            "description":"Objectifs: créer un site web e-commerce - page catalogue produit et gestion de l'ajout/suppression au panier ou ajout/suppression en favoris. -Création de maquette e-commerce avec l’outil Figma - Utilisation - Développement en JS & HTML CSS – Bootstrap - Fonctionnalités développées en JS : Récupération asynchrone des données stockées en JSON / Modale pour visualiser le panier / Ajout/Suppression des produits dans le panier et calcul du panier / Ajout/Suppression des produits mis en favoris / Ajout d’un loader pour le chargement initial des données - Supervision du projet",
-            "technosTag": ["HTML","Bootstrap", "Javascript"],
+            "description":["-Création un site web e-commerce","- Page catalogue produit et gestion de l'ajout/suppression au panier ou ajout/suppression en favoris.","-Création de maquette e-commerce avec l’outil Figma","-Récupération asynchrone des données stockées en JSON","-Modale pour visualiser le panier / Ajout/Suppression des produits dans le panier et calculer le total du panier","-Ajout/Suppression des produits mis en favoris","- Supervision du projet"],
+            "technosTag": ["HTML","CSS", "Bootstrap", "Javascript"],
             "frontBack": "front",
             "url": "",
             "cover":"./images/Ara_BeautyJS.jpg",
@@ -139,7 +139,7 @@
         },
         {
             "titre": "Site E-commerce - Ara Beauty - V2",
-            "description":"Objectifs: créer un site web e-commerce - page catalogue produit et gestion de l'ajout/suppression au panier ou ajout/suppression en favoris. -Création de maquette e-commerce avec l’outil Figma - Utilisation - Développement en JS & HTML CSS – Bootstrap - Fonctionnalités développées en JS : Récupération asynchrone des données stockées en JSON / Modale pour visualiser le panier / Ajout/Suppression des produits dans le panier et calcul du panier / Ajout/Suppression des produits mis en favoris / Ajout d’un loader pour le chargement initial des données - Supervision du projet",
+            "description":["-Création un site web e-commerce","- Page catalogue produit et gestion de l'ajout/suppression au panier ou ajout/suppression en favoris.","-Création de maquette e-commerce avec l’outil Figma","-Récupération asynchrone des données stockées en JSON","-Modale pour visualiser le panier / Ajout/Suppression des produits dans le panier et calculer le total du panier","-Ajout/Suppression des produits mis en favoris","- Supervision du projet"],
             "technosTag": ["HTML","Bootstrap", "Javascript","React","Express", "MongoDB","NodeJS"],
             "frontBack": "front",
             "url": "",
@@ -149,7 +149,7 @@
         },
         {
             "titre": "Site E-commerce - Salesforce - SFRA ",
-            "description":"Objectifs: - Récupération de SFRA depuis le Git officiel de Salesforce - Mise en place de l’environnement de travail avec Salesforce Commerce Cloud (Sandbox) - Refonte et personnalisation d’un site E-commerce en suivant le cahier des charges - Modification de la Home page depuis Page Designer - Ajout d’un champs « Newsletter » associé à un Custom Object - Création d’un nouveau catalogue - Création de campagne promotionnelle - Rôle de Git Admin",
+            "description":["- Récupération de SFRA depuis le Git officiel de Salesforce","- Mise en place de l’environnement de travail avec Salesforce Commerce Cloud (Sandbox)","- Refonte et personnalisation d’un site E-commerce en suivant le cahier des charges","- Modification de la Home page depuis Page Designer","- Ajout d’un champs « Newsletter » associé à un Custom Object","- Création d’un nouveau catalogue - Création de campagne promotionnelle","- Rôle de Git Admin"],
             "technosTag": ["HTML","Bootstrap", "Javascript","React","Express", "MongoDB","NodeJS"],
             "frontBack": "front",
             "url": "",
@@ -159,7 +159,7 @@
         },
         {
             "titre": "Landing Page - Cap Formation",
-            "description":"Objectifs: créer une landing page pour présenter des offres de d'accompagnement à l'orientation post bac. Définition des orientations graphiques et construction de la page au regard des besoins et envies clients. Création d'un formulaire de contact. Ajout d'un bouton whatapp pour faciliter la mise en relation. Hébergement du site sur Netlify et redirection vers le nom de domaine acheté par le client.",
+            "description":["- Création d'une landing page pour présenter des offres d'accompagnement à l'orientation post bac.","- Définition des orientations graphiques et construction de la page au regard des besoins et envies clients.","- Création d'un formulaire de contact.","- Ajout d'un bouton Whatapp pour faciliter la mise en relation.","- Hébergement du site sur Netlify et redirection vers le nom de domaine acheté par le client."],
             "technosTag": ["HTML","Tailwind CSS", "Javascript","React","Express", "MongoDB","NodeJS"],
             "frontBack": "front et back",
             "url": "https://cap-orientationpro.com/",
