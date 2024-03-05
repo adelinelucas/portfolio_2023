@@ -13,6 +13,7 @@ import SalesforceAbout from './appv2/pages/SalesforceAbout';
 import SalesforcePortfolio from './appv2/pages/SalesforcePorfolio';
 import SalesforceExperiencesPro from './appv2/pages/SalesforceExperiencesPro';
 import SalesforceContact from './appv2/pages/SalesforceContact';
+import SalesforceApp from './appv2/pages/SalesforceApp';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       <Navbar/>
       <Routes>
         {/* Salesforce portfolio */}
-        <Route path='/' element={<SalesforceHome/>} >
+        <Route path='/' element={<SalesforceApp/>} >
           <Route path="salesforce/about" element={<SalesforceAbout />} />
           <Route path="salesforce/portfolio" element={<SalesforcePortfolio />} />
           <Route path="salesforce/experiences-pro" element={<SalesforceExperiencesPro />} />

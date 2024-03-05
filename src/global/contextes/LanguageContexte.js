@@ -5,11 +5,14 @@ const LanguageContext = React.createContext();
 export const LanguageProvider = ({children}) =>{
 
     const [languageEng,setLanguageEng] = useState(false);
+    const [emitScrollEvent, setEmitScrollEvent] = useState(false)
 
     return (
         <LanguageContext.Provider value={{
             languageEng,
-            setLanguageEng
+            setLanguageEng,
+            emitScrollEvent, 
+            setEmitScrollEvent
         }}>
             {children}
         </LanguageContext.Provider>

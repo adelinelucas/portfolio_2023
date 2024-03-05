@@ -9,43 +9,50 @@ import SalesforcePortfolio from '../SalesforcePorfolio';
 import ScrollButton from '../../components/ScrollButton';
 import SalesforceCompetencesWeb from '../SalesforceCompetencesWeb';
 import {LanguageProvider} from '../../../global/contextes/LanguageContexte';
+import {useLanguageContext} from '../../../global/contextes/LanguageContexte';
 
 const SalesforceHome = () => {
 
     const mainRef= useRef();
+    const {emitScrollEvent,setEmitScrollEvent} = useLanguageContext();
+
     const updateBackgroundHeight = () => {
+        let contactNavEl = document.getElementById('salesforce-contact-link-contact');
         const mainElement = mainRef.current;
+
         if (mainElement) {
-            const height = mainElement.clientHeight;
+            let height = mainElement.clientHeight;
+            if(emitScrollEvent){
+                height = height - 300;
+                setEmitScrollEvent(false)
+            }
             mainElement.style.setProperty('--background-height', `${height}px`);
         }
     };
     useEffect(() => {    
         window.addEventListener('resize', updateBackgroundHeight);
         window.addEventListener('scroll', updateBackgroundHeight);
-        updateBackgroundHeight(); // Appel initial pour définir la hauteur correcte
+        updateBackgroundHeight();
     
         return () => {
           window.removeEventListener('resize', updateBackgroundHeight);
           window.removeEventListener('scroll', updateBackgroundHeight);
         };
-      }, []);
-    return (
-        <LanguageProvider>
-            <main className='page__salesforce-profil' ref={mainRef} >
-                <Header/>
-                <SalesforceAbout/>
-                <div className='page__salesforce-profil-content'>
-                    <SalesforceCompetencesWeb />
-                    <SalesforcePortfolio/>
-                    <SalesforceExperiencesPro />
-                    <SalesforceContact />
-                </div>
-                <Footer/>
-                <ScrollButton/>
-            </main>
-        </LanguageProvider>
+      }, [emitScrollEvent]);
 
+    return (
+        <main className='page__salesforce-profil' ref={mainRef} >
+            <Header/>
+            <SalesforceAbout/>
+            <div className='page__salesforce-profil-content'>
+                <SalesforceCompetencesWeb />
+                <SalesforcePortfolio/>
+                <SalesforceExperiencesPro />
+                <SalesforceContact />
+            </div>
+            <Footer/>
+            <ScrollButton/>
+        </main>
     );
 };
 
