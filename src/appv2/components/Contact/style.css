@@ -58,7 +58,16 @@
 .page__salesforce-profil-contact-form article form .error{
     font-size: var(--FONT-XXXS);
     position: absolute;
-    top: 40px;
+    top: 30px;
+    letter-spacing: 1px;
+    color:#ff5844;
+    width: 13rem;
+}
+
+.page__salesforce-profil-contact-form article form .error.textarea{
+    font-size: var(--FONT-XXXS);
+    position: absolute;
+    top: 60px;
     letter-spacing: 1px;
     color:#ff5844;
     width: 13rem;
